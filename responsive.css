@@ -15,6 +15,10 @@
 		width: 100%;
 		height: auto;
 	}
+	.grid li h2{
+		margin: 7px;
+	}
+	
 
 	.js .grid li{
 		width: 100%;
