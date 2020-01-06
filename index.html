@@ -1,1 +1,53 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>迪喆有限公司</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+	<script type="text/javascript" src="tabletop.js"></script>
+</head>
+<body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    xfbml            : true,
+    version          : 'v5.0'
+  });
+};
+
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+attribution=setup_tool
+page_id="203689073011561"
+logged_in_greeting="你好! 歡迎使用 messenger 和我們聯繫!"
+logged_out_greeting="你好! 歡迎使用 messenger 和我們聯繫!">
+</div>
+
+	
+	<h1>TEST</h1>
+
+
+<script type="text/javascript">
+console.log("start");
+var sheet_key = "1C1egmUIO3plZTWOCfQKhLoNvYbPRFlGtriAZRG5YE80";
+Tabletop.init( { key: sheet_key,
+                callback: function(data, tabletop) { 
+                  console.log(data)
+                },
+                simpleSheet: true } )
+
+
+</script>	
+</body>
+</html>
