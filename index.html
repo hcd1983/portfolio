@@ -99,16 +99,14 @@ logged_out_greeting="你好! 歡迎使用 messenger 和我們聯繫!">
 <script src="js/colorfinder-1.1.js"></script>
 <script src="js/gridScrollFx.js"></script>
 <script src="site.js"></script>
-<script>
-	new GridScrollFx( document.getElementById( 'grid' ), {
-		viewportFactor : 0.4
-	} );
-</script>
 
 <script type="text/javascript">
 
 function tt_init(data, tabletop){
 	console.log(data);
+	new GridScrollFx( document.getElementById( 'grid' ), {
+		viewportFactor : 0.4
+	} );
 }
 
 function go_init(){
