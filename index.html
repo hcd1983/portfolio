@@ -107,14 +107,14 @@ function tt_init(data, tabletop){
 	} );
 }
 
-
+var sheet_key = "1C1egmUIO3plZTWOCfQKhLoNvYbPRFlGtriAZRG5YE80";
+Tabletop.init( { key: sheet_key,
+                callback: tt_init,
+                simpleSheet: true } )
 
 function go_init(){
 
-	// var sheet_key = "1C1egmUIO3plZTWOCfQKhLoNvYbPRFlGtriAZRG5YE80";
-	// Tabletop.init( { key: sheet_key,
-	//                 callback: tt_init,
-	//                 simpleSheet: true } )
+	
 	
 	// GA
 	window.dataLayer = window.dataLayer || [];
