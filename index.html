@@ -11,13 +11,10 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   	<meta name="apple-mobile-web-app-capable" content="yes">
 	
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<link rel="stylesheet" type="text/css" href="responsive.css" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-
-	<script src="js/modernizr.custom.js"></script>
+	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="css/normalize.css" />
+	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="css/component.css" />
+	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="responsive.css" />
+	<link rel="preload" onload="this.onload=null;this.rel='stylesheet';" as="style" href="style.css" />
 </head>
 <body onload="go_init();">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -91,8 +88,8 @@ logged_out_greeting="你好! 歡迎使用 messenger 和我們聯繫!">
 		<li><a href="#"><img src="images/logo.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
 	</ul>
 </section>
-
-<script type="text/javascript" src="tabletop.js" ></script>
+<script type="text/javascript" src="tabletop.js"></script>
+<script src="js/modernizr.custom.js" defer></script>
 <script src="js/masonry.pkgd.min.js" defer></script>
 <script src="js/imagesloaded.pkgd.min.js" defer></script>
 <script src="js/classie.js" defer></script>
