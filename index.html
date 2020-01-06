@@ -19,7 +19,7 @@
 
 	<script src="js/modernizr.custom.js"></script>
 </head>
-<body>
+<body onload="go_init();">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65552203-1"></script>
 
@@ -106,15 +106,18 @@ logged_out_greeting="你好! 歡迎使用 messenger 和我們聯繫!">
 </script>
 
 <script type="text/javascript">
-console.log("start");
-var sheet_key = "1C1egmUIO3plZTWOCfQKhLoNvYbPRFlGtriAZRG5YE80";
-Tabletop.init( { key: sheet_key,
-                callback: go_init,
-                simpleSheet: true } )
 
-
-function go_init(data, tabletop){
+function tt_init(data, tabletop){
 	console.log(data);
+}
+
+function go_init(){
+
+	var sheet_key = "1C1egmUIO3plZTWOCfQKhLoNvYbPRFlGtriAZRG5YE80";
+	Tabletop.init( { key: sheet_key,
+	                callback: tt_init,
+	                simpleSheet: true } )
+	
 	// GA
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
