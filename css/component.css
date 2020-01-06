@@ -47,6 +47,7 @@
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 300;
+	margin-right: 0;
 }
 
 .title-box h2 a {
@@ -64,6 +65,13 @@
 	display: block;
 	outline: none;
 	border: none;
+	/*width: 100%;*/
+	width: calc(100% - 7px);
+	height: auto;
+}
+
+.grid li img {
+    width: 100%;
 }
 
 .grid li > a {
