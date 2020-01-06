@@ -19,10 +19,35 @@
 <body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65552203-1"></script>
+<script type="text/javascript">
+	// GA
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
+	gtag('config', 'UA-65552203-1');
+</script>
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <!-- Your customer chat code -->
+<script type="text/javascript">
+	 // chatbot
+	window.fbAsyncInit = function() {
+	  FB.init({
+	    xfbml            : true,
+	    version          : 'v5.0'
+	  });
+	};
+
+	(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+</script>
 <div class="fb-customerchat"
 attribution=setup_tool
 page_id="203689073011561"
@@ -125,38 +150,8 @@ Tabletop.init( { key: sheet_key,
                 callback: tt_init,
                 simpleSheet: true } )
 
-function go_init(){
+function go_init(){}
 
-	
-	
-	// GA
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-65552203-1');
-
-    // chatbot
-	window.fbAsyncInit = function() {
-	  FB.init({
-	    xfbml            : true,
-	    version          : 'v5.0'
-	  });
-	};
-
-	(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
-	fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-
-	
-
-}
-
-go_init();
 </script>	
 </body>
 </html>
