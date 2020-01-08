@@ -39,7 +39,8 @@ function MainGrid(data){
 		var title = _data.title;
 		var img = _data.image;
 		var des = nl2br( _data.description );
-		html += `<a href="#${_data.id}"><figure><img src="images/${img}" alt="${title}"/><h3>${title}</h3></figure></a>`;
+		var delay = i *150;
+		html += `<a href="#${_data.id}" class="animated animatedFadeInUp fadeInUp" style="animation-delay:${delay}ms;"><figure><img src="images/${img}" alt="${title}"/><h3>${title}</h3></figure></a>`;
 		// html += `<figure><img src="images/${img}" alt="${title}"/></figure>`;
 		
 	}
@@ -47,10 +48,13 @@ function MainGrid(data){
 	main_content += `
 		<div>
 			<div class="dummy-des">
+				<div></div>
+				<span class="icon close-content"></span>
 			</div>	
 		</div>`;
 
-	main_content += `<span class="loading"></span><span class="icon close-content"></span>`;
+	main_content += `<span class="loading"></span>`;
+	// main_content += `<span class="icon close-content"></span>`;
 
 	$("#main_grid").html(html);
 	$("#main_content").html(main_content);
@@ -92,10 +96,10 @@ function RenderbyItemid (id) {
   const des = nl2br(_data.description);
   var html = `<img  class="dummy-img" src="images/${_data.image_dummy}" alt="${_data.title}"/>`;
   if(_data.url){
-  	 html += `<div><a class="link_button" href="${_data.url}" target="_blank" rel="nofollow noopener">前往頁面</a></div>`;
+  	 html += `<div class="dummy-text"><a class="link_button" href="${_data.url}" target="_blank" rel="nofollow noopener">前往頁面</a></div>`;
   }
-  html += `<h3>${_data.title}</h3>`+`<p class="dummy-text">${des}</p>`;
-  $(".dummy-des").html(html);
+  html += `<h3 class="dummy-text">${_data.title}</h3>`+`<p class="dummy-text">${des}</p>`;
+  $(".dummy-des > div").html(html);
 
 
 } 

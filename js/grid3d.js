@@ -8,6 +8,9 @@
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
+
+ var RecordTop = window.pageYOffset;
+
 ;( function( window ) {
 	
 	'use strict';
@@ -97,6 +100,7 @@
 			
 			})
 		}
+
 		window.addEventListener("hashchange", function(){
 			_navigate();
 
@@ -106,6 +110,7 @@
 		this.close.addEventListener( 'click', function() {
 			location.hash = "";
 			self._hideContent();
+			window.scrollTo(0,RecordTop);
 		} );
 
 		if( this.support ) {
@@ -131,7 +136,7 @@
 	// in the end of the animation the content is shown
 	// a loading indicator will appear for 1 second to simulate a loading period
 	grid3D.prototype._showContent = function( pos ) {
-		
+		RecordTop = window.pageYOffset;
 		// var content_pos = pos;
 		var content_pos = 0;
 		
