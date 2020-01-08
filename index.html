@@ -8,13 +8,16 @@
 
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   	<meta name="apple-mobile-web-app-capable" content="yes">
-	
+	<style type="text/css">
+		:root {
+		  --main-color: #1b224e;
+		}
+	</style>
+	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap" rel="stylesheet">
 	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="css/normalize.css" />
 	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="css/component.css" />
-	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="responsive.css" />
+	<!-- <link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="responsive.css" /> -->
 	<link rel="preload" onload="this.onload=null;this.rel='stylesheet';" as="style" href="style.css" />
-
-	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="https://fonts.googleapis.com/css?family=Gelasio|Noto+Serif+TC:400,600,700&display=swap">
 </head>
 <body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -24,13 +27,32 @@
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
+	var ga_id = 'UA-65552203-1';
+</script>
 
-	gtag('config', 'UA-65552203-1');
+<script type="text/javascript">
+    // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    // })(window,document,'script','https://www.google-analytics.com/analytics.js','ga')
+
+    // ga('create', 'UA-65552203-1', 'auto')
 </script>
 
 
 <!-- Facebook Pixel Code -->
-
+<script type="text/javascript">
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '1940801029505575');
+	fbq('track', 'PageView');
+</script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1940801029505575&ev=PageView&noscript=1"
 /></noscript>
@@ -42,94 +64,23 @@
 
 <h1>TEST</h1>
 
-<section class="grid-wrap">
-	<ul class="grid swipe-down" id="grid">
-		<li class="title-box">
-			<h2><a href="http://ryotakemasa.com/">迪喆有限公司</a>作品集</h2>
-		</li>
-		<li><a href="#"><img src="images/logo.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
-		<li><a href="#"><img src="images/logo.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
-	</ul>
+<section class="grid3d vertical" id="grid3d">
+	
+	<div class="grid-wrap">
+		<div id="main_grid" class="grid">
+		</div>
+	</div><!-- /grid-wrap -->
+	
+	<div id="main_content" class="content"></div>
+
 </section>
+<script src="js/jquery.min.js" defer></script>
 <script type="text/javascript" src="tabletop.js"></script>
 <script src="js/modernizr.custom.js" defer></script>
-<script src="js/masonry.pkgd.min.js" defer></script>
-<script src="js/imagesloaded.pkgd.min.js" defer></script>
 <script src="js/classie.js" defer></script>
-<script src="js/colorfinder-1.1.js" defer></script>
-<script src="js/gridScrollFx.js" defer></script>
+<script src="js/helper.js" defer></script>
+<script src="js/grid3d.js" defer></script>
 <script src="site.js" ></script>
-
-<script type="text/javascript">
-window.onload = go_init;
-
-function tt_init(data, tabletop){
-	console.log(data);
-	new GridScrollFx( document.getElementById( 'grid' ), {
-		viewportFactor : 0.4
-	} );
-
-	// !function(f,b,e,v,n,t,s)
-	// {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	// n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	// if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	// n.queue=[];t=b.createElement(e);t.async=!0;
-	// t.src=v;s=b.getElementsByTagName(e)[0];
-	// s.parentNode.insertBefore(t,s)}(window, document,'script',
-	// 'https://connect.facebook.net/en_US/fbevents.js');
-	// fbq('init', '1940801029505575');
-	// fbq('track', 'PageView');
-
-}
-
-
-
-function go_init(){
-
-	var sheet_key = "1C1egmUIO3plZTWOCfQKhLoNvYbPRFlGtriAZRG5YE80";
-	Tabletop.init( { key: sheet_key,
-	                callback: tt_init,
-	                simpleSheet: true } )
-}
-
-</script>	
+	
 </body>
 </html>

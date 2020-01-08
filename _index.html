@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>迪喆有限公司</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+	
+	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="css/normalize.css" />
+	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="css/component.css" />
+	<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="responsive.css" />
+	<link rel="preload" onload="this.onload=null;this.rel='stylesheet';" as="style" href="style.css" />
+</head>
+<body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65552203-1"></script>
+<script type="text/javascript">
+	// GA
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-65552203-1');
+</script>
+
+
+<!-- Facebook Pixel Code -->
+<script type="text/javascript">
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '1940801029505575');
+	fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1940801029505575&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<!-- webstie start -->
+
+
+<h1>TEST</h1>
+
+<section class="grid3d vertical" id="grid3d">
+	<div class="grid-wrap">
+		<div id="main_grid" class="grid">
+			<figure><img src="images/1.jpg" alt="img01"/></figure>
+			<figure><img src="images/5.jpg" alt="img05"/></figure>
+			<figure><img src="images/8.jpg" alt="img08"/></figure>
+			<figure><img src="images/2.jpg" alt="img02"/></figure>
+			<figure><img src="images/4.jpg" alt="img04"/></figure>
+			<figure><img src="images/3.jpg" alt="img03"/></figure>
+			<figure><img src="images/9.jpg" alt="img09"/></figure>
+			<figure><img src="images/6.jpg" alt="img06"/></figure>
+			<figure><img src="images/7.jpg" alt="img07"/></figure>
+		</div>
+	</div><!-- /grid-wrap -->
+	<div id="main_content" class="content">
+		<div>
+			<div class="dummy-des">
+				<div class="dummy-img"></div>			
+				<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+				<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+			</div>	
+		</div>
+		
+		<span class="loading"></span>
+		<span class="icon close-content"></span>
+	</div>
+</section>
+<script src="js/jquery.min.js" defer></script>
+<script type="text/javascript" src="tabletop.js"></script>
+<script src="js/modernizr.custom.js" defer></script>
+<script src="js/classie.js" defer></script>
+<script src="js/helper.js" defer></script>
+<script src="js/grid3d.js" defer></script>
+<script src="site.js" ></script>
+
+<script type="text/javascript">
+window.onload = go_init;
+
+function MainGrid(data){
+	var html = "";
+	var main_content = "";
+	for (var i = 0; i < data.length; i++) {
+		var _data = data[i];
+		var title = _data.title;
+		var img = _data.image;
+		html += `<figure><img src="images/${img}" alt="${title}"/></figure>`;
+		main_content += `
+		<div>
+			<div class="dummy-des">
+				<div class="dummy-img"></div>			
+				<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+				<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+			</div>	
+		</div>`;
+	}
+
+	$("#main_grid").html(html);
+} 
+
+function tt_init(data, tabletop){
+	
+	MainGrid(data);
+
+	new grid3D( document.getElementById( 'grid3d' ) );
+	
+	$(document).click(function(event) {
+		if($(".content.show .show").length > 0){
+
+		    if (!$(event.target).closest(".dummy-des, .icon.close-content").length) {
+		        $(".icon.close-content").click();
+		    }
+		
+		}
+	   
+	});
+
+
+}
+
+
+function go_init(){
+	
+	var sheet_key = "1C1egmUIO3plZTWOCfQKhLoNvYbPRFlGtriAZRG5YE80";
+	Tabletop.init( { key: sheet_key,
+	                callback: tt_init,
+	                simpleSheet: true } )
+}
+
+</script>	
+</body>
+</html>
