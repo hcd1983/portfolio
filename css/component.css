@@ -475,7 +475,7 @@ img.dummy-img {
 	.grid {
 	    padding: 0 20px;
 	}
-	.grid a, .grid .placeholder {
+	.grid a{
 	    width: 100%;
 	    padding-top: 88.5%;
 	}
@@ -485,9 +485,6 @@ img.dummy-img {
 	    margin: 10px 0;
 	}
 
-	.dummy-img {
-	    margin-top: 70px;
-	}
 	
 
 }

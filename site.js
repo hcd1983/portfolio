@@ -40,7 +40,7 @@ function MainGrid(data){
 		var img = _data.image;
 		var des = nl2br( _data.description );
 		var delay = i *150;
-		html += `<a href="#${_data.id}" class="animated animatedFadeInUp fadeInUp" style="animation-delay:${delay}ms;"><figure><img src="images/${img}" alt="${title}"/><h3>${title}</h3></figure></a>`;
+		html += `<a href="#${_data.id}"><figure><img src="images/${img}" alt="${title}" class="animated animatedFadeInUp fadeInUp" style="animation-delay:${delay}ms;"/><h3>${title}</h3></figure></a>`;
 		// html += `<figure><img src="images/${img}" alt="${title}"/></figure>`;
 		
 	}
