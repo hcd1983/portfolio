@@ -195,7 +195,7 @@ body {
 }
 
 .content {
-	overflow-y: scroll;
+	overflow-y: auto;
 	height: 0; /* What seems to be the problem, officer? Well, we have a second scroll bar in Chrome! */
 	background: #fff;
 	visibility: hidden;

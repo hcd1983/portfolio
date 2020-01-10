@@ -52,24 +52,10 @@
 		
 		var self = this;
 
-		_navigate = function(){
-			
+		this.render = function(){
+
 			var _time = 0;
-
-			if (!location.hash || location.hash === '#'){
-
-				if($("#main_content").hasClass("show")){
-				  	$(".icon.close-content").click();
-				  	location.hash = "";
-				}
-
-				// history.pushState(null, null, window.location.href.split('#')[0]);
-				gtag ('config', ga_id);
-				return false;
 			
-			}
-
-
 			self.gridItems.forEach( function( item, idx ) {
 				
 

@@ -102,6 +102,30 @@ function RenderbyItemid (id) {
   $(".dummy-des > div").html(html);
 
 
-} 
+}
 
+
+_navigate = function(){
+			
+
+	if (!location.hash || location.hash === '#'){
+
+		if($("#main_content").hasClass("show")){
+		  	$(".icon.close-content").click();
+		  	location.hash = "";
+		}
+
+		// history.pushState(null, null, window.location.href.split('#')[0]);
+		gtag ('config', ga_id);
+		return false;
+	
+	}else if(location.hash === "#about"){
+		alert("OK");
+	}else{
+		MyGrid3D.render();
+	}
+
+	
+
+}
 
