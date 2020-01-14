@@ -1,13 +1,21 @@
 "use starict";
 
 window.onload = init;
-// window.onhashchange = navigate
+
+
+// window.addEventListener("hashchange", function(){
+// 	_navigate();
+
+// }, false);
+
 var listings;
-var _navigate;
+// var _navigate;
 
 
 function init(){
 	
+	window.onhashchange = _navigate
+
 	var sheet_key = "1C1egmUIO3plZTWOCfQKhLoNvYbPRFlGtriAZRG5YE80";
 	Tabletop.init( { key: sheet_key,
 	                callback: processData,
@@ -105,7 +113,9 @@ function RenderbyItemid (id) {
 }
 
 
-_navigate = function(){
+
+
+var _navigate = function(){
 			
 
 	if (!location.hash || location.hash === '#'){

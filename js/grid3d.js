@@ -87,10 +87,7 @@
 			})
 		}
 
-		window.addEventListener("hashchange", function(){
-			_navigate();
-
-		}, false);
+		
 
 		// close the content element
 		this.close.addEventListener( 'click', function() {
