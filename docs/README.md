@@ -1,1 +1,0 @@
-# Hcd Design Studio
