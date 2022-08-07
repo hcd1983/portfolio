@@ -15,4 +15,7 @@
     "url": "https://github.com/hcd1983/portfolio/issues"
   },
   "homepage": "https://github.com/hcd1983/portfolio#readme",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.49"
+  }
 }
