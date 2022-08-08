@@ -2,12 +2,13 @@
   <div>
     <Test />
     <Content />
+    BBB
   </div>
 </template>
 
 <script>
 export default {
-  name: "Layout"
+  name: "Layout",
 }
 </script>
 

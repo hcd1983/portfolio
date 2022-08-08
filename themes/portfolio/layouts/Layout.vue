@@ -1,6 +1,7 @@
 <template>
 <div>
   <div class="container">
+    <Toc />
     <Content />
     <div class="grid grid-cols-4">
       <div class="flex flex-col flex-grow flex-shrink">
@@ -12,13 +13,18 @@
         </div>
       </div>
     </div>
+    <NavBar />
   </div>
 </div>
 </template>
 
 <script>
 export default {
-  name: "Layout"
+  name: "Layout",
+  mounted() {
+    console.log(this.$router.getRoutes())
+    console.log('hihihi')
+  }
 }
 </script>
 
