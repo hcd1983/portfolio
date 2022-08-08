@@ -1,12 +1,10 @@
 <template>
-<div>
-  Grid
-</div>
+<h1 class="bg-red-700">Test cool</h1>
 </template>
 
 <script>
 export default {
-  name: "Grid"
+  name: "Test"
 }
 </script>
 

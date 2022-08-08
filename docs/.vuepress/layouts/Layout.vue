@@ -1,7 +1,8 @@
 <template>
-<div>
-  <Content />
-</div>
+  <div>
+    <Test />
+    <Content />
+  </div>
 </template>
 
 <script>

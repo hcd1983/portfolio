@@ -1,4 +1,5 @@
 const { portfolioTheme } = require("../../themes/portfolio")
+const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
 const { path } = require('@vuepress/utils')
 const { viteBundler } = require('@vuepress/bundler-vite')
 
@@ -7,6 +8,15 @@ module.exports = {
     title: 'Hcd',
     description: 'This is my first VuePress site',
     theme: portfolioTheme(),
+    layouts: {
+        Layout: path.resolve(__dirname, 'layouts/Layout.vue'),
+        // 404: path.resolve(__dirname, 'layouts/404.vue'),
+    },
+    plugins: [
+        registerComponentsPlugin({
+            componentsDir: path.resolve(__dirname, './components'),
+        }),
+    ],
     bundler: viteBundler({
         viteOptions: {
             css: {
