@@ -1,11 +1,12 @@
 <template>
 <div id="wrap">
-    <intro />
-    <about />
-    <works />
-    <RouterLink to="/works/test">Tester</RouterLink>
-    <RouterLink to="/">Home</RouterLink>
-    <Content />
+  <work-grid title="it works" />
+  <work-grid title="nice" />
+  <Content />
+  <about />
+  <works />
+  <RouterLink to="/works/test">Tester</RouterLink>
+  <RouterLink to="/">Home</RouterLink>
 </div>
 </template>
 
@@ -18,7 +19,7 @@ export default {
     const site = useSiteData()
   },
   mounted() {
-
+    console.log(this.$router.getRoutes())
   }
 }
 </script>

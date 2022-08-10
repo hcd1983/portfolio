@@ -1,8 +1,11 @@
 <template>
 <div ref="trigger" class="w-screen overflow-x-hidden">
-  <div ref="target" class="flex w-fit">
-    <div v-for="i in 20" class="h-screen w-[50vw] bg-blue-300 even:bg-red-300 flex-shrink-0 flex items-center justify-center">
-      <span class="text-3xl">{{ i }}</span>
+  <div class="flex flex-col h-screen">
+    <h3 class="text-8xl">Works</h3>
+    <div ref="target" class="flex w-fit flex-1">
+      <div v-for="i in 20" class="h-full w-[50vw] bg-blue-300 even:bg-red-300 flex-shrink-0 flex items-center justify-center">
+        <span class="text-3xl">{{ i }}</span>
+      </div>
     </div>
   </div>
 </div>
@@ -38,12 +41,12 @@ export default {
       this.st = ScrollTrigger.create({
         trigger: trigger,
         start: "top top",
-        end: "+=700",
+        end: `+=${offset}`,
         // markers: true,
         animation: tween,
         scrub: true,
         pin: true,
-        // pinnedContainer: trigger,
+        pinnedContainer: trigger,
         // pinType: "fixed"
       })
       window.st = this.st
