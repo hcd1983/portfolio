@@ -5,7 +5,6 @@ const portfolioTheme = (options) => {
         name: 'portfolio',
         extends: defaultTheme({
             ...options,
-            okok: 'cool'
         }),
         layouts: {
             Layout: path.resolve(__dirname, 'layouts/Layout.vue'),
