@@ -2,14 +2,16 @@
 <div>
   <div class="container">
     <intro />
-    <Content />
+    <about />
+    <works />
+<!--    <Content />-->
   </div>
 </div>
 </template>
 
 <script>
 export default {
-  name: "Layout"
+  name: "Layout",
 }
 </script>
 

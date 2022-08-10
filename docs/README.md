@@ -1,4 +1,7 @@
-# Hcd Design Studio Portfolio
+---
+title: Home work
+---
+# Home
 ## Ch1
 [GitHub](https://github.com)  
 [Home](../README.md)
