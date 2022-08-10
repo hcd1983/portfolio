@@ -1,7 +1,6 @@
 const { portfolioTheme } = require("../../themes/portfolio")
 const config = require("./config/index.js")
 const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
-const gsap = require("../../plugins/gsap.js")
 const { path } = require('@vuepress/utils')
 const { viteBundler } = require('@vuepress/bundler-vite')
 const { defaultTheme } = require('@vuepress/theme-default')
@@ -26,7 +25,7 @@ module.exports = {
         ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Sans+TC:wght@400;500&display=swap', crossorigin: true }],
     ],
     plugins: [
-        gsap(),
+        // gsap(),
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
         }),

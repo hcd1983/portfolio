@@ -1,24 +1,24 @@
 <template>
-<div>
-  <div class="container">
+<div id="wrap">
     <intro />
     <about />
     <works />
-<!--    <Content />-->
-  </div>
+    <RouterLink to="/works/test">Tester</RouterLink>
+    <RouterLink to="/">Home</RouterLink>
+    <Content />
 </div>
 </template>
 
 <script>
-import { usePageData } from '@vuepress/client'
+import { usePageData, useSiteData } from '@vuepress/client'
 export default {
   name: "Layout",
   setup() {
     const page = usePageData()
-    console.log(page.value.bar) // bar
+    const site = useSiteData()
   },
   mounted() {
-    console.log(this.gsap)
+
   }
 }
 </script>
