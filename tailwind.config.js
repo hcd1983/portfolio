@@ -7,6 +7,9 @@ module.exports = {
   theme: {
     container: {
       center: true,
+      padding: {
+        DEFAULT: '1rem',
+      }
     },
     fontFamily: {
       'sans': ['Noto Sans TC', 'sans-serif'],

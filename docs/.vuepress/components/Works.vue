@@ -1,8 +1,8 @@
 <template>
 <div ref="trigger" class="w-screen overflow-x-hidden">
   <div class="flex flex-col h-screen">
-    <h3 class="text-8xl">Works</h3>
-    <div ref="target" class="flex w-fit flex-1">
+    <h3 class="text-6xl font-cursive pt-3">My Works</h3>
+    <div ref="target" class="flex w-fit flex-1 pt-3">
       <div v-for="i in 20" class="h-full w-[50vw] bg-blue-300 even:bg-red-300 flex-shrink-0 flex items-center justify-center">
         <span class="text-3xl">{{ i }}</span>
       </div>
@@ -21,7 +21,7 @@ export default {
     }
   },
   mounted() {
-    console.log(ScrollTrigger.create)
+    console.log(ScrollTrigger.isTouch)
     this.$nextTick(() => {
       this.setTrigger()
     })

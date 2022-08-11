@@ -1,7 +1,7 @@
 <template>
 <div id="wrap">
-  <work-grid title="it works" />
-  <work-grid title="nice" />
+<!--  <work-grid title="it works" />-->
+<!--  <work-grid title="nice" />-->
   <Content />
   <about />
   <works />
