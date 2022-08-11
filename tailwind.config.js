@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./docs/.vuepress/**/*.vue",
+    "./docs/**/*.md",
     "./themes/**/*.{js,vue,ts}",
   ],
   theme: {

@@ -35,6 +35,7 @@ export default {
   },
   methods: {
     setTrigger() {
+      if (window.innerWidth < 1024) return
       const { trigger, target } = this.$refs
       const offset = target.getBoundingClientRect().width - window.innerWidth
       const tween = gsap.to(target, { x: -offset })

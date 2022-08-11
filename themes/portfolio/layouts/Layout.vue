@@ -3,8 +3,6 @@
 <!--  <work-grid title="it works" />-->
 <!--  <work-grid title="nice" />-->
   <Content />
-  <about />
-  <works />
   <RouterLink to="/works/test">Tester</RouterLink>
   <RouterLink to="/">Home</RouterLink>
 </div>
