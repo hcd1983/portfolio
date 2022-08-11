@@ -6,6 +6,7 @@ const { viteBundler } = require('@vuepress/bundler-vite')
 const { defaultTheme } = require('@vuepress/theme-default')
 const glob = require('glob');
 const markdownFiles = glob.sync('docs/**/*.md').map(f => '/' + f);
+const faviconHead = require("./favionHead.js")
 console.log(markdownFiles)
 
 const themeConfig = {
@@ -20,6 +21,7 @@ module.exports = {
     description: config.description,
     theme:portfolioTheme( themeConfig ),
     head: [
+        ...faviconHead,
         ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
         ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true }],
         ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Sans+TC:wght@400;500&display=swap', crossorigin: true }],
