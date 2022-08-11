@@ -42,6 +42,9 @@ module.exports = {
                     ]
                 }
             },
+            ssr: {
+                noExternal: ['gsap'],
+            },
         },
         vuePluginOptions: {},
     }),
