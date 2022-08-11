@@ -1,5 +1,5 @@
 <template>
-<div ref="trigger" class="w-screen overflow-x-hidden">
+<div ref="trigger" class="w-screen max-w-full overflow-x-hidden">
   <div class="flex flex-col h-screen">
     <h3 class="text-6xl font-cursive pt-3">Works</h3>
     <div ref="target" class="flex w-fit flex-1 pt-3">

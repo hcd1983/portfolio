@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"Home work","lang":"zh-TW","frontmatter":{"title":"Home work"},"excerpt":"","headers":[{"level":2,"title":"Ch1","slug":"ch1","children":[]}],"git":{"updatedTime":1660140980000,"contributors":[{"name":"Dean Huang","email":"hcd@mojopot.com","commits":7}]},"filePathRelative":"README.md","bar":"bar"}');export{e as data};

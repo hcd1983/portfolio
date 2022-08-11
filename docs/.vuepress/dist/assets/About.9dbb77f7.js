@@ -1,1 +1,0 @@
-import{_ as o,o as e,c as t}from"./app.0eaee182.js";const c={name:"About"},s={class:"block"};function a(n,r,_,u,p,f){return e(),t("section",s," about ")}var l=o(c,[["render",a],["__file","About.vue"]]);export{l as default};
