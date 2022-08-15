@@ -1,13 +1,16 @@
 <template>
-<div ref="trigger" class="w-screen max-w-full overflow-x-hidden">
+<div v-if="!isTouch"  ref="trigger" class="w-screen max-w-full overflow-x-hidden">
   <div class="flex flex-col h-screen">
-    <h3 class="text-6xl font-cursive pt-3">Works</h3>
-    <div ref="target" class="flex w-fit flex-1 pt-3">
-      <div v-for="i in 20" class="h-full w-[1800px] bg-blue-300 even:bg-red-300 flex-shrink-0 flex items-center justify-center">
+    <h3 class="text-6xl font-cursive pt-3 text-center">My Works</h3>
+    <div ref="target" class="flex w-fit flex-1 pt-3 gap-[10px]">
+      <div v-for="i in 20" class="h-[300px] w-[300px] bg-blue-300 even:bg-red-300 flex-shrink-0 flex items-center justify-center">
         <span class="text-3xl">{{ i }}</span>
       </div>
     </div>
   </div>
+</div>
+<div v-else>
+  Mobile
 </div>
 </template>
 
@@ -17,13 +20,17 @@ export default {
   name: "Works",
   data() {
     return {
-      st: null
+      st: null,
+      isTouch: 0
     }
   },
   mounted() {
-    console.log(ScrollTrigger.isTouch)
     this.$nextTick(() => {
-      this.setTrigger()
+      const isTouch = ScrollTrigger.isTouch
+      this.isTouch = isTouch
+      if (isTouch === 0) {
+        this.setTrigger()
+      }
     })
     if (window) {
       window.addEventListener("resize", this.resetTrigger)
@@ -35,7 +42,7 @@ export default {
   },
   methods: {
     setTrigger() {
-      if (window.innerWidth < 1024) return
+      // if (window.innerWidth < 1024) return
       const { trigger, target } = this.$refs
       const offset = target.getBoundingClientRect().width - window.innerWidth
       const tween = gsap.to(target, { x: -offset })

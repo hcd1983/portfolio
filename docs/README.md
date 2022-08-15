@@ -4,11 +4,14 @@ description: 從產品設計師轉職的軟體工程師。 從基本的 Html、C
 ---
 <intro />
 <about />
-<div class="container lg:mx-none lg:max-w-full lg:px-0 mt-10">
-    <works />
+<div class="bg-gray-200 pt-10 pb-16">
+    <div class="container max-w-[900px]">
+        <timeline />
+    </div>
 </div>
+<works />
 
-<h3 class="text-[500px] bg-green">Bg</h3>
+<h3 class="text-[30px] bg-green">Bg</h3>
 
 # Home
 ## Ch1

@@ -1,8 +1,9 @@
 <template>
-<section class="block">
-  <div class="container px-3 py-6">
-    <div class="mx-auto max-w-[700px] flex flex-col items-center gap-y-5 md:gap-y-0 md:flex-row md:justify-between md:gap-x-12">
+<section id="about" class="block py-10">
+  <div class="container px-3">
+    <div class="mx-auto max-w-[900px] flex flex-col items-center gap-y-5 md:gap-y-0 md:flex-row md:justify-between md:gap-x-12">
       <div class="order-2">
+        <h3 class="text-6xl font-cursive pt-3 mb-10">About</h3>
         <h1 class="text-3xl font-bold">Hi, 我是 <span class="text-blue-500">欣迪</span></h1>
         <p class="mt-6 text-base leading-loose">
           從產品設計師轉職的軟體工程師。<br/>
