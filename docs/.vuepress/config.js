@@ -1,6 +1,6 @@
 const { portfolioTheme } = require("../../themes/portfolio")
 // const config = require("./config/index.js")
-const svgSprites = require('rollup-plugin-svg-sprites')
+const { createSvgIconsPlugin } = require('vite-plugin-svg-icons')
 const Config = require("./models/Config")
 const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
 const { path } = require('@vuepress/utils')
@@ -55,11 +55,19 @@ module.exports = {
                 noExternal: ['gsap'],
             },
             plugins: [
-                svgSprites({
-                    vueComponent: true,
-                    exclude: ['node_modules/**', './public/**/*.*'],
-                    outputFolder: 'dist/public'
-                })
+                // svgSprites({
+                //     vueComponent: true,
+                //     exclude: ['node_modules/**', './public/**/*.*'],
+                //     outputFolder: 'dist/public'
+                // }),
+                createSvgIconsPlugin({
+                    // Specify the icon folder to be cached
+                    iconDirs: [path.resolve(__dirname, './assets/icons')],
+                    // Specify symbolId format
+                    symbolId: 'icon-[dir]-[name]',
+                    inject: 'body-last',
+                    // customDomId: '__svg__icons__dom__',
+                }),
             ]
         },
         vuePluginOptions: {},

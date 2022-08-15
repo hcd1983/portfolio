@@ -27,7 +27,7 @@
       <div class="shrink-0 flex-grow order-1 md:order-2">
         <img class="rounded-full w-full max-w-[130px] md:max-w-[200px]" :src="$withBase('/images/portfolio.png')" alt="黃欣迪" loading="lazy">
       </div>
-      <my-icon />
+      <SvgIcon name="blog" />
     </div>
   </div>
 </section>
@@ -35,9 +35,7 @@
 
 <script>
 import { usePageData } from '@vuepress/client'
-import MyIcon from '@assets/github.svg'
 export default {
-  components: { MyIcon },
   name: "About",
   setup() {
     const page = usePageData()
