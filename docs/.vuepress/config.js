@@ -66,7 +66,7 @@ module.exports = {
                     // Specify symbolId format
                     symbolId: 'icon-[dir]-[name]',
                     inject: 'body-last',
-                    // customDomId: '__svg__icons__dom__',
+                    customDomId: '__svg__icons__dom__',
                 }),
             ]
         },

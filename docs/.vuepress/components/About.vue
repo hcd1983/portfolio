@@ -13,13 +13,14 @@
         </p>
         <div class="flex gap-[10px] mt-10">
           <a
-              v-for="{sub, url, image}, key in socialLink"
+              v-for="{sub, url, icon}, key in socialLink"
               :key="key"
               :href="url"
               target="_blank"
               class="flex flex-col items-center opacity-60 hover:opacity-100 transition-opacity duration-500 ease-in-out"
           >
-            <img :src="image" :alt="sub" class="w-10 h-auto fill-blue-700" />
+<!--            <img :src="image" :alt="sub" class="w-10 h-auto fill-blue-700" />-->
+            <svg-icon :name="icon" />
             <p>{{ sub }}</p>
           </a>
         </div>
@@ -27,7 +28,6 @@
       <div class="shrink-0 flex-grow order-1 md:order-2">
         <img class="rounded-full w-full max-w-[130px] md:max-w-[200px]" :src="$withBase('/images/portfolio.png')" alt="黃欣迪" loading="lazy">
       </div>
-      <SvgIcon name="blog" />
     </div>
   </div>
 </section>

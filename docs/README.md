@@ -8,11 +8,11 @@ description: 從產品設計師轉職的軟體工程師。 從基本的 Html、C
 ---
 <intro />
 
-![VuePress Logo](/images/portfolio.png)
+[comment]: <> (![VuePress Logo]&#40;/images/portfolio.png&#41;)
 
-![VuePress Logo222](/icons/github.svg)
+[comment]: <> (![VuePress Logo222]&#40;/icons/github.svg&#41;)
 
-<img :src="$withBase('/icons/blog.svg')" alt="VuePress Logo">
+[comment]: <> (<img :src="$withBase&#40;'/icons/blog.svg'&#41;" alt="VuePress Logo">)
 
 
 <about />

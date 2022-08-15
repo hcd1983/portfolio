@@ -1,5 +1,6 @@
 import { defineClientConfig } from '@vuepress/client'
 import { START_LOCATION } from 'vue-router'
+import 'virtual:svg-icons-register'
 
 export default defineClientConfig({
     enhance({ app, router, siteData }){
