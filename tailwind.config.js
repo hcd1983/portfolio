@@ -16,7 +16,11 @@ module.exports = {
       'sans': ['Noto Sans TC', 'sans-serif'],
       'cursive': ['Fredericka the Great', 'cursive'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#ff8800',
+      }
+    },
   },
   plugins: [],
 }

@@ -36,6 +36,9 @@ export default {
       window.addEventListener("resize", this.resetTrigger)
     }
   },
+  updated() {
+    this.resetTrigger
+  },
   beforeUnmount() {
     this.disableTrigger()
     window.removeEventListener("resize", this.resetTrigger)
