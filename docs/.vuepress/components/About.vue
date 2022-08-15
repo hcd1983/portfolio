@@ -11,6 +11,18 @@
           對於網站架設技術有一種不可思議的渴望。目前已經是會使用 <span class="text-blue-500">Larval</span> 、<span class="text-blue-500">Vue</span>、<span class="text-blue-500">React</span> 的全端工程師。
           目前在多家公司擔任顧問，同時也是網站架設公司負責人。
         </p>
+        <div class="flex gap-[10px] mt-10">
+          <a
+              v-for="{sub, url, image}, key in socialLink"
+              :key="key"
+              :href="url"
+              target="_blank"
+              class="flex flex-col items-center opacity-60 hover:opacity-100 transition-opacity duration-500 ease-in-out"
+          >
+            <img :src="image" :alt="sub" class="w-10 h-auto fill-blue-700" />
+            <p>{{ sub }}</p>
+          </a>
+        </div>
       </div>
       <div class="shrink-0 flex-grow order-1 md:order-2">
         <img class="rounded-full w-full max-w-[130px] md:max-w-[200px]" :src="$withBase('/images/portfolio.png')" alt="黃欣迪" loading="lazy">
@@ -21,8 +33,18 @@
 </template>
 
 <script>
+import { usePageData } from '@vuepress/client'
+
 export default {
-  name: "About"
+  name: "About",
+  setup() {
+    const page = usePageData()
+    console.log(page.value) // bar
+    // const logoPath = ref('/images/icons/blog.svg')
+    return {
+      socialLink: page.value.socialLink
+    }
+  },
 }
 </script>
 
