@@ -1,5 +1,6 @@
 const { portfolioTheme } = require("../../themes/portfolio")
 // const config = require("./config/index.js")
+const svgSprites = require('rollup-plugin-svg-sprites')
 const Config = require("./models/Config")
 const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
 const { path } = require('@vuepress/utils')
@@ -52,6 +53,12 @@ module.exports = {
             ssr: {
                 noExternal: ['gsap'],
             },
+            plugins: [
+                svgSprites({
+                    vueComponent: true,
+                    exclude: ['node_modules/**']
+                })
+            ]
         },
         vuePluginOptions: {},
     }),

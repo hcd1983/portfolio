@@ -17,7 +17,7 @@ description: 從產品設計師轉職的軟體工程師。 從基本的 Html、C
 
 <h3 class="text-[30px] bg-green">Bg</h3>
 
-![VuePress Logo](/icons/blog.svg)
+![VuePress Logo]('/images/portfolio.png')
 # Home
 ## Ch1
 [GitHub](https://github.com)  
