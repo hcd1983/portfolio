@@ -7,6 +7,11 @@ title: Home work
 description: 從產品設計師轉職的軟體工程師。 從基本的 Html、Css 、Js 開始到原生的 PHP 和前後端框架。目前在多家公司擔任顧問，同時也是網站架設公司負責人。
 ---
 <intro />
+
+![VuePress Logo](/images/portfolio.png)
+
+![VuePress Logo](/icons/blog.svg)
+
 <about />
 <div class="bg-gray-200 pt-10 pb-16">
     <div class="container max-w-[900px]">
@@ -17,7 +22,6 @@ description: 從產品設計師轉職的軟體工程師。 從基本的 Html、C
 
 <h3 class="text-[30px] bg-green">Bg</h3>
 
-![VuePress Logo]('/images/portfolio.png')
 # Home
 ## Ch1
 [GitHub](https://github.com)  
