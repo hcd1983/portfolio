@@ -25,6 +25,7 @@ module.exports = {
     theme:portfolioTheme( themeConfig ),
     alias: {
         '@assets': path.resolve(__dirname, './assets'),
+        '@public': path.resolve(__dirname, './public'),
     },
     head: [
         ...faviconHead,
@@ -56,7 +57,8 @@ module.exports = {
             plugins: [
                 svgSprites({
                     vueComponent: true,
-                    exclude: ['node_modules/**']
+                    exclude: ['node_modules/**', './public/**/*.*'],
+                    outputFolder: 'dist/public'
                 })
             ]
         },

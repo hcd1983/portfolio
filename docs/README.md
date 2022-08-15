@@ -10,7 +10,10 @@ description: 從產品設計師轉職的軟體工程師。 從基本的 Html、C
 
 ![VuePress Logo](/images/portfolio.png)
 
-![VuePress Logo](/icons/blog.svg)
+![VuePress Logo222](/icons/github.svg?)
+
+<img :src="$withBase('/icons/blog.svg')" alt="VuePress Logo">
+
 
 <about />
 <div class="bg-gray-200 pt-10 pb-16">

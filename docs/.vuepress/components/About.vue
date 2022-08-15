@@ -35,7 +35,7 @@
 
 <script>
 import { usePageData } from '@vuepress/client'
-import MyIcon from '../assets/github.svg'
+import MyIcon from '@assets/github.svg'
 export default {
   components: { MyIcon },
   name: "About",
