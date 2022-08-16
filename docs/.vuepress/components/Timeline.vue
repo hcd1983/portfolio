@@ -15,13 +15,17 @@
           <TimelineBlock title="2014 - Present">
             <h3 class="text-lg font-medium text-gray-900">Freelancer</h3>
             <h4 class="font-medium mt-1">- 公司負責人</h4>
-            <p class="text-sm font-normal text-gray-700 mt-2">以接外包為主，曾與多家企業合作，從活動網站到金流串接，都能完成。</p>
+            <p class="text-sm font-normal text-gray-700 mt-2">以接外包為主，曾與多家企業合作，從活動網站到金流串接，都具備相當的經驗。</p>
             <h3 class="text-lg font-medium text-gray-900 mt-6">奧樂科技</h3>
             <h4 class="font-medium mt-1">- UI/UX 與前端顧問</h4>
             <p class="text-sm font-normal text-gray-700 mt-2">長期合作客戶。此公司為醫療用品結合行動裝置的 App 開發。主要為協助公司規劃 Demo 版介面，並使用 web view 做 UI 的 layout。</p>
             <h3 class="text-lg font-medium text-gray-900 mt-6">meet.jobs</h3>
             <h4 class="font-medium mt-1">- 前端工程師</h4>
-            <p class="text-sm font-normal text-gray-700 mt-2">國際求職網站。在這邊主要負責網站前端維護與新 功能開發。</p>
+            <p class="text-sm font-normal text-gray-700 mt-2">國際求職網站。在這邊主要負責網站前端維護與功能開發。</p>
+          </TimelineBlock>
+          <TimelineBlock title="2013">
+            <h3 class="text-lg font-medium text-gray-900">龍華科技大學</h3>
+            <h4 class="font-medium mt-1">- 互動介面設計講師</h4>
           </TimelineBlock>
           <TimelineBlock title="2012 - 2014">
             <h3 class="text-lg font-medium text-gray-900">育成團隊@ AppWorks</h3>
