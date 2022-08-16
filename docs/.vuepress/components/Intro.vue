@@ -29,6 +29,8 @@ export default {
    this.$nextTick(() => {
      setTimeout(() => {
        this.start = true
+       console.log(this.$route)
+       if (this.$route.hash) return
        gsap.to(window, {duration: .6, scrollTo: 100, delay: .9, ease: "power2.out"});
      }, 500)
    })
