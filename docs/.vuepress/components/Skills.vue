@@ -1,21 +1,21 @@
 <template>
 <section class="block py-10 pb-20">
-  <div class="container max-w-[900px]">
+  <div class="container max-w-[1200px]">
     <h3 class="text-6xl font-cursive pt-3 mb-10 text-center">Skills</h3>
-    <div class="grid w-full grid-cols-2 md:grid-cols-3 gap-[10px]">
-      <section v-for="({ title, icons }, idx) in skills" :key="idx"  class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
-        <div class="p-5">
-          <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-900 tracking-wide">{{ title }}</h5>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          <div class="flex gap-[5px]">
-            <div v-for="(icon, _idx) in icons" :key="`icon-${_idx}`" class="w-8 h-8">
+    <div class="grid w-full gap-[20px] md:grid-cols-2 lg:grid-cols-3 md:gap-[10px]">
+      <section v-for="({ title, icons, description }, idx) in skills" :key="idx"  class="bg-white rounded-lg border border-gray-200 shadow-md p-5 flex flex-col justify-between h-full">
+          <div>
+            <h5 class="mb-8 text-2xl font-semibold tracking-tight text-gray-900 tracking-wide">{{ title }}</h5>
+            <div class="mb-3 font-normal text-gray-700 dark:text-gray-400 description" v-html="description" />
+          </div>
+          <div class="flex gap-[10px] mt-3">
+            <div v-for="(icon, _idx) in icons" :key="`icon-${_idx}`" class="h-12 w-12 md:w-10 md:h-10">
               <svg-icon
                   :name="icon"
                   color="#999"
               />
             </div>
           </div>
-        </div>
       </section>
     </div>
   </div>
@@ -36,5 +36,7 @@ export default {
 </script>
 
 <style scoped>
-
+.description::v-deep p{
+  @apply mb-3;
+}
 </style>
