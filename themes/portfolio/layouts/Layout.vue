@@ -1,6 +1,6 @@
 <template>
 <div id="wrap">
-  <grid-bg />
+<!--  <grid-bg />-->
 <!--  <work-grid title="it works" />-->
 <!--  <work-grid title="nice" />-->
   <Content id="content" class="z-10 relative" />

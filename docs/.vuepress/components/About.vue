@@ -1,5 +1,5 @@
 <template>
-<section id="about" class="block py-10">
+<section id="about" class="block pt-10 pb-20 bg-gray-100">
   <div class="container max-w-[900px]">
     <div class="mx-auto flex flex-col items-center gap-y-5 md:gap-y-0 md:flex-row md:justify-between md:gap-x-12">
       <div class="order-2">
@@ -40,8 +40,6 @@ export default {
   name: "About",
   setup() {
     const page = usePageData()
-    console.log(page.value) // bar
-    // const logoPath = ref('/images/icons/blog.svg')
     return {
       socialLink: page.value.globalData.socialLink
     }

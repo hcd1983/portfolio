@@ -3,6 +3,38 @@ module.exports = {
     title: "HCD Design Portfolio",
     description: "",
     globalData: {
+        skills: [
+            {
+                title: 'HTML / CSS / Vanilla JS',
+                icons: ['html', 'css', 'js'],
+                description: ''
+            },
+            {
+                title: 'JS Frameworks',
+                icons: ['node', 'vue', 'react'],
+                description: ''
+            },
+            {
+                title: 'Pure PHP / MySql',
+                icons: ['php', 'mysql'],
+                description: ''
+            },
+            {
+                title: 'Laravel',
+                icons: ['laravel'],
+                description: ''
+            },
+            {
+                title: 'WordPress',
+                icons: ['wordpress'],
+                description: ''
+            },
+            {
+                title: 'Graphic / 3D Modeling',
+                icons: [''],
+                description: ''
+            },
+        ],
         socialLink: [
             {
                 sub: 'LinkedIn',
