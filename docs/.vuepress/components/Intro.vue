@@ -1,8 +1,13 @@
 <template>
-<div class="flex relative h-[80vh] w-screen max-w-full flex-col justify-center items-center">
-  <h1 class="font-cursive text-9xl"><span>HCD</span></h1>
-  <hr class="border-[3px] border-gray-700 w-[90%] my-3 max-w-[500px]" />
-  <h1 class="font-cursive text-8xl">design</h1>
+<div class="flex relative h-[80vh] w-screen max-w-full flex-col justify-center items-center" :class="`${start ? 'active' : ''}`">
+  <grid-bg2 />
+  <h1 class="font-cursive text-9xl">
+    <span class="!delay-300">HCD</span>
+  </h1>
+  <hr class="border-[3px] border-gray-700 my-3 max-w-[500px] transition-all duration-300" />
+  <h1 class="font-cursive text-8xl">
+    <span class="!delay-300">design</span>
+  </h1>
   <div @click.prevent="handleScrollDown" class="absolute left-[50%-48px] bottom-5 w-[48px] cursor-pointer">
     <scroll-down-icon class="animate-bounce fill-gray-600 w-full h-auto" />
   </div>
@@ -11,11 +16,30 @@
 
 <script>
 import {gsap, ScrollTrigger} from "../../../modules";
+import { ref } from "vue"
 export default {
   name: "Intro",
+  setup() {
+    const start = ref(false)
+    return {
+      start
+    }
+  },
+  mounted() {
+   this.$nextTick(() => {
+     setTimeout(() => {
+       this.start = true
+       gsap.to(window, {duration: .6, scrollTo: 100, delay: .9, ease: "power2.out"});
+     }, 500)
+   })
+  },
   methods: {
     handleScrollDown() {
-      gsap.to(window, {duration: .3, scrollTo: 600, ease: "back.out(1.7)"});
+      gsap.to(window, {duration: .3, scrollTo: '#about', ease: "back.out(1.7)"}).then(() => {
+        if (typeof window !== undefined) {
+          window.history.pushState(undefined, undefined, './#about')
+        }
+      });
     }
   }
 }
@@ -32,11 +56,11 @@ h1 span{
   width: 0;
   margin: auto;
   transition: all .5s ease-in-out;
-  overflow: hidden;
+  /*overflow: hidden;*/
   transform: scale(.7);
 }
 
-h1.active span{
+.active h1 span{
   opacity: 1;
   width: 100%;
   transform: scale(1);
@@ -44,6 +68,10 @@ h1.active span{
 
 hr {
   transform: skewX(30deg);
-  /*border-image: url("https://png.pngtree.com/png-clipart/20170312/ourmid/pngtree-vector-painted-black-and-white-brush-art-white-brush-effect-png-image_3041429.png") 100 round;*/
+  width: 0;
+}
+
+.active hr {
+  width: 90%;
 }
 </style>

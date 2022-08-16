@@ -1,6 +1,7 @@
 <template>
-<section id="skills" class="block py-10 pb-20">
-  <div class="container max-w-[1200px]">
+<section id="skills" class="relative block py-10 pb-20">
+  <grid-bg2 />
+  <div class="container max-w-[1200px] relative z-10">
     <h3 class="text-6xl font-cursive pt-3 mb-10 text-center">Skills</h3>
     <div class="grid w-full gap-[20px] md:grid-cols-2 lg:grid-cols-3 md:gap-[10px]">
       <section v-for="({ title, icons, description }, idx) in skills" :key="idx"  class="bg-white rounded-lg border border-gray-200 shadow-md p-5 flex flex-col justify-between h-full">

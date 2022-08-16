@@ -31,7 +31,7 @@
           <a
               :active="isActive"
               :href="href"
-              @click.prevent="handleLinkClick($event, navigate)"
+              @click.prevent="handleLinkClick($event, navigate, route)"
               class="hover:text-black hover:scale-125 duration-500"
           >
             {{ title }}
@@ -44,6 +44,7 @@
 </template>
 
 <script>
+import {gsap, ScrollTrigger} from "../../../modules";
 import { ref } from "vue"
 export default {
   name: "MainMenu",
@@ -61,12 +62,45 @@ export default {
       menu
     }
   },
+  mounted() {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('hashchange', this.handleHashChange);
+    }
+  },
+  beforeUnmount() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('hashchange', this.handleHashChange);
+    }
+  },
   methods: {
-    handleLinkClick(e, navigate) {
+    handleLinkClick(e, navigate, route) {
       this.active = false
       setTimeout(() => {
-        navigate()
+        const _route = this.$route
+        if (_route.path === '/') {
+          const { fullPath, hash } = route
+          history.pushState(undefined, undefined, `./${hash}`)
+          this.changeHash(hash)
+          // this.$router.push(fullPath)
+          // gsap.to(window, {duration: .6, scrollTo: hash || 0, ease: "power2.out"}).then(() => {
+          //   this.$router.push(fullPath)
+          // })
+        } else {
+          navigate()
+        }
       }, 500)
+    },
+    changeHash(hash) {
+      return new Promise(resolve => {
+        gsap.to(window, {duration: .6, scrollTo: hash || 0, ease: "power2.out"}).then(() => {
+          resolve()
+        })
+      })
+    },
+    handleHashChange() {
+      console.log('changed')
+      const { hash } = window.location
+      this.changeHash(hash)
     }
   }
 }
