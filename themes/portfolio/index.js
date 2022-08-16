@@ -8,6 +8,7 @@ const portfolioTheme = (options) => {
         }),
         layouts: {
             Layout: path.resolve(__dirname, 'layouts/Layout.vue'),
+            Index: path.resolve(__dirname, 'layouts/Index.vue'),
             // 404: path.resolve(__dirname, 'layouts/404.vue'),
         },
         extendsPage: (page) => {

@@ -1,13 +1,9 @@
 <template>
 <div id="wrap">
-  <MainMenu/>
-  <intro />
-<!--  <grid-bg />-->
-<!--  <work-grid title="it works" />-->
-<!--  <work-grid title="nice" />-->
-  <Content id="content" class="z-10 relative" />
-<!--  <RouterLink to="/works/test">Tester</RouterLink>-->
-<!--  <RouterLink to="/">Home</RouterLink>-->
+  <Content
+      id="content"
+      class="z-10 relative transition-opacity duration-300"
+  />
 </div>
 </template>
 

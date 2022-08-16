@@ -8,9 +8,9 @@
   <h1 class="font-cursive text-8xl">
     <span class="!delay-300">design</span>
   </h1>
-  <div @click.prevent="handleScrollDown" class="absolute left-[50%-48px] bottom-5 w-[48px] cursor-pointer">
+  <button @click.prevent="handleScrollDown" class="absolute left-[50%-48px] bottom-5 w-[48px] cursor-pointer transition-opacity duration-800 delay-1000">
     <scroll-down-icon class="animate-bounce fill-gray-600 w-full h-auto" />
-  </div>
+  </button>
 </div>
 </template>
 
@@ -26,12 +26,17 @@ export default {
     }
   },
   mounted() {
+   this.$emitter.on('introOver', () => {
+     if (this.$route.hash) return
+     if (window.scrollY > 80) return;
+     gsap.to(window, {duration: .6, scrollTo: 100, ease: "power2.out"});
+   })
    this.$nextTick(() => {
      setTimeout(() => {
        this.start = true
-       console.log(this.$route)
-       if (this.$route.hash) return
-       gsap.to(window, {duration: .6, scrollTo: 100, delay: .9, ease: "power2.out"});
+       setTimeout(() => {
+         this.$emitter.emit('introOver')
+       }, 900)
      }, 500)
    })
   },
@@ -75,5 +80,13 @@ hr {
 
 .active hr {
   width: 90%;
+}
+
+button {
+  opacity: 0;
+}
+
+.active button {
+  opacity: 1;
 }
 </style>
