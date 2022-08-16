@@ -7,6 +7,8 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "start": "lite-server",
+    "predeploy": "yarn docs:build",
+    "deploy": "gh-pages -d docs/.vuepress/dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+https://github.com/hcd1983/portfolio.git",
@@ -19,6 +21,7 @@
   "devDependencies": {
     "@vuepress/plugin-register-components": "^2.0.0-beta.49",
     "autoprefixer": "^10.4.8",
+    "gh-pages": "^4.0.0",
     "lite-server": "^2.6.1",
     "npm": "^8.16.0",
     "postcss": "^8.4.16",
