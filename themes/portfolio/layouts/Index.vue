@@ -1,5 +1,6 @@
 <template>
 <div id="wrap">
+  <grid-bg2 class="!fixed" />
   <MainMenu/>
   <intro />
   <Content

@@ -1,6 +1,5 @@
 <template>
 <div id="works" class="pb-16 relative">
-  <grid-bg2 />
   <div v-if="!isTouch"  ref="trigger" class="w-screen max-w-full overflow-x-hidden">
     <div class="flex flex-col h-screen">
       <h3 class="text-6xl font-cursive text-center pt-10">My Works</h3>

@@ -1,6 +1,5 @@
 <template>
 <div class="flex relative h-[80vh] w-screen max-w-full flex-col justify-center items-center" :class="`${start ? 'active' : ''}`">
-  <grid-bg2 />
   <h1 class="font-cursive text-9xl">
     <span class="!delay-300">HCD</span>
   </h1>

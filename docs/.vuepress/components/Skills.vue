@@ -1,6 +1,5 @@
 <template>
 <section id="skills" class="relative block py-10 pb-20">
-  <grid-bg2 />
   <div class="container max-w-[1200px] relative z-10">
     <h3 class="text-6xl font-cursive pt-3 mb-10 text-center">Skills</h3>
     {{ themeData }}
