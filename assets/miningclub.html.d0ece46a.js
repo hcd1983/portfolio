@@ -1,1 +1,0 @@
-import{_ as t,o as s,c as n,b as e,d as a}from"./app.2528b20d.js";const c={},o=e("h1",{id:"test",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#test","aria-hidden":"true"},"#"),a(" test")],-1),i=e("p",null,"Hi my friend i miss you so",-1),r=[o,i];function _(d,l){return s(),n("div",null,r)}var m=t(c,[["render",_],["__file","miningclub.html.vue"]]);export{m as default};

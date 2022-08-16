@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as o,b as e,d as r}from"./app.d8e4d192.js";const a={},c=e("h1",{id:"test",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#test","aria-hidden":"true"},"#"),r(" test")],-1),d=e("p",null,"Hi my friend i miss you so",-1),n=[c,d];function _(i,l){return s(),o("div",null,n)}var h=t(a,[["render",_],["__file","superdouble.html.vue"]]);export{h as default};
