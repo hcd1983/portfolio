@@ -1,7 +1,7 @@
 <template>
   <li class="mb-10 ml-4">
-    <div class="absolute w-3 h-3 bg-gray-700 rounded-full mt-2 -left-1.5 border border-white dark:border-gray-900" />
-    <time class="mb-1 text-sm font-normal leading-none text-gray-800 ">{{ title }}</time>
+    <div class="absolute w-3 h-3 bg-gray-700 rounded-full mt-2 -left-1.5 border border-white" />
+    <time class="mb-1 text-lg font-medium leading-none text-blue-700 ">{{ title }}</time>
     <slot></slot>
   </li>
 </template>

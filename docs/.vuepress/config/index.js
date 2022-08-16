@@ -6,7 +6,7 @@ module.exports = {
         {
             sub: 'LinkedIn',
             icon: 'linkedIn2',
-            color: '#0077b5',
+            color: '#000',
             url: 'https://www.linkedin.com/in/%E6%AC%A3%E8%BF%AA-%E9%BB%83-6979939a/'
         },
         {
@@ -18,7 +18,7 @@ module.exports = {
         {
             sub: 'Blog',
             icon: 'blog',
-            color: colors.blue["700"],
+            color: '#000',
             url: 'https://it-monk.com/'
         }
     ]

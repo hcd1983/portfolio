@@ -23,8 +23,6 @@ description: 從產品設計師轉職的軟體工程師。 從基本的 Html、C
 </div>
 <works />
 
-<h3 class="text-[30px] bg-green">Bg</h3>
-
 # Home
 ## Ch1
 [GitHub](https://github.com)  
