@@ -16,11 +16,7 @@ description: 從產品設計師轉職的軟體工程師。 從基本的 Html、C
 
 
 <about />
-<div class="bg-gray-200 pt-10 pb-16">
-    <div class="container max-w-[900px]">
-        <timeline />
-    </div>
-</div>
+<timeline />
 <works />
 
 # Home
