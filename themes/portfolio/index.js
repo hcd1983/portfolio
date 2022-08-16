@@ -15,8 +15,7 @@ const portfolioTheme = (options) => {
                 ...page.routeMeta,
                 ...page.frontmatter.routeMeta
             }
-            page.foo = 'foo'
-            page.data.bar = 'bar'
+            page.data.bar = 'bar beer'
             page.data.globalData = options.globalData
         },
     }

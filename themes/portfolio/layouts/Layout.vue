@@ -11,8 +11,18 @@
 </template>
 
 <script>
+import { usePagesData, resolvers, } from "@vuepress/client"
 export default {
   name: "Layout",
+  setup() {
+    // const pDatas = usePagesData()
+    for (let valueKey in usePagesData().value) {
+      resolvers.resolvePageData(valueKey).then((pageData) => {
+        console.log(pageData)
+        console.log(decodeURI(pageData.path));
+      });
+    }
+  }
 }
 </script>
 
