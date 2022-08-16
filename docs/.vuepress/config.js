@@ -16,6 +16,9 @@ const themeConfig = {
     sidebar: false,
     colorMode: 'light',
     colorModeSwitch: false,
+    themePlugins: {
+        backToTop: false
+    }
 }
 
 module.exports = {
