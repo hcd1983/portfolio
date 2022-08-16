@@ -21,30 +21,41 @@ export default {
   data() {
     return {
       st: null,
-      isTouch: 0
+      isTouch: 0,
+      resizeObserver: null
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      const isTouch = ScrollTrigger.isTouch
-      this.isTouch = isTouch
-      if (isTouch === 0) {
-        this.setTrigger()
-      }
-    })
-    if (window) {
-      window.addEventListener("resize", this.resetTrigger)
-    }
+
+    this.resizeObserver = new ResizeObserver(() => {
+      this.resetTrigger()
+    });
+    this.resizeObserver.observe(document.getElementById('app'))
+
+    // this.$nextTick(() => {
+    //   const isTouch = ScrollTrigger.isTouch
+    //   this.isTouch = isTouch
+    //   if (isTouch === 0) {
+    //     this.setTrigger()
+    //   }
+    // })
+    // if (window) {
+    //   window.addEventListener("resize", this.resetTrigger)
+    // }
   },
   updated() {
-    this.resetTrigger
+    this.resetTrigger()
   },
   beforeUnmount() {
     this.disableTrigger()
-    window.removeEventListener("resize", this.resetTrigger)
+    this.resizeObserver.disconnect()
+    this.resizeObserver = null
+    // window.removeEventListener("resize", this.resetTrigger)
   },
   methods: {
     setTrigger() {
+      this.isTouch = ScrollTrigger.isTouch
+      if (  this.isTouch ) return
       // if (window.innerWidth < 1024) return
       const { trigger, target } = this.$refs
       const offset = target.getBoundingClientRect().width - window.innerWidth
