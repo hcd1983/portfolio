@@ -6,9 +6,11 @@ module.exports = {
         skills: [
             {
                 title: 'HTML / CSS / Vanilla JS',
-                icons: ['html', 'css', 'js'],
+                icons: ['html', 'css', 'js', 'ts'],
                 description: '<p>具備網頁設計的相關知識，能熟練切版並使用原生 Js 語法進行開發。<p/>' +
-                    '<p>熟悉 Promise 、async / await 非同步處理相關語法與特性，進行 api 的串接。</p>'
+                    '<p>會使用 rem 方式進行切版佈局。<p/>' +
+                    '<p>熟悉 Promise 、async / await 非同步處理相關語法與特性，進行 api 的串接。</p>' +
+                    '<p>已知基本 TypeScript 用法，正將部分小型專案重構。</p>'
             },
             {
                 title: 'JS Frameworks',
@@ -20,14 +22,14 @@ module.exports = {
             {
                 title: 'CSS Framworks',
                 icons: ['tailwind', 'bootstrap'],
-                description: '<p>近兩年的專案都使用 tailwindcss 作為前端框架。能熟練使用 unity css 與對 config 做設定。<p/>' +
+                description: '<p>近兩年的專案都使用 <strong>tailwindcss</strong> 作為前端框架。能熟練使用 unity css 並對 config 做設定。<p/>' +
                     '<p>早期使用 Bootstrap 4 進行開發，目前有一個合作專案使用 Bootstrap 5。</p>'
             },
             {
                 title: 'Laravel / PHP / MySql',
                 icons: [ 'laravel', 'php', 'mysql'],
                 description: '<p>能用純 php + mysql 開發 CMS 和購物車系統。</p>' +
-                    '<p>Laravel 為目前主要使用之後端框架。熟悉 Controller 和 Model，能夠產出 api，也會做事件排程（另如訂閱扣款)，並使用 github action 的 cronjob 處理佇列事件。</p>'
+                    '<p><strong>Laravel</strong> 為目前主要使用之後端框架。熟悉 Controller 和 Model，能產出 api，也會做事件排程（另如訂閱扣款)，並使用 github action 的 cronjob 處理佇列事件。</p>'
             },
             {
                 title: 'WordPress',

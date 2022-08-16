@@ -1,8 +1,8 @@
 ---
-title: Msside
+title: MiningClub
 description: Description of this page
 skillTags: [ 'vue', 'vue-cli' ]
-priority: 100
+priority: 101
 ---
 # test
 Hi my friend

@@ -1,7 +1,7 @@
 ---
-title: Msside
+title: Profit
 description: Description of this page
-skillTags: [ 'vue', 'vue-cli' ]
+skillTags: [ 'vue', 'nuxtJs' ]
 priority: 100
 ---
 # test
