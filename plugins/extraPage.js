@@ -4,16 +4,6 @@ const { createPage } = require('@vuepress/core')
 const extraPage = (options, app) => {
     return {
         name: 'extra-page',
-        extendsPage: (page) => {
-            page.routeMeta = {
-                ...page.routeMeta,
-                ...page.frontmatter.routeMeta
-            }
-            console.log(options)
-            page.foo = 'foo'
-            page.data.bar = 'bar'
-            page.data.socialLink = options.socialLink
-        },
         async onInitialized(app) {
             app.pages.push(
                 await createPage(app, {

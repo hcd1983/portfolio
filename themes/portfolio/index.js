@@ -10,6 +10,15 @@ const portfolioTheme = (options) => {
             Layout: path.resolve(__dirname, 'layouts/Layout.vue'),
             // 404: path.resolve(__dirname, 'layouts/404.vue'),
         },
+        extendsPage: (page) => {
+            page.routeMeta = {
+                ...page.routeMeta,
+                ...page.frontmatter.routeMeta
+            }
+            page.foo = 'foo'
+            page.data.bar = 'bar'
+            page.data.globalData = options.globalData
+        },
     }
 }
 

@@ -18,7 +18,8 @@ const themeConfig = {
     colorModeSwitch: false,
     themePlugins: {
         backToTop: false
-    }
+    },
+    globalData: Config.globalData
 }
 
 module.exports = {

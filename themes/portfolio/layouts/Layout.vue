@@ -3,7 +3,7 @@
   <grid-bg />
 <!--  <work-grid title="it works" />-->
 <!--  <work-grid title="nice" />-->
-  <Content />
+  <Content id="content" class="z-10 relative" />
 <!--  <RouterLink to="/works/test">Tester</RouterLink>-->
 <!--  <RouterLink to="/">Home</RouterLink>-->
 </div>

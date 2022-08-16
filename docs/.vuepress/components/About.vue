@@ -43,7 +43,7 @@ export default {
     console.log(page.value) // bar
     // const logoPath = ref('/images/icons/blog.svg')
     return {
-      socialLink: page.value.socialLink
+      socialLink: page.value.globalData.socialLink
     }
   },
 }

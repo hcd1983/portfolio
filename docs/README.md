@@ -16,6 +16,7 @@ description: 從產品設計師轉職的軟體工程師。 從基本的 Html、C
 
 
 <about />
+<Skills />
 <timeline />
 <works />
 
