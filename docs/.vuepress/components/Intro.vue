@@ -1,5 +1,5 @@
 <template>
-<div class="flex relative h-screen w-screen max-w-full flex-col justify-center items-center">
+<div class="flex relative h-[80vh] w-screen max-w-full flex-col justify-center items-center">
   <h1 class="font-cursive text-9xl"><span>HCD</span></h1>
   <hr class="border-[3px] border-gray-700 w-[90%] my-3 max-w-[500px]" />
   <h1 class="font-cursive text-8xl">design</h1>
