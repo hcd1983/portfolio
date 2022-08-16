@@ -1,1 +1,0 @@
-import{_ as r,o as s,c as l,a as e,r as n}from"./app.49b70051.js";const a={};function i(m,p){const o=n("intro"),t=n("about"),c=n("Skills"),_=n("timeline");return s(),l("div",null,[e(o),e(t),e(c),e(_)])}var f=r(a,[["render",i],["__file","index.html.vue"]]);export{f as default};

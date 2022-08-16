@@ -1,1 +1,0 @@
-import{_ as a,o as c,c as s,a as e,r as o}from"./app.49b70051.js";const r={name:"Layout"},_={id:"wrap"};function i(p,u,d,l,m,f){const t=o("MainMenu"),n=o("Content");return c(),s("div",_,[e(t),e(n,{id:"content",class:"z-10 relative"})])}var M=a(r,[["render",i],["__file","Layout.vue"]]);export{M as default};

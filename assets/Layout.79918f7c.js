@@ -1,0 +1,1 @@
+import{_ as e,o,c as n,a,r}from"./app.2528b20d.js";const s={name:"Layout"},c={id:"wrap"};function _(i,p,d,u,l,f){const t=r("Content");return o(),n("div",c,[a(t,{id:"content",class:"z-10 relative transition-opacity duration-300"})])}var v=e(s,[["render",_],["__file","Layout.vue"]]);export{v as default};
