@@ -3,7 +3,7 @@
   <h1 class="font-cursive text-9xl"><span>HCD</span></h1>
   <hr class="border-[3px] border-gray-700 w-[90%] my-3 max-w-[500px]" />
   <h1 class="font-cursive text-8xl">design</h1>
-  <div @click="handleScrollDown" class="absolute left-[50%-48px] bottom-5 w-[48px] cursor-pointer">
+  <div @click.prevent="handleScrollDown" class="absolute left-[50%-48px] bottom-5 w-[48px] cursor-pointer">
     <scroll-down-icon class="animate-bounce fill-gray-600 w-full h-auto" />
   </div>
 </div>
@@ -15,7 +15,7 @@ export default {
   name: "Intro",
   methods: {
     handleScrollDown() {
-      gsap.to(window, {duration: 1, scrollTo: 600, ease: "back.out(1.7)"});
+      gsap.to(window, {duration: .3, scrollTo: 600, ease: "back.out(1.7)"});
     }
   }
 }

@@ -1,5 +1,6 @@
 <template>
 <div id="wrap">
+  <MainMenu/>
 <!--  <grid-bg />-->
 <!--  <work-grid title="it works" />-->
 <!--  <work-grid title="nice" />-->
@@ -10,15 +11,8 @@
 </template>
 
 <script>
-import {gsap, ScrollTrigger} from "../../../modules"
-import { ref } from "vue"
-import { usePageData, useSiteData } from '@vuepress/client'
 export default {
   name: "Layout",
-  setup() {
-    const page = usePageData()
-    const site = useSiteData()
-  },
 }
 </script>
 

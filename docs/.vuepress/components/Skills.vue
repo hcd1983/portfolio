@@ -1,5 +1,5 @@
 <template>
-<section class="block py-10 pb-20">
+<section id="skills" class="block py-10 pb-20">
   <div class="container max-w-[1200px]">
     <h3 class="text-6xl font-cursive pt-3 mb-10 text-center">Skills</h3>
     <div class="grid w-full gap-[20px] md:grid-cols-2 lg:grid-cols-3 md:gap-[10px]">

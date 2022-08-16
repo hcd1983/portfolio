@@ -1,5 +1,5 @@
 <template>
-  <div class="relative pt-10 pb-16">
+  <div id="experience" class="relative pt-10 pb-16">
     <overlay class="opacity-70 bg-gray-200 " />
     <div class="container max-w-[900px]">
       <div
@@ -53,7 +53,7 @@
       </div>
     </div>
     <div v-if="!expend" class="absolute w-full h-1/3 bottom-0 w-full left-0 bg-gradient-to-t from-gray-200 to-transparent flex items-end justify-center pb-10">
-      <button @click="expend = true" class="text-black font-cursive text-xl flex gap-3 items-center animate-pulse">
+      <button @click.prevent="expend = true" class="text-black font-cursive text-xl flex gap-3 items-center animate-pulse">
         <div class="w-8 h-8"><svg-icon name="tap" fill="#000" /></div>
         Click to Expand
       </button>
