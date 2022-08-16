@@ -15,8 +15,8 @@ const portfolioTheme = (options) => {
                 ...page.routeMeta,
                 ...page.frontmatter.routeMeta
             }
-            page.data.bar = 'bar beer'
-            page.data.globalData = options.globalData
+
+            // page.data.globalData = options.globalData
         },
     }
 }

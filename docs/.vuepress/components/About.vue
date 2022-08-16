@@ -35,13 +35,13 @@
 </template>
 
 <script>
-import { usePageData } from '@vuepress/client'
+import { useThemeData } from '@vuepress/plugin-theme-data/lib/client'
 export default {
   name: "About",
   setup() {
-    const page = usePageData()
+    const theme = useThemeData()
     return {
-      socialLink: page.value.globalData.socialLink
+      socialLink: theme.value.globalData.socialLink
     }
   },
 }

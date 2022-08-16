@@ -4,6 +4,7 @@
   <div v-if="!isTouch"  ref="trigger" class="w-screen max-w-full overflow-x-hidden">
     <div class="flex flex-col h-screen">
       <h3 class="text-6xl font-cursive text-center pt-10">My Works</h3>
+      <div>{{ $theme }}</div>
       <div ref="target" class="flex w-fit flex-1 pt-10 gap-[10px]">
         <div v-for="i in 20" class="h-[300px] w-[300px] bg-blue-300 even:bg-red-300 flex-shrink-0 flex items-center justify-center">
           <span class="text-3xl">{{ i }}</span>
@@ -18,9 +19,26 @@
 </template>
 
 <script>
+import { usePagesData, resolvers } from "@vuepress/client"
+import { ref } from "vue"
 import {gsap, ScrollTrigger} from "../../../modules";
+const isWorkPage = (pageData) => {
+  const { path } = pageData
+  return /\/works\/.*.html/.test(path)
+}
 export default {
   name: "Works",
+  setup() {
+    // const pDatas = usePagesData()
+    const works = ref([])
+    for (let valueKey in usePagesData().value) {
+      resolvers.resolvePageData(valueKey).then((pageData) => {
+        if (isWorkPage(pageData)) works.value.push(pageData)
+        // console.log(decodeURI(pageData.path));
+      });
+    }
+    return { works }
+  },
   data() {
     return {
       st: null,
@@ -29,7 +47,6 @@ export default {
     }
   },
   mounted() {
-
     this.resizeObserver = new ResizeObserver(() => {
       this.resetTrigger()
     });
