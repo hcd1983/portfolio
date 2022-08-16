@@ -1,6 +1,7 @@
 <template>
 <div id="wrap">
   <MainMenu/>
+  <intro />
 <!--  <grid-bg />-->
 <!--  <work-grid title="it works" />-->
 <!--  <work-grid title="nice" />-->
@@ -13,15 +14,6 @@
 <script>
 export default {
   name: "Layout",
-  // setup() {
-  //   // const pDatas = usePagesData()
-  //   for (let valueKey in usePagesData().value) {
-  //     resolvers.resolvePageData(valueKey).then((pageData) => {
-  //       console.log(pageData)
-  //       console.log(decodeURI(pageData.path));
-  //     });
-  //   }
-  // }
 }
 </script>
 

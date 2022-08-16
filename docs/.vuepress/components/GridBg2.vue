@@ -17,5 +17,6 @@ div {
   background-size: 30px 30px;
   background-image: linear-gradient(var(--bg-line-color), transparent 1px), linear-gradient(90deg, var(--bg-line-color) 1px, transparent 1px);
   background-position: center;
+  background-attachment: fixed;
 }
 </style>
