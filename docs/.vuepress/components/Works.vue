@@ -96,12 +96,12 @@ export default {
         // yes, we can add it to an entire timeline!
         scrollTrigger: {
           ...triggerOptions,
-          snap: {
-            snapTo: "labels", // snap to the closest label in the timeline
-            duration: {min: .2, max: .5}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-            delay: 0.1, // wait 0.2 seconds from the last scroll event before doing the snapping
-            ease: "power1.inOut"
-          }
+          // snap: {
+          //   snapTo: "labels", // snap to the closest label in the timeline
+          //   duration: {min: .2, max: .5}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+          //   delay: 0.1, // wait 0.2 seconds from the last scroll event before doing the snapping
+          //   ease: "power1.inOut"
+          // }
         }
       });
 
@@ -139,7 +139,7 @@ export default {
       if ( window.scrollY + 300 < start ) {
         gsap.to(window, {duration: .3, scrollTo: start })
       } else if (window.scrollY < end) {
-        gsap.to(window, {duration: .3, scrollTo: (window.scrollY + scrollDownUnit ) })
+        // gsap.to(window, {duration: .3, scrollTo: (window.scrollY + scrollDownUnit ) })
       }
 
     }

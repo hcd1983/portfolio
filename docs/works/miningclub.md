@@ -1,7 +1,7 @@
 ---
 title: MiningClub
 description: Description of this page
-skillTags: [ 'vue', 'tailwind', 'laravel' ]
+skillTags: [ 'vue', 'nuxtjs', 'tailwind', 'laravel' ]
 priority: 101
 cover: /images/miningclub2.png
 link: https://www.miningclub.com.tw/
@@ -10,4 +10,4 @@ link: https://www.miningclub.com.tw/
 
 主要技術為 **Nuxt** x **Laravel** x **Tailwindcss** 。
 
-在本站開發扮演吃重角色，負責網站前後端及大部分介面設計。參與細節包含 Api 撰寫與串接、金流串接、UI 流程與外觀設計。
+在本站開發扮演吃重角色，負責網站前後端及大部分介面設計。參與細節包含 Api 撰寫與串接、金流串接、流程與 UI 設計。

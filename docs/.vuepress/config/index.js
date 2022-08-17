@@ -1,7 +1,7 @@
 const colors = require("tailwindcss/colors")
 module.exports = {
     title: "HCD Design Portfolio",
-    description: "",
+    description: "產品設計師轉職的軟體工程師。具備 Html、Css 、Js 和 PHP 等前後端語法相關知識，熱愛挑戰技術與解決困難。現在是會使用 Larval 、Vue、React 的全端開發者。",
     globalData: {
         skills: [
             {
@@ -38,11 +38,12 @@ module.exports = {
                     '<p>近期專案把 WP 當成純後端使用。僅使用其 REST API 功能。</p>'
             },
             {
-                title: 'Graphic / 3D Modeling',
+                title: 'UI / Graphic / 3D Modeling',
                 icons: ['ps', 'ai', 'solidworks'],
-                description: '<p>設計師背景，讓我對色彩學、語意學都有一定認識。曾經擔任互動介面設計與 Adobe 系列講師。</p>' +
-                    '<p>具備 Solidworks 3D 軟體建模能力，曾在小型專案導入 Bobylon.js 將 3D 模型放入網站互動。</p>' +
-                    '<p>設計師的經驗在處理 svg 和 canvas 等網站技術上給我很大的幫助。</p>'
+                description: '<p>曾任互動介面設計與 Adobe 軟體講師。</p>' +
+                    '<p>具備 UI 能力，繪製 svg 並導入 figma 進行排版編輯。</p>' +
+                    '<p>Solidworks 3D 軟體建模能力，曾在小型專案導入 Bobylon.js 將 3D 模型放入網站互動。</p>' +
+                    '<p>有處理 svg 和 canvas 等動畫技術的能力。</p>'
             },
         ],
         socialLink: [
