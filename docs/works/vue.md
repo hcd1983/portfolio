@@ -15,17 +15,17 @@ description: '本作品集由 Vuepress v2 搭建'
 {
 title: 'goodeye.guide',
 link: 'https://goodeye.guide/',
-description: '搭配書籍推出的 SPA，有串接 Goole Map api ，可搜尋附近景點。'
+description: '搭配書籍推出的 SPA，串接 Goole Map api ，可搜尋附近景點。'
 },
 {
 title: '人禾好時',
 link: 'https://urbanfarming.greatbuilding.com.tw/',
-description: 'VuePress 搭建的靜態網站。負責程式部分。設計為良亙創意，'
+description: 'VuePress 搭建的靜態網站。負責程式部分'
 },
 {
 title: 'Space X 發射 API 串接',
 link: 'https://spacex.it-monk.com/',
-description: '使用 vue + Parcel 做的 API 串接練習網站，UI 和程式都為自己獨力完成。'
+description: '使用 vue + Parcel 做的 spaceX API 發射紀錄串。UI 和程式都為自己獨力完成。'
 }
 ]
 ---
