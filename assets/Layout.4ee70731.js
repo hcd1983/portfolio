@@ -1,0 +1,1 @@
+import{_ as a,o as c,c as s,a as t,r as e}from"./app.cb7cd900.js";const r={name:"Layout"},_={id:"wrap"};function i(p,u,d,l,m,f){const o=e("MainMenu"),n=e("Content");return c(),s("div",_,[t(o),t(n,{id:"content",class:"z-10 relative transition-opacity duration-300"})])}var y=a(r,[["render",i],["__file","Layout.vue"]]);export{y as default};
