@@ -5,7 +5,8 @@
       <h3 class="text-6xl font-cursive text-center pt-10">My Works</h3>
       <div ref="target" class="flex flex-1 flex-wrap pt-10 gap-[10px] w-fit flex-nowrap">
         <template v-for="(work, idx) in works">
-          <WorkSectionDesktop
+          <WorkSectionDesktop ref="workSection"
+              :active="activeWork === idx"
               :work="work"
               class="relative w-screen h-full max-h-[600px]"
           />
@@ -38,7 +39,8 @@ export default {
       st: null,
       isTouch: 0,
       resizeObserver: null,
-      workSectionCount: 0
+      workSectionCount: 0,
+      activeWork: 0
     }
   },
   mounted() {
@@ -82,6 +84,9 @@ export default {
         scrub: true,
         pin: true,
         pinnedContainer: trigger,
+        // onUpdate: self => {
+        //   console.log("progress:", self.progress.toFixed(1), "direction:", self.direction, "velocity", self.getVelocity())
+        // }
         // pinType: "fixed"
       })
       window.st = this.st
@@ -96,7 +101,6 @@ export default {
       this.st = null
     },
     resetTrigger() {
-      console.log('ok')
       this.disableTrigger()
       this.setTrigger()
     }

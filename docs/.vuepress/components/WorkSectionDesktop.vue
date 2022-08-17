@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <div class="absolute w-full h-full inset-0 lg:flex">
+  <section ref="section" class="transition duration-300">
+    <div class="absolute w-full h-full inset-0 lg:flex transition duration-300" :class="`${active ? '' : 'opacity-30 scale-90' }`">
       <div class="flex-1 bg-gray-200">
         <img
             v-if="work.cover"
@@ -45,12 +45,36 @@ export default {
   props: {
     work: {
       type: Work
+    },
+    // active: {
+    //   type: Boolean,
+    //   default () { return false }
+    // }
+  },
+  data() {
+    return {
+      active: true,
     }
   },
   mounted() {
     this.$nextTick(() => {
       this.$emitter.emit("workSectionReady")
     })
+    window.addEventListener("scroll", this.handleScroll)
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      const el = this.$refs.section
+      const { x, width } = el.getBoundingClientRect()
+      if ( x < - window.innerWidth / 3 || x > window.innerWidth * .7) {
+        this.active = false
+      } else {
+        this.active = true
+      }
+    }
   }
   // setup(props) {
   //   // console.log(props.work)

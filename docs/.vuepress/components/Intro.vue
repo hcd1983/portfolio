@@ -27,7 +27,7 @@ export default {
   mounted() {
    this.$emitter.on('introOver', () => {
      if (this.$route.hash) return
-     if (window.scrollY > 80) return;
+     if (window.scrollY > 30) return;
      gsap.to(window, {duration: .6, scrollTo: 100, ease: "power2.out"});
    })
    this.$nextTick(() => {
