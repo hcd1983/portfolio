@@ -1,1 +1,0 @@
-import{_ as i,e as s,o as c,c as a,t as o}from"./app.cb7cd900.js";const p={name:"WorkGrid",props:{title:{type:String}},setup(e){return{count:s(0)}}};function l(e,t,n,r,u,_){return c(),a("div",{onClick:t[0]||(t[0]=d=>r.count++)},o(n.title)+", "+o(r.count),1)}var k=i(p,[["render",l],["__file","WorkGrid.vue"]]);export{k as default};
