@@ -11,7 +11,7 @@ linkList: [
 title: 'BeautyPtt 表特版看圖工具',
 link: 'https://beautyptt.cc/',
 description: '使用原生 PHP 爬蟲蒐集 PTT 表特版內容，並優化看圖介面。有自己用原生 PHP 寫的簡易管理系統。'
-}
+},
 {
 title: '看圖工具的技術解說',
 link: 'https://it-monk.com/side-project-beautyptt-cc-%e8%a1%a8%e7%89%b9%e7%89%88%e7%9c%8b%e5%9c%96%e5%b7%a5%e5%85%b7%e8%a7%a3%e8%aa%aa-2-%e5%89%8d%e7%ab%af/',

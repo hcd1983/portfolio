@@ -3,6 +3,7 @@ title: 更多使用 React 的網站
 description: Description of this page
 skillTags: [ 'react', 'gatsby' ]
 overlayIcon: react
+cover: /images/infiniti.png
 priority: 90
 linkList: [
 {
