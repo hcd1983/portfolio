@@ -18,8 +18,7 @@
 </template>
 
 <script>
-import { usePagesData, resolvers } from "@vuepress/client"
-import { ref } from "vue"
+import { useSiteData } from "@vuepress/client"
 import {gsap, ScrollTrigger} from "../../../modules";
 const isWorkPage = (pageData) => {
   const { path } = pageData
@@ -28,14 +27,7 @@ const isWorkPage = (pageData) => {
 export default {
   name: "Works",
   setup() {
-    // const pDatas = usePagesData()
-    const works = ref([])
-    for (let valueKey in usePagesData().value) {
-      resolvers.resolvePageData(valueKey).then((pageData) => {
-        if (isWorkPage(pageData)) works.value.push(pageData)
-        // console.log(decodeURI(pageData.path));
-      });
-    }
+    const { works } = useSiteData().value
     return { works }
   },
   data() {

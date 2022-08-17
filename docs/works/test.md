@@ -6,6 +6,8 @@ addon: super cool
 head:
     - [meta, { name: bar , content: square brackets syntax }]
 ---
+{{ $router.getRoutes() }}
+
 # test
 Hi my friend
 i miss you so
