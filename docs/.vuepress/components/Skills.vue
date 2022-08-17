@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.description::v-deep p{
+.description:deep(p){
   @apply mb-3;
 }
 </style>
