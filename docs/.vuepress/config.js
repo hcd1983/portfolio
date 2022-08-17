@@ -19,7 +19,7 @@ const themeConfig = {
     themePlugins: {
         backToTop: false
     },
-    globalData: Config.globalData
+    siteConfig: Config
 }
 
 module.exports = {

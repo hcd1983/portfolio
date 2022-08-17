@@ -2,7 +2,6 @@
 <section id="skills" class="relative block py-10 pb-20">
   <div class="container max-w-[1200px] relative z-10">
     <h3 class="text-6xl font-cursive pt-3 mb-10 text-center">Skills</h3>
-    {{ themeData }}
     <div class="grid w-full gap-[20px] md:grid-cols-2 lg:grid-cols-3 md:gap-[10px]">
       <section v-for="({ title, icons, description }, idx) in skills" :key="idx"  class="bg-white rounded-lg border border-gray-200 shadow-md p-5 flex flex-col justify-between h-full">
           <div>
@@ -25,14 +24,15 @@
 
 <script>
 // import { usePageData } from '@vuepress/client'
-import { useThemeData } from '@vuepress/plugin-theme-data/lib/client'
+// import { useThemeData } from '@vuepress/plugin-theme-data/lib/client'
+import { useSiteData } from '@vuepress/client'
+
 export default {
   name: "Skills",
   setup() {
-    // const page = usePageData()
-    const themeData = useThemeData()
+    const siteData = useSiteData()
     return {
-      skills: themeData.value.globalData.skills,
+      skills: siteData.value.globalData.skills,
     }
   }
 }

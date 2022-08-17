@@ -11,12 +11,16 @@ const portfolioTheme = (options) => {
             Index: path.resolve(__dirname, 'layouts/Index.vue'),
             // 404: path.resolve(__dirname, 'layouts/404.vue'),
         },
+        onInitialized: (app) => {
+            app.siteData.globalData = options.siteConfig.globalData
+        },
         extendsPage: (page) => {
+            // console.log(page.contentRendered)
             page.routeMeta = {
                 ...page.routeMeta,
                 ...page.frontmatter.routeMeta
             }
-
+            page.data.contentRendered = page.contentRendered
             // page.data.globalData = options.globalData
         },
     }

@@ -5,6 +5,5 @@ addon: super cool
 skillTags: [ 'php', 'mysql', 'bootstrap' ]
 priority: 99
 ---
-# test
-Hi my friend
-i miss you so
+
+{{ $site }}
