@@ -3,7 +3,7 @@
   <div v-if="!isTouch"  ref="trigger" class="w-screen max-w-full overflow-x-hidden">
     <div class="flex flex-col h-screen">
       <h3 class="text-6xl font-cursive text-center pt-10">My Works</h3>
-      <div>{{ works }}</div>
+      <div>{{ works.works }}</div>
       <div ref="target" class="flex w-fit flex-1 pt-10 gap-[10px]">
         <div v-for="i in 20" class="h-[300px] w-[300px] bg-blue-300 even:bg-red-300 flex-shrink-0 flex items-center justify-center">
           <span class="text-3xl">{{ i }}</span>
@@ -19,6 +19,7 @@
 
 <script>
 import { useSiteData } from "@vuepress/client"
+import Works from "../models/Works";
 import {gsap, ScrollTrigger} from "../../../modules";
 const isWorkPage = (pageData) => {
   const { path } = pageData
@@ -28,7 +29,7 @@ export default {
   name: "Works",
   setup() {
     const { works } = useSiteData().value
-    return { works }
+    return { works: new Works(works) }
   },
   data() {
     return {
