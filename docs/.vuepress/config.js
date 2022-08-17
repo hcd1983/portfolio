@@ -44,7 +44,6 @@ module.exports = {
             componentsDir: path.resolve(__dirname, './components'),
         }),
     ],
-    clientConfigFile: path.resolve(__dirname, './clientConfig.js'),
     bundler: viteBundler({
         viteOptions: {
             css: {

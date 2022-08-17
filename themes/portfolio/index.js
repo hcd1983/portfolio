@@ -15,6 +15,7 @@ const portfolioTheme = (options) => {
             Index: path.resolve(__dirname, 'layouts/Index.vue'),
             404: path.resolve(__dirname, 'layouts/404.vue'),
         },
+        clientConfigFile: path.resolve(__dirname, './clientConfig.js'),
         onInitialized: (app) => {
             // siteData 加入 globalData
             app.siteData.globalData = options.siteConfig.globalData
