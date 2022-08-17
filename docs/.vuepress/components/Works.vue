@@ -68,7 +68,8 @@ export default {
   },
   methods: {
     setTrigger() {
-      if (window.innerWidth < 1024) this.isTouch = true
+      console.log(ScrollTrigger.isTouch)
+      if (window.innerWidth < 1024 || ScrollTrigger.isTouch ) this.isTouch = true
       // this.isTouch = ScrollTrigger.isTouch
       if (  this.isTouch  ) return
       const { trigger, target } = this.$refs
