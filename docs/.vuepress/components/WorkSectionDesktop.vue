@@ -15,7 +15,7 @@
           <h1 class="flex items-center justify-between">
             {{ work.title }}
             <a v-if="work.link" :href="work.link" target="_blank">
-              <div class="h-8 w-8 animate-bounce">
+              <div class="h-8 w-8">
                 <svg-icon
                     name="link"
                     color="#000"

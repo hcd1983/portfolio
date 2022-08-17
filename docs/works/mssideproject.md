@@ -1,7 +1,7 @@
 ---
 title: 失敗人格図鑑
 description: Description of this page
-skillTags: [ 'vue', 'tailwindcss' ]
+skillTags: [ 'vue', 'tailwind', 'gsap' ]
 priority: 98
 cover: https://i.imgur.com/G20IoHr.png
 link: https://mssideproject.com/
