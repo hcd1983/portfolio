@@ -2,7 +2,7 @@
 title: Profit
 description: Description of this page
 skillTags: [ 'vue', 'nuxtJs' ]
-priority: 100
+priority: 95
 ---
 # test
 Hi my friend

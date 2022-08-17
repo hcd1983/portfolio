@@ -30,6 +30,7 @@
     "vuepress": "^2.0.0-beta.49"
   },
   "dependencies": {
+    "dotenv": "^16.0.1",
     "glob": "^8.0.3",
     "gsap": "^3.10.4",
     "mitt": "^3.0.0"

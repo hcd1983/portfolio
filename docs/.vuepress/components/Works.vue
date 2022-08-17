@@ -1,10 +1,9 @@
 <template>
 <div id="works" class="pb-16 relative">
-  {{ works }}
   <div v-if="!isTouch"  ref="trigger" class="w-screen max-w-full overflow-x-hidden">
     <div class="flex flex-col h-screen">
       <h3 class="text-6xl font-cursive text-center pt-10">My Works</h3>
-      <div ref="target" class="flex w-fit flex-1 pt-10 gap-[10px]">
+      <div ref="target" class="flex flex-1 flex-wrap pt-10 gap-[10px] w-fit flex-nowrap">
         <template v-for="(work, idx) in works">
           <WorkSectionDesktop
               :work="work"
@@ -14,9 +13,9 @@
       </div>
     </div>
   </div>
-  <div v-else>
+  <clientOnly v-else>
     Mobile
-  </div>
+  </clientOnly>
 </div>
 </template>
 
@@ -53,7 +52,6 @@ export default {
     this.$emitter.on("workSectionReady", () => {
       this.workSectionCount++
       if (this.workSectionCount === this.works.length) {
-        console.log('child ready')
         this.resetTrigger()
       }
     })
@@ -69,9 +67,9 @@ export default {
   },
   methods: {
     setTrigger() {
+      if (window.innerWidth < 1024) this.isTouch = true
       // this.isTouch = ScrollTrigger.isTouch
-      // if (  this.isTouch ) return
-      // if (window.innerWidth < 1024) return
+      if (  this.isTouch ) return
       const { trigger, target } = this.$refs
       const offset = target.getBoundingClientRect().width - window.innerWidth
       const tween = gsap.to(target, { x: -offset })
@@ -79,7 +77,7 @@ export default {
         trigger: trigger,
         start: "top top",
         end: `+=${offset}`,
-        markers: {startColor: "green", endColor: "red", fontSize: "36px"},
+        // markers: {startColor: "green", endColor: "red", fontSize: "36px"},
         animation: tween,
         scrub: true,
         pin: true,

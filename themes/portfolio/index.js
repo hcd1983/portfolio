@@ -1,5 +1,12 @@
 const { path } = require('@vuepress/utils')
 const { defaultTheme } = require('@vuepress/theme-default')
+// require('dotenv').config()
+// const nodeEnv = process.env.NODE_ENV
+//
+// const isDev = () => {
+//     return nodeEnv === 'development'
+// }
+
 const isWorkPage = ({ path }) => {
     const regx = /\/works\/.*\.html/
     return regx.test(path)
