@@ -1,5 +1,5 @@
 ---
-title: Allrover 八輪滑板 / 翻轉背包
+title: Allrover 八輪滑板
 description: Description of this page
 addon: super cool
 skillTags: [ 'bootstrap4', 'php', 'mysql' ]

@@ -1,9 +1,19 @@
 <template>
-  <section ref="section" class="transition duration-300" :class="`${active ? 'active' : ''}`">
-    <div class="absolute w-full h-full inset-0 lg:flex transition duration-300" :class="`${active ? '' : 'opacity-30 scale-90' }`">
-      <div class="flex-1 bg-gray-200 relative">
+  <section
+      class="rounded-xl overflow-hidden drop-shadow-md"
+      :class="{
+        'lg:col-span-2': work.colSpan
+      }"
+  >
+    <div class="w-full h-full inset-0 flex flex-col transition duration-300">
+      <div
+          class="bg-gray-200 relative h-[250px]"
+          :class="{
+            'lg:h-[300px]': work.colSpan
+          }"
+      >
         <overlay v-if="work.overlayIcon" class="bg-[rgba(0,0,0,.6)] flex items-center justify-center">
-          <div class="w-[130px] h-[130px]">
+          <div class="w-[90px] h-[90px]">
             <svg-icon
                 :name="work.overlayIcon"
                 color="#000"
@@ -14,11 +24,11 @@
             v-if="work.cover"
             :src="work.cover"
             :alt="work.title"
-            class="lg:object-cover w-full h-full"
+            class="object-cover w-full h-full"
             loading="lazy"
         />
       </div>
-      <div class="w-full max-w-[50%] w-[500px] px-8 py-10 flex flex-col justify-between bg-gray-100">
+      <div class="flex-1 w-full px-8 py-10 flex flex-col justify-between bg-gray-100">
         <div>
           <h2 class="flex items-center justify-between">
             {{ work.title }}
@@ -31,7 +41,7 @@
               </div>
             </a>
           </h2>
-          <div v-if="work.contentRendered" class="content mt-6" v-html="work.contentRendered" />
+          <div v-if="work.contentRendered" class="content mt-6 md:mt-3" v-html="work.contentRendered" />
           <template v-if="work.linkList && work.linkList.length">
             <h3 class="mt-3">相關連結</h3>
             <ul class="mt-1">
@@ -52,8 +62,8 @@
             </ul>
           </template>
         </div>
-        <div class="flex items-center justify-center gap-[10px]">
-          <div v-for="(icon, _idx) in work.skillTags" :key="`icon-${_idx}`" class="h-12 w-12">
+        <div class="flex items-center justify-center gap-[10px] mt-5">
+          <div v-for="(icon, _idx) in work.skillTags" :key="`icon-${_idx}`" class="h-8 w-8">
             <svg-icon
                 :name="icon"
                 color="#999"
@@ -75,56 +85,14 @@ export default {
   props: {
     work: {
       type: Work
-    },
-    // active: {
-    //   type: Boolean,
-    //   default () { return false }
-    // }
-  },
-  data() {
-    return {
-      active: true,
-    }
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.$emitter.emit("workSectionReady")
-    })
-
-    ScrollTrigger.addEventListener("scrollEnd", () => {
-      window.removeEventListener("scroll", this.handleScroll)
-    });
-    ScrollTrigger.addEventListener("scrollStart", () => {
-      window.addEventListener("scroll", this.handleScroll)
-    });
-  },
-  beforeUnmount() {
-    window.removeEventListener("scroll", this.handleScroll)
-  },
-  methods: {
-    handleScroll() {
-      const el = this.$refs.section
-      if (!el) return
-      const { x, width } = el.getBoundingClientRect()
-      if ( x < - window.innerWidth / 3 || x > window.innerWidth * .7) {
-        this.active = false
-      } else {
-        this.active = true
-      }
     }
   }
-  // setup(props) {
-  //   // console.log(props.work)
-  //   return {
-  //     ...props.work
-  //   }
-  // },
 }
 </script>
 
 <style scoped lang="scss">
 h2 {
-  @apply border-b-0 font-medium text-3xl mb-3;
+  @apply border-b-0 font-medium text-2xl mb-3;
 }
 
 h3 {

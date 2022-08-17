@@ -1,6 +1,6 @@
 <template>
   <section ref="section" class="transition duration-300" :class="`${active ? 'active' : ''}`">
-    <div class="absolute w-full h-full inset-0 lg:flex transition duration-300" :class="`${active ? '' : 'opacity-30 scale-90' }`">
+    <div class="absolute w-full h-full inset-0 flex transition duration-300" :class="`${active ? '' : 'opacity-30 scale-90' }`">
       <div class="flex-1 bg-gray-200 relative">
         <overlay v-if="work.overlayIcon" class="bg-[rgba(0,0,0,.6)] flex items-center justify-center">
           <div class="w-[130px] h-[130px]">
@@ -14,11 +14,11 @@
             v-if="work.cover"
             :src="work.cover"
             :alt="work.title"
-            class="lg:object-cover w-full h-full"
+            class="object-cover w-full h-full"
             loading="lazy"
         />
       </div>
-      <div class="w-full max-w-[50%] w-[500px] px-8 py-10 flex flex-col justify-between bg-gray-100">
+      <div class="max-w-[50%] w-[500px] px-8 py-10 flex flex-col justify-between bg-gray-100">
         <div>
           <h2 class="flex items-center justify-between">
             {{ work.title }}
@@ -75,11 +75,7 @@ export default {
   props: {
     work: {
       type: Work
-    },
-    // active: {
-    //   type: Boolean,
-    //   default () { return false }
-    // }
+    }
   },
   data() {
     return {

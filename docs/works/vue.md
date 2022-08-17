@@ -5,6 +5,7 @@ skillTags: [ 'vue', 'nuxtjs' ]
 overlayIcon: vue
 priority: 91
 cover: /images/spaceX.png
+colSpan: true
 linkList: [
 {
 title: 'goodeye.guide',

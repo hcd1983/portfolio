@@ -2,7 +2,7 @@
 title: It-monk
 description: Description of this page
 addon: super cool
-cover: /images/coding.jpg
+cover: https://i.imgur.com/JPzpqsmh.jpg
 link: https://it-monk.com/
 priority: -100
 ---

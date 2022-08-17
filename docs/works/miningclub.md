@@ -3,7 +3,7 @@ title: MiningClub
 description: Description of this page
 skillTags: [ 'vue', 'nuxtjs', 'tailwind', 'laravel' ]
 priority: 101
-cover: /images/miningclub2.png
+cover: https://i.imgur.com/WBv6Z7Bh.png
 link: https://www.miningclub.com.tw/
 ---
 收費會員網站，包含會員付費、購買課程、註冊等功能，並使用排程完成月費自動扣款。

@@ -3,7 +3,7 @@ title: WordPress 佈景開發
 description: Description of this page
 addon: super cool
 skillTags: [ 'wordpress', 'bootstrap4' ]
-cover: /images/ezqc.png
+cover: https://i.imgur.com/PbXq0l6h.png
 overlayIcon: 'wordpress'
 linkList: [
     { 
