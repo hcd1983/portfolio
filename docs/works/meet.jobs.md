@@ -9,6 +9,6 @@ link: https://meet.jobs
 ---
 超過 6 萬會員的國際求職網站。
 
-為主要前端工程師。負責功能開發、效能改善、協助 SEO、故障排除。
+為主要前端工程師，已經進入第三年。負責功能開發、效能改善、協助 SEO、故障排除。
 
-使用技術為 NextJs，目前正在移除 style-component，全面改用 tailwincdss。
+使用主要開發框架為 NextJs 。

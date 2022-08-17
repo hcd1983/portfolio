@@ -1,9 +1,10 @@
 ---
-title: Infiniti
+title: Meleap
 description: Description of this page
 addon: super cool
-skillTags: [ 'vue', 'vue-cli', 'laravel', 'bootstrap' ]
+skillTags: [ 'vue', 'wordpress', 'bootstrap' ]
 priority: 80
+cover: https://api.meleap.com/wp-content/uploads/2020/10/meleap-preview.jpg
 ---
 # test
 Hi my friend

@@ -1,5 +1,5 @@
 <template>
-  <section ref="section" class="transition duration-300">
+  <section ref="section" class="transition duration-300" :class="`${active ? 'active' : ''}`">
     <div class="absolute w-full h-full inset-0 lg:flex transition duration-300" :class="`${active ? '' : 'opacity-30 scale-90' }`">
       <div class="flex-1 bg-gray-200">
         <img
@@ -7,6 +7,7 @@
             :src="work.cover"
             :alt="work.title"
             class="lg:object-cover w-full h-full"
+            loading="lazy"
         />
       </div>
       <div class="w-full max-w-[50%] w-[500px] px-8 py-10 flex flex-col justify-between bg-gray-100">
@@ -39,6 +40,7 @@
 
 <script>
 // import { toRefs, toRef } from "vue"
+import { ScrollTrigger } from "../../../modules";
 import Work from "../models/Work";
 export default {
   name: "WorkSectionDesktop",
@@ -60,7 +62,13 @@ export default {
     this.$nextTick(() => {
       this.$emitter.emit("workSectionReady")
     })
-    window.addEventListener("scroll", this.handleScroll)
+
+    ScrollTrigger.addEventListener("scrollEnd", () => {
+      window.removeEventListener("scroll", this.handleScroll)
+    });
+    ScrollTrigger.addEventListener("scrollStart", () => {
+      window.addEventListener("scroll", this.handleScroll)
+    });
   },
   beforeUnmount() {
     window.removeEventListener("scroll", this.handleScroll)
@@ -68,6 +76,7 @@ export default {
   methods: {
     handleScroll() {
       const el = this.$refs.section
+      if (!el) return
       const { x, width } = el.getBoundingClientRect()
       if ( x < - window.innerWidth / 3 || x > window.innerWidth * .7) {
         this.active = false
@@ -99,7 +108,7 @@ h2 {
     @apply border-b-0 font-medium text-3xl mb-1;
   }
   p {
-    @apply text-lg mb-1;
+    @apply text-lg mb-2;
   }
   .header-anchor {
     @apply hidden
