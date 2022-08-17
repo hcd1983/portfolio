@@ -47,7 +47,7 @@
             <ul class="mt-1">
               <li v-for="({title, link, description}, idx) in work.linkList" :key="idx">
                 <h4>
-                  <a :href="link">
+                  <a :href="link" target="_blank">
                     {{ title }}
                     <div class="h-3 w-3 inline-block ml-1">
                       <svg-icon
