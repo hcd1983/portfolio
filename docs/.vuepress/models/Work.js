@@ -1,5 +1,6 @@
 class Work {
     _priority = 0
+    _cover = null
     constructor(work) {
         for(let key in work) {
             if (!this.hasOwnProperty(key)) {
@@ -15,6 +16,13 @@ class Work {
     set priority (val) {
         this._priority = val ?? this._priority
     }
+    get cover () {
+        return this._cover
+    }
+    set cover (val) {
+        this._cover = val ?? this._cover
+    }
+
 }
 
 export default Work

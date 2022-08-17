@@ -5,25 +5,10 @@
     <div class="flex flex-col h-screen">
       <h3 class="text-6xl font-cursive text-center pt-10">My Works</h3>
       <div ref="target" class="flex w-fit flex-1 pt-10 gap-[10px]">
-<!--        <section v-for="({cover, title}, idx) in works" class="relative w-screen h-[300px] flex items-center justify-center">-->
-<!--          <div class="absolute w-screen h-full inset-0 bg-blue-300 flex">-->
-<!--            <div class="w-1/2">-->
-<!--                  <img-->
-<!--                      v-if="cover"-->
-<!--                      :src="cover"-->
-<!--                      :alt="title"-->
-<!--                      class="object-cover w-full h-full object-center"-->
-<!--                  />-->
-<!--            </div>-->
-<!--            <div class="flex-1 p-5">-->
-<!--              <h2>{{ title }} {{ cover }}</h2>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </section>-->
         <template v-for="(work, idx) in works">
           <WorkSectionDesktop
               :work="work"
-              class="relative w-screen h-[300px]"
+              class="relative w-screen h-full max-h-[600px]"
           />
         </template>
       </div>
@@ -72,17 +57,6 @@ export default {
         this.resetTrigger()
       }
     })
-
-    // this.$nextTick(() => {
-    //   const isTouch = ScrollTrigger.isTouch
-    //   this.isTouch = isTouch
-    //   if (isTouch === 0) {
-    //     this.setTrigger()
-    //   }
-    // })
-    // if (window) {
-    //   window.addEventListener("resize", this.resetTrigger)
-    // }
   },
   updated() {
     this.resetTrigger()
