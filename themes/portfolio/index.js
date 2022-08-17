@@ -13,7 +13,7 @@ const portfolioTheme = (options) => {
         layouts: {
             Layout: path.resolve(__dirname, 'layouts/Layout.vue'),
             Index: path.resolve(__dirname, 'layouts/Index.vue'),
-            // 404: path.resolve(__dirname, 'layouts/404.vue'),
+            404: path.resolve(__dirname, 'layouts/404.vue'),
         },
         onInitialized: (app) => {
             // siteData 加入 globalData
