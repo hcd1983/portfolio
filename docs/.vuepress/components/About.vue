@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="shrink-0 flex-grow order-1 md:order-2">
-        <img class="rounded-full w-full max-w-[130px] md:max-w-[200px]" :src="$withBase('/images/portfolio.png')" alt="Hcd Design Studio" loading="lazy">
+        <img class="rounded-full w-full max-w-[130px] md:max-w-[200px]" src="https://i.imgur.com/xAJ3I0pm.png" alt="Hcd Design Studio" loading="lazy">
 <!--        <img class="rounded-full w-full max-w-[130px] md:max-w-[200px]" src="@assets/icons/ai.svg" alt="Hcd Design Studio" loading="lazy">-->
       </div>
     </div>
