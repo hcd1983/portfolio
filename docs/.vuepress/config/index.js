@@ -3,6 +3,9 @@ module.exports = {
     title: "HCD Design Portfolio",
     description: "產品設計師轉職的軟體工程師。具備 Html、Css 、Js 和 PHP 等前後端語法相關知識，熱愛挑戰技術與解決困難。現在是會使用 Larval 、Vue、React 的全端開發者。",
     ga: 'G-G2WG3Q3Z4Y',
+    og: {
+        image: 'https://i.imgur.com/Lhdtyjmh.png',
+    },
     globalData: {
         skills: [
             {

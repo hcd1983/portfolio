@@ -34,6 +34,10 @@ module.exports = {
     },
     head: [
         ...faviconHead,
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:title', content: Config.title }],
+        ['meta', { property: 'og:description', content: Config.description }],
+        ['meta', { property: 'og:image', content: Config.og.image }],
         ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
         ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true }],
         ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Sans+TC:wght@400;500&display=swap', crossorigin: true }],
