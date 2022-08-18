@@ -4,7 +4,7 @@ description: Description of this page
 skillTags: [ 'vue', 'nuxtjs' ]
 overlayIcon: vue
 priority: 91
-cover: /images/spaceX.png
+cover: https://i.imgur.com/vbekGXzh.png
 colSpan: true
 linkList: [
 {
