@@ -1,1 +1,0 @@
-import{_ as e,o as _,c as t}from"./app.49071e1b.js";const s={name:"GridBg2"},r={class:"absolute w-full h-full inset-0 z-0"};function a(o,c,n,d,i,l){return _(),t("div",r)}var u=e(s,[["render",a],["__scopeId","data-v-b11f62c4"],["__file","GridBg2.vue"]]);export{u as default};
