@@ -13,12 +13,12 @@ export default defineClientConfig({
         router.beforeEach((to,from) => {
             if (from === START_LOCATION) {
                 // initial navigation
-                console.log('start')
+                // console.log('start')
             }
-            console.log('before navigation', from, to)
+            // console.log('before navigation', from, to)
         })
         router.afterEach((to) => {
-            console.log('after navigation')
+            // console.log('after navigation')
         })
     },
     setup(){
