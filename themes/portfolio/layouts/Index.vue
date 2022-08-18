@@ -3,14 +3,27 @@
   <grid-bg2 class="!fixed" />
   <MainMenu/>
   <intro />
-  <Content
+  <div
       id="content"
       class="z-10 relative transition-opacity duration-300"
       :class="{
         'opacity-0' : !introOver,
         'opacity-100': introOver
       }"
-  />
+  >
+    <about />
+    <Skills />
+    <timeline />
+    <works />
+  </div>
+<!--  <Content-->
+<!--      id="content"-->
+<!--      class="z-10 relative transition-opacity duration-300"-->
+<!--      :class="{-->
+<!--        'opacity-0' : !introOver,-->
+<!--        'opacity-100': introOver-->
+<!--      }"-->
+<!--  />-->
 </div>
 </template>
 
@@ -26,7 +39,6 @@ export default {
   },
   mounted() {
     this.$emitter.on('introOver', () => {
-      console.log('works')
       this.introOver = true
     })
   }
