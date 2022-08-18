@@ -1,5 +1,4 @@
 const { portfolioTheme } = require("../../themes/portfolio")
-// const config = require("./config/index.js")
 const { createSvgIconsPlugin } = require('vite-plugin-svg-icons')
 const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 const Config = require("./models/Config")
@@ -7,7 +6,7 @@ const { registerComponentsPlugin } = require('@vuepress/plugin-register-componen
 const { path } = require('@vuepress/utils')
 const { viteBundler } = require('@vuepress/bundler-vite')
 const { defaultTheme } = require('@vuepress/theme-default')
-const extraPage = require("../../plugins/extraPage")
+// const extraPage = require("../../plugins/extraPage")
 const glob = require('glob');
 const markdownFiles = glob.sync('docs/**/*.md').map(f => '/' + f);
 const faviconHead = require("./favionHead.js")
@@ -44,7 +43,7 @@ module.exports = {
     ],
     plugins: [
         // gsap(),
-        extraPage(Config),
+        // extraPage(Config),
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
         }),
