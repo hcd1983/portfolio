@@ -14,12 +14,7 @@
 </template>
 
 <script>
-import { usePageHead } from "@vuepress/client"
 export default {
   name: "404",
-  // setup() {
-  //   const head = usePageHead()
-  //   console.log(head.value)
-  // }
 }
 </script>
