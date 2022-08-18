@@ -32,12 +32,12 @@
             <h4 class="font-medium mt-1">- UI 設計師 / 前端工程師</h4>
             <p class="text-sm font-normal text-gray-700 mt-2">加入新創團隊，並在 AppWorks 新創加速器接受為期一年的培訓。此處也是開始寫程式轉捩點。</p>
           </TimelineBlock>
-          <TimelineBlock title="2011 - 2012">
+          <TimelineBlock title="2010 - 2012">
             <h3 class="text-lg font-medium text-gray-900">SHEICO Group</h3>
             <h4 class="font-medium mt-1">- 設計組組長</h4>
             <p class="text-sm font-normal text-gray-700 mt-2">公司為世界最大潛水衣製造商，市占 70%。 工作內容為設計潛水衣外觀與新機 能提案。展會期間須規劃參展項目與展場布置。</p>
           </TimelineBlock>
-          <TimelineBlock title="2009 - 2010">
+          <TimelineBlock title="2008 - 2010">
             <h3 class="text-lg font-medium text-gray-900">尚芳國際興業股份有限公司</h3>
             <h4 class="font-medium mt-1">- 工業設計工程師</h4>
             <p class="text-sm font-normal text-gray-700 mt-2">設計大型電玩機台外觀與機構。工作內容以 3D建 模為主。偶爾需支援活動網頁的設計與更新。</p>

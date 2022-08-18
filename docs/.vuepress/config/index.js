@@ -55,7 +55,7 @@ module.exports = {
                 sub: 'LinkedIn',
                 icon: 'linkedin3',
                 color: '#000',
-                url: 'https://www.linkedin.com/in/%E6%AC%A3%E8%BF%AA-%E9%BB%83-6979939a/'
+                url: 'https://www.linkedin.com/in/Dean-6979939a/'
             },
             {
                 sub: 'GitHub',

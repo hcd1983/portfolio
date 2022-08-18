@@ -27,7 +27,7 @@ export default defineClientConfig({
         const page = usePageData()
         const route = useRoute()
         const head = usePageHead()
-        const title = usePageHeadTitle().valuee
+        const title = usePageHeadTitle().value
 
         onBeforeMount(() => {
             if (route.name === '404') document.title = `頁面不存在 | ${title}`
