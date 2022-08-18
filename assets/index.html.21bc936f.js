@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"","lang":"zh-TW","frontmatter":{"layout":"Index"},"excerpt":"","headers":[],"git":{"updatedTime":1660784259000,"contributors":[{"name":"Dean Huang","email":"hcd@mojopot.com","commits":29}]},"filePathRelative":"README.md","contentRendered":""}');export{e as data};
