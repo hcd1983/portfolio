@@ -35,9 +35,12 @@
           <template v-if="work.linkList && work.linkList.length">
             <h3 class="mt-3">相關連結</h3>
             <ul class="mt-1">
-              <li v-for="({title, link, description}, idx) in work.linkList" :key="idx">
+              <li v-for="({title, link, description, target}, idx) in work.linkList" :key="idx">
                 <h4>
-                  <a :href="link" target="_blank">
+                  <a
+                      :href="link"
+                      :target="target || '_blank'"
+                  >
                     {{ title }}
                     <div class="h-3 w-3 inline-block ml-1">
                       <svg-icon
@@ -108,7 +111,7 @@ export default {
         this.active = true
       }
     }
-  }
+  },
   // setup(props) {
   //   // console.log(props.work)
   //   return {

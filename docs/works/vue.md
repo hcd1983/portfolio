@@ -10,7 +10,8 @@ linkList: [
 {
 title: '作品集',
 link: 'javascript:void(0)',
-description: '本作品集由 Vuepress v2 搭建'
+description: '本作品集由 Vuepress v2 搭建',
+target: _self
 },
 {
 title: 'goodeye.guide',
