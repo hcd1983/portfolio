@@ -1,5 +1,6 @@
 import {defineClientConfig, usePageHead, usePageHeadTitle, usePageData} from '@vuepress/client'
 import { START_LOCATION, useRoute } from 'vue-router'
+import { watch } from 'vue'
 import { onBeforeMount } from "vue";
 import { useI18n } from 'vue-i18n'
 import i18n from "./i18n";
@@ -39,9 +40,14 @@ export default defineClientConfig({
             if (route.name === '404') document.title = `頁面不存在 | ${title}`
         })
 
-        if (page.value.lang === 'en-US') {
-            i18n.global.locale.value = 'en'
-        }
+
+        watch(page, (value) => {
+            if (page.value.lang === 'en-US') {
+                i18n.global.locale.value = 'en'
+            } else {
+                i18n.global.locale.value = 'zh'
+            }
+        },{immediate:true})
 
         // console.log(route.name)
         // console.log(page.value.frontmatter)

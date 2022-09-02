@@ -23,18 +23,20 @@
 </template>
 
 <script>
-// import { usePageData } from '@vuepress/client'
-// import { useThemeData } from '@vuepress/plugin-theme-data/lib/client'
+import { watch, ref  } from "vue"
 import {usePageData, useSiteData} from '@vuepress/client'
-import Works from "../models/Works";
 
 export default {
   name: "Skills",
   setup() {
-    const page = usePageData().value
+    const skills = ref(null)
+    const page = usePageData()
     const siteData = useSiteData().value
+    watch(page, (_page) => {
+      skills.value = _page.lang === 'en-US' ? siteData.globalData.skills.en : siteData.globalData.skills.zh
+    },{ immediate : true})
     return {
-      skills: (page.lang === 'en-US' ? siteData.globalData.skills.en : siteData.globalData.skills.zh),
+      skills
     }
   }
 }

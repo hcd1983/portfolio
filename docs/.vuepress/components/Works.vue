@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import { watch, ref  } from "vue"
 import { useSiteData, usePageData } from "@vuepress/client"
 import Works from "../models/Works";
 import {gsap, ScrollTrigger} from "../../../modules";
@@ -38,10 +39,14 @@ const triggerId = "worksTrigger"
 export default {
   name: "Works",
   setup() {
-    const page = usePageData().value
+    const page = usePageData()
     const { works: { zh : worksZh, en: worksEn } } = useSiteData().value
-    const works = page.lang === 'en-US' ? worksEn : worksZh
-    return { works: (new Works(works)).works }
+    const works = ref(null)
+    watch(page, (_page) => {
+      const _works = _page.lang === 'en-US' ? worksEn : worksZh
+      works.value = (new Works(_works)).works
+    }, {immediate: true})
+    return { works }
   },
   data() {
     return {
