@@ -1,5 +1,6 @@
 <template>
 <div id="wrap">
+  <LocaleSwitcher />
   <MainMenu/>
   <Content
       id="content"

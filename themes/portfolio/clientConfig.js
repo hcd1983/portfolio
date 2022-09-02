@@ -24,8 +24,8 @@ export default defineClientConfig({
             }
             // console.log('before navigation', from, to)
         })
-        router.afterEach((to) => {
-            // console.log('after navigation')
+        router.afterEach((to, from) => {
+            // console.log('after navigation', to.name, from.name)
         })
     },
     setup(){
