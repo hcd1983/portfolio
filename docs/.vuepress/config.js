@@ -12,6 +12,7 @@ const markdownFiles = glob.sync('docs/**/*.md').map(f => '/' + f);
 const faviconHead = require("./favionHead.js")
 console.log(markdownFiles)
 
+
 const themeConfig = {
     sidebar: false,
     colorMode: 'light',
@@ -19,10 +20,42 @@ const themeConfig = {
     themePlugins: {
         backToTop: false
     },
-    siteConfig: Config
+    siteConfig: Config,
+    locales: {
+        '/': {
+            selectLanguageName: '繁體中文',
+        },
+        '/en/': {
+            selectLanguageName: 'English',
+        },
+    },
 }
 
 module.exports = {
+    locales: {
+        // The key is the path for the locale to be nested under.
+        // As a special case, the default locale can use '/' as its path.
+        '/': {
+            lang: 'zh-TW',
+            title: Config.title,
+            description: Config.description,
+        },
+        '/en/': {
+            lang: 'en-US',
+            title: Config.en.title,
+            description: Config.en.description,
+            head:[
+                ...faviconHead,
+                ['meta', { property: 'og:type', content: 'website' }],
+                ['meta', { property: 'og:title', content: Config.en.description }],
+                ['meta', { property: 'og:description', content: Config.en.description }],
+                ['meta', { property: 'og:image', content: Config.og.image }],
+                ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+                ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true }],
+                ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Noto+Sans+TC:wght@400;500&display=swap', crossorigin: true }],
+            ]
+        },
+    },
     lang: 'zh-TW',
     title: Config.title,
     description: Config.description,
