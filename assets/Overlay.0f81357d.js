@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as t,l}from"./app.a243a0ae.js";const o={name:"Overlay"},r={class:"absolute w-full h-full inset-0"};function n(e,c,_,f,u,d){return a(),t("div",r,[l(e.$slots,"default")])}var p=s(o,[["render",n],["__file","Overlay.vue"]]);export{p as default};
