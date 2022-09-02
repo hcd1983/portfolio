@@ -9,49 +9,93 @@ module.exports = {
         image: 'https://i.imgur.com/Lhdtyjmh.png',
     },
     globalData: {
-        skills: [
-            {
-                title: 'HTML / CSS / Vanilla JS',
-                icons: ['html', 'css', 'js', 'ts'],
-                description: '<p>具備網頁設計的相關知識，能熟練切版並使用原生 Js 語法進行開發。<p/>' +
-                    '<p>會使用 rem 方式進行切版佈局。<p/>' +
-                    '<p>熟悉 Promise 、async / await 非同步處理相關語法與特性，進行 api 的串接。</p>' +
-                    '<p>已知基本 TypeScript 用法，正將部分小型專案重構。</p>'
-            },
-            {
-                title: 'JS Frameworks',
-                icons: ['node', 'vue', 'react'],
-                description: '<p>熟悉 vue 和 react 生態圈。<p/>' +
-                    '<p><strong>vue</strong>: 為目前主要使用框架。 能使用 Nuxt 完成大型專案。 也能針對需求，此用 Vue-Cli 或 Vuepress 進行開發。<p/>' +
-                    '<p><strong>React</strong>: 維護 NextJs 大型網站已有 3 年經驗，能夠優化效能與開發新功能。</p>'
-            },
-            {
-                title: 'CSS Framworks',
-                icons: ['tailwind', 'bootstrap'],
-                description: '<p>近兩年的專案都使用 <strong>tailwindcss</strong> 作為前端框架。能熟練使用 unity css 並對 config 做設定。<p/>' +
-                    '<p>早期使用 Bootstrap 4 進行開發，目前有一個合作專案使用 Bootstrap 5。</p>'
-            },
-            {
-                title: 'Laravel / PHP / MySql',
-                icons: [ 'laravel', 'php', 'mysql'],
-                description: '<p>能用純 php + mysql 開發 CMS 和購物車系統。</p>' +
-                    '<p><strong>Laravel</strong> 為目前主要使用之後端框架。熟悉 Controller 和 Model，能產出 api，也會做事件排程（另如訂閱扣款)，並使用 github action 的 cronjob 處理佇列事件。</p>'
-            },
-            {
-                title: 'WordPress',
-                icons: ['wordpress'],
-                description: '<p>了解 WP 佈景架構，能開發外掛及佈景主題。曾自寫 WP 的購物車外掛，至今運作良好。</p>' +
-                    '<p>近期專案把 WP 當成純後端使用。僅使用其 REST API 功能。</p>'
-            },
-            {
-                title: 'UI / Graphic / 3D Modeling',
-                icons: ['ps', 'ai', 'solidworks'],
-                description: '<p>曾任互動介面設計與 Adobe 軟體講師。</p>' +
-                    '<p>具備 UI 能力，繪製 svg 並導入 figma 進行排版編輯。</p>' +
-                    '<p>Solidworks 3D 軟體建模能力，曾在小型專案導入 Bobylon.js 將 3D 模型放入網站互動。</p>' +
-                    '<p>有處理 svg 和 canvas 等動畫技術的能力。</p>'
-            },
-        ],
+        skills: {
+            en: [
+                {
+                    title: 'HTML / CSS / Vanilla JS',
+                    icons: ['html', 'css', 'js', 'ts'],
+                    description: '<p>In-depth knowledge of web development.<p/>' +
+                        '<p>Ability to layout with REM style.<p/>' +
+                        '<p>Familiar with Promise, async / await asynchronous processing.</p>' +
+                        '<p>Basic TypeScript usage is known.</p>'
+                },
+                {
+                    title: 'JS Frameworks',
+                    icons: ['node', 'vue', 'react'],
+                    description: '<p>Familiar with Both React and Vue.<p/>' +
+                        '<p><strong>Vue</strong>: For the current main use of the framework. Can use Nuxt to complete large projects. It can also be developed with Vue-Cli or Vuepress.<p/>' +
+                        '<p><strong>React</strong>: 3 years experience in maintaining NextJs large website.</p>'
+                },
+                {
+                    title: 'CSS Framworks',
+                    icons: ['tailwind', 'bootstrap'],
+                    description: '<p>iverse experience in sass, css, tailwindcss.<p/>' +
+                        '<p>Able to use Bootstrap 4 or 5.</p>'
+                },
+                {
+                    title: 'Laravel / PHP / MySql',
+                    icons: ['laravel', 'php', 'mysql'],
+                    description: '<p>Develop CMS or shopping cart system with php & mysql.</p>' +
+                        '<p>Familiar wiht Laravel and MVC framework.</p>'
+                },
+                {
+                    title: 'WordPress',
+                    icons: ['wordpress'],
+                    description: '<p>Able to develop WordPress plugins and themes.</p>' +
+                        '<p>Or just use WordPress Rest API</p>'
+                },
+                {
+                    title: 'UI / Graphic / 3D Modeling',
+                    icons: ['ps', 'ai', 'solidworks'],
+                    description: '<p>Used to be a interface design and Adobe software lecturer.</p>' +
+                        '<p>3D modling. Able to use Bobylon.js to put 3D model in website.</p>'
+                },
+            ],
+            zh: [
+                {
+                    title: 'HTML / CSS / Vanilla JS',
+                    icons: ['html', 'css', 'js', 'ts'],
+                    description: '<p>具備網頁設計的相關知識，能熟練切版並使用原生 Js 語法進行開發。<p/>' +
+                        '<p>會使用 rem 方式進行切版佈局。<p/>' +
+                        '<p>熟悉 Promise 、async / await 非同步處理相關語法與特性，進行 api 的串接。</p>' +
+                        '<p>已知基本 TypeScript 用法，正將部分小型專案重構。</p>'
+                },
+                {
+                    title: 'JS Frameworks',
+                    icons: ['node', 'vue', 'react'],
+                    description: '<p>熟悉 vue 和 react 生態圈。<p/>' +
+                        '<p><strong>vue</strong>: 為目前主要使用框架。 能使用 Nuxt 完成大型專案。 也能針對需求，此用 Vue-Cli 或 Vuepress 進行開發。<p/>' +
+                        '<p><strong>React</strong>: 維護 NextJs 大型網站已有 3 年經驗，能夠優化效能與開發新功能。</p>'
+                },
+                {
+                    title: 'CSS Framworks',
+                    icons: ['tailwind', 'bootstrap'],
+                    description: '<p>近兩年的專案都使用 <strong>tailwindcss</strong> 作為前端框架。能熟練使用 unity css 並對 config 做設定。<p/>' +
+                        '<p>早期使用 Bootstrap 4 進行開發，目前有一個合作專案使用 Bootstrap 5。</p>'
+                },
+                {
+                    title: 'Laravel / PHP / MySql',
+                    icons: ['laravel', 'php', 'mysql'],
+                    description: '<p>能用純 php + mysql 開發 CMS 和購物車系統。</p>' +
+                        '<p><strong>Laravel</strong> 為目前主要使用之後端框架。熟悉 Controller 和 Model，能產出 api，也會做事件排程（另如訂閱扣款)，並使用 github action 的 cronjob 處理佇列事件。</p>'
+                },
+                {
+                    title: 'WordPress',
+                    icons: ['wordpress'],
+                    description: '<p>了解 WP 佈景架構，能開發外掛及佈景主題。曾自寫 WP 的購物車外掛，至今運作良好。</p>' +
+                        '<p>近期專案把 WP 當成純後端使用。僅使用其 REST API 功能。</p>'
+                },
+                {
+                    title: 'UI / Graphic / 3D Modeling',
+                    icons: ['ps', 'ai', 'solidworks'],
+                    description: '<p>曾任互動介面設計與 Adobe 軟體講師。</p>' +
+                        '<p>具備 UI 能力，繪製 svg 並導入 figma 進行排版編輯。</p>' +
+                        '<p>Solidworks 3D 軟體建模能力，曾在小型專案導入 Bobylon.js 將 3D 模型放入網站互動。</p>' +
+                        '<p>有處理 svg 和 canvas 等動畫技術的能力。</p>'
+                },
+            ],
+        }
+        ,
         socialLink: [
             {
                 sub: 'LinkedIn',

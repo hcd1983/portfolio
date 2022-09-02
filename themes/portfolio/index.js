@@ -5,7 +5,7 @@ const { defaultTheme } = require('@vuepress/theme-default')
 //
 // const isDev = () => {
 //     return nodeEnv === 'development'
-// }
+//
 
 const isWorkPage = ({ path }) => {
     const regx = /\/works\/.*\.html/
@@ -28,15 +28,26 @@ const portfolioTheme = (options) => {
             app.siteData.globalData = options.siteConfig.globalData
 
             // siteData 加入 works
-            const works = []
+            const works = {
+                zh: [],
+                en: []
+            }
             app.pages.forEach(( page ) => {
                 if (!isWorkPage(page)) return
                 const { frontmatter, lang, contentRendered  } = page
-                works.push({
-                    ...frontmatter,
-                    lang,
-                    contentRendered
-                })
+                if (lang === 'en-US') {
+                    works.en.push({
+                        ...frontmatter,
+                        lang,
+                        contentRendered
+                    })
+                } else {
+                    works.zh.push({
+                        ...frontmatter,
+                        lang,
+                        contentRendered
+                    })
+                }
             })
             app.siteData.works = works
 

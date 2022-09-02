@@ -43,7 +43,7 @@
           </h2>
           <div v-if="work.contentRendered" class="content mt-6 md:mt-3" v-html="work.contentRendered" />
           <template v-if="work.linkList && work.linkList.length">
-            <h3 class="mt-3">相關連結</h3>
+            <h3 class="mt-3">{{ $t('Related Links') }}</h3>
             <ul class="mt-1">
               <li v-for="({title, link, description, target}, idx) in work.linkList" :key="idx">
                 <h4>

@@ -4,13 +4,24 @@
     <div class="mx-auto flex flex-col items-center gap-y-5 md:gap-y-0 md:flex-row md:justify-between md:gap-x-12">
       <div class="order-2">
         <h3 class="text-6xl font-cursive pt-3 mb-10">About</h3>
-        <h1 class="text-3xl font-bold">Hi, 我是 <span class="text-blue-500">欣迪</span></h1>
-        <p class="mt-6 text-base leading-loose">
-          從產品設計師轉職的軟體工程師。<br/>
-          具備 Html、Css 、Js 和 PHP 等前後端語法相關知識，熱愛挑戰技術與解決困難。<br/>
-          現在是會使用 <span class="text-blue-500">Larval</span> 、<span class="text-blue-500">Vue</span>、<span class="text-blue-500">React</span> 的全端開發者。
-          現為前端為主的 Freelancer ，也在數家企業擔任顧問。
-        </p>
+        <template v-if="page.lang === 'en-US'">
+          <h1 class="text-3xl font-bold">Hi, I am <span class="text-blue-500">Dean (Hsin-Ti)</span>.</h1>
+          <p class="mt-6 text-base leading-loose">
+            Product designer turned into a software engineer.<br/>
+            I got on-depth knowledge with web development, and love to solve difficulties with logic and knowledge.<br/>
+            Now I am a full-end freelancer who able to use <span class="text-blue-500">Larval</span>, <span class="text-blue-500">Vue</span>, <span class="text-blue-500">React</span> and serves as a consultant for several companies.
+          </p>
+        </template>
+        <template v-else>
+          <h1 class="text-3xl font-bold">Hi, 我是 <span class="text-blue-500">欣迪</span></h1>
+          <p class="mt-6 text-base leading-loose">
+            從產品設計師轉職的軟體工程師。<br/>
+            具備 Html、Css 、Js 和 PHP 等前後端語法相關知識，熱愛挑戰技術與解決困難。<br/>
+            現在是會使用 <span class="text-blue-500">Larval</span> 、<span class="text-blue-500">Vue</span>、<span class="text-blue-500">React</span> 的全端開發者。
+            現為前端為主的 Freelancer ，也在數家企業擔任顧問。
+          </p>
+        </template>
+
         <div class="flex gap-[20px] mt-10 justify-center md:justify-start">
           <a
               v-for="{sub, url, icon, color}, key in socialLink"
@@ -36,13 +47,16 @@
 </template>
 
 <script>
-import { useSiteData } from '@vuepress/client'
+import { useSiteData, usePageData } from '@vuepress/client'
+
 export default {
   name: "About",
   setup() {
+    const page = usePageData()
     const site = useSiteData()
     return {
-      socialLink: site.value.globalData.socialLink
+      socialLink: site.value.globalData.socialLink,
+      page,
     }
   },
 }

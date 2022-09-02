@@ -34,7 +34,7 @@ export default {
   setup() {
     const introOver = ref(false)
     return {
-      introOver
+      introOver,
     }
   },
   mounted() {

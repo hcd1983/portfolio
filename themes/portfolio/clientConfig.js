@@ -1,11 +1,16 @@
 import {defineClientConfig, usePageHead, usePageHeadTitle, usePageData} from '@vuepress/client'
 import { START_LOCATION, useRoute } from 'vue-router'
 import { onBeforeMount } from "vue";
+import { useI18n } from 'vue-i18n'
+import i18n from "./i18n";
 import mitt from 'mitt'
 import 'virtual:svg-icons-register'
 
 export default defineClientConfig({
     enhance({ app, router, siteData }){
+        // use i18n
+        app.use(i18n)
+
         // add emitter
         const emitter = mitt()
         app.config.globalProperties.$emitter = emitter
@@ -24,6 +29,7 @@ export default defineClientConfig({
         })
     },
     setup(){
+        const { t } = useI18n()
         const page = usePageData()
         const route = useRoute()
         const head = usePageHead()
@@ -33,10 +39,15 @@ export default defineClientConfig({
             if (route.name === '404') document.title = `頁面不存在 | ${title}`
         })
 
+        if (page.value.lang === 'en-US') {
+            i18n.global.locale.value = 'en'
+        }
+
         // console.log(route.name)
         // console.log(page.value.frontmatter)
         // console.log(head.value)
         // console.log(usePageHeadTitle().value)
+        return { t, i18n }
     },
     rootComponents: [],
 })
