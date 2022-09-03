@@ -1,5 +1,5 @@
 <template>
-<div class="fixed z-50 top-5 left-5">
+<div class="fixed z-40 top-5 left-5">
   <router-link to="/">中文</router-link> / <router-link to="/en/">English</router-link>
 </div>
 </template>
