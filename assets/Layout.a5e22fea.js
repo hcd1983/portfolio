@@ -1,1 +1,0 @@
-import{_ as c,o as r,c as s,a as e,r as o}from"./app.7366c57b.js";const _={name:"Layout"},i={id:"wrap"};function p(u,d,l,m,f,v){const t=o("LocaleSwitcher"),n=o("MainMenu"),a=o("Content");return r(),s("div",i,[e(t),e(n),e(a,{id:"content",class:"z-10 relative transition-opacity duration-300"})])}var h=c(_,[["render",p],["__file","Layout.vue"]]);export{h as default};
