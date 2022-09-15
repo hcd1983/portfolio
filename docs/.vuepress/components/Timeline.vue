@@ -34,17 +34,17 @@
               <h4 class="font-medium mt-1">- Design Team Leader</h4>
               <p class="text-sm font-normal text-gray-700 mt-2">Design profassional water sportswear (suit for surfing or diving). Plan the exhibition projects and the layout.</p>
             </TimelineBlock>
-            <TimelineBlock title="2008/05 - 2010/12">
+            <TimelineBlock title="2009/05 - 2010/12">
               <h3 class="text-lg font-medium text-gray-900">SAINT-FUN INTERNATIONAL CO.</h3>
               <h4 class="font-medium mt-1">- ID Engineer</h4>
               <p class="text-sm font-normal text-gray-700 mt-2">Design the appearance and mechanism of arcade game machines. The work content is mainly 3D modeling</p>
             </TimelineBlock>
-            <TimelineBlock title="2007 - 2008">
+            <TimelineBlock title="2008 - 2009">
               <h3 class="text-lg font-medium text-gray-900">R.O.C. NANY</h3>
             </TimelineBlock>
             <TimelineBlock title="Education">
-              <h3 class="text-lg font-medium text-gray-900">Chang Gung University<br/><small>Bachelor of Industrial Design (2001 - 2004)</small></h3>
-              <h3 class="text-lg font-medium text-gray-900 mt-2">National Cheng Kung University - <br/><small>Master of Industrial Design (2004 - 2007)</small></h3>
+              <h3 class="text-lg font-medium text-gray-900">Chang Gung University<br/><small>Bachelor of Industrial Design (2001 - 2005)</small></h3>
+              <h3 class="text-lg font-medium text-gray-900 mt-2">National Cheng Kung University - <br/><small>Master of Industrial Design (2005 - 2008)</small></h3>
             </TimelineBlock>
           </template>
           <template v-else >
@@ -73,17 +73,17 @@
               <h4 class="font-medium mt-1">- 設計組組長</h4>
               <p class="text-sm font-normal text-gray-700 mt-2">公司為世界最大潛水衣製造商，市占 70%。 工作內容為設計潛水衣外觀與新機能提案。展會期間須規劃參展項目與展場布置。</p>
             </TimelineBlock>
-            <TimelineBlock title="2008/05 - 2010/12">
+            <TimelineBlock title="2009/05 - 2010/12">
               <h3 class="text-lg font-medium text-gray-900">尚芳國際興業股份有限公司</h3>
               <h4 class="font-medium mt-1">- 工業設計工程師</h4>
               <p class="text-sm font-normal text-gray-700 mt-2">設計大型電玩機台外觀與機構。工作內容以 3D建 模為主。偶爾需支援活動網頁的設計與更新。</p>
             </TimelineBlock>
-            <TimelineBlock title="2007 - 2008">
+            <TimelineBlock title="2008 - 2009">
               <h3 class="text-lg font-medium text-gray-900">中華民國海軍義務役</h3>
             </TimelineBlock>
             <TimelineBlock title="Education">
-              <h3 class="text-lg font-medium text-gray-900">長庚大學 - 工業設計學士 <small>(2001 - 2004)</small></h3>
-              <h3 class="text-lg font-medium text-gray-900">國立成功大學 - 工業設計碩士 <small>(2004 - 2007)</small></h3>
+              <h3 class="text-lg font-medium text-gray-900">長庚大學 - 工業設計學士 <small>(2001 - 2005)</small></h3>
+              <h3 class="text-lg font-medium text-gray-900">國立成功大學 - 工業設計碩士 <small>(2005 - 2008)</small></h3>
             </TimelineBlock>
           </template>
         </ol>
