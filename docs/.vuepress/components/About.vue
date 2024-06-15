@@ -5,19 +5,20 @@
       <div class="order-2">
         <h3 class="text-6xl font-cursive pt-3 mb-10">About</h3>
         <template v-if="page.lang === 'en-US'">
-          <h1 class="text-3xl font-bold">Hi, I am <span class="text-blue-500">Dean (Hsin-Ti)</span>.</h1>
+          <h1 class="text-3xl font-bold">Hi, I am <span class="text-blue-500">Dean</span>.</h1>
           <p class="mt-6 text-base leading-loose">
             Product designer turned into a software engineer.<br/>
             I got on-depth knowledge with web development, and love to solve difficulties with logic and knowledge.<br/>
-            Now I am a full-end freelancer who able to use <span class="text-blue-500">Larval</span>, <span class="text-blue-500">Vue</span>, <span class="text-blue-500">React</span> and serves as a consultant for several companies.
+            Familiar with mainstream front-end and back-end frameworks such as <span class="text-blue-500">Node.js, Laravel, Vue, React</span>, etc. Previously worked as a freelancer, university lecturer in interactive interface design
           </p>
+          <p>Currently serving as the Frontend Leader at a game company, responsible for game development. And I also oversee technical planning, project management, and team scheduling.</p>
         </template>
         <template v-else>
           <h1 class="text-3xl font-bold">Hi, 我是 <span class="text-blue-500">欣迪</span></h1>
           <p class="mt-6 text-base leading-loose">
             從產品設計師轉職的軟體工程師。<br/>
             具備 Html、Css 、Js 和 PHP 等前後端語法相關知識，熱愛挑戰技術與解決困難。<br/>
-            並熟悉 <span class="text-blue-500">NodeJs</span>、 <span class="text-blue-500">Laravel</span> 、<span class="text-blue-500">Vue</span>、<span class="text-blue-500">React</span> ...等主流前後端框架。
+            熟悉 <span class="text-blue-500">NodeJs</span>、 <span class="text-blue-500">Laravel</span> 、<span class="text-blue-500">Vue</span>、<span class="text-blue-500">React</span> ...等主流前後端框架。
             曾擔任 Freelancer ，大學互動介面設計講師，並在數家企業擔任技術顧問。</p>
           <p>現職為遊戲公司前端 Leader， 除了使用 Cocos Creator 遊戲引擎進行開發外，也負責技術規劃、專案管理及人員調度。
           </p>

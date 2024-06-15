@@ -27,10 +27,10 @@ module.exports = {
                         '<p><strong>React</strong>: 3 years experience in maintaining NextJs large website.</p>'
                 },
                 {
-                    title: 'CSS Framworks',
-                    icons: ['tailwind', 'bootstrap'],
-                    description: '<p>iverse experience in sass, css, tailwindcss.<p/>' +
-                        '<p>Able to use Bootstrap 4 or 5.</p>'
+                    title: 'Git',
+                    icons: ['git'],
+                    description: '<p>Proficient in using Git for version control, familiar with Git flow and other mainstream release processes.<p/>' +
+                        '<p>Experienced in integrating with Jenkins for completing CI/CD deployment processes.</p>'
                 },
                 {
                     title: 'Laravel / PHP / MySql',
@@ -38,11 +38,16 @@ module.exports = {
                     description: '<p>Develop CMS or shopping cart system with php & mysql.</p>' +
                         '<p>Familiar wiht Laravel and MVC framework.</p>'
                 },
+                // {
+                //     title: 'WordPress',
+                //     icons: ['wordpress'],
+                //     description: '<p>Able to develop WordPress plugins and themes.</p>' +
+                //         '<p>Or just use WordPress Rest API</p>'
+                // },
                 {
-                    title: 'WordPress',
-                    icons: ['wordpress'],
-                    description: '<p>Able to develop WordPress plugins and themes.</p>' +
-                        '<p>Or just use WordPress Rest API</p>'
+                    title: 'Cocos Creator',
+                    icons: ['cocos'],
+                    description: `Using the Cocos Creator game engine for development, integrated with TypeScript.`
                 },
                 {
                     title: 'UI / Graphic / 3D Modeling',
