@@ -13,7 +13,16 @@
         <h4 class="font-cursive text-3xl mb-10 text-center">(Present - Past)</h4>
         <ol class="relative border-l border-gray-700 mx-auto max-w-[600px] pb-5">
           <template v-if="page.lang === 'en-US'">
-            <TimelineBlock title="2014 - Present" class="py-5 px-3 border-2 border-blue-400 rounded-lg bg-white">
+            <TimelineBlock title="2023/2 - Present" class="py-5 px-3 border-2 border-blue-400 rounded-lg bg-white">
+              <h3 class="text-lg font-medium text-gray-900">ELS Tech</h3>
+              <h4 class="font-medium mt-1">- Frontend Team Leader</h4>
+              <p class="text-sm font-normal text-gray-700 mt-2">Using Cocos Creator game engine for game development</p>
+<p class="text-sm font-normal text-gray-700 mt-2">Building and maintaining game management backend.</p>
+<p class="text-sm font-normal text-gray-700 mt-2">Building and maintaining game brand official website.</p>
+<p class="text-sm font-normal text-gray-700 mt-2">Writing and planning Jenkins automated deployment pipeline.</p>
+<p class="text-sm font-normal text-gray-700 mt-2">Project technical planning, project progress management, team scheduling.</p>
+            </TimelineBlock>
+            <TimelineBlock title="2014 - 2023/2">
               <h3 class="text-lg font-medium text-gray-900">Freelancer</h3>
               <h4 class="font-medium mt-1">- Registered company in 2017</h4>
               <p class="text-sm font-normal text-gray-700 mt-2">Cooperate with many companies. Has extensive experience of website development.</p>
