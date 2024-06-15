@@ -14,11 +14,6 @@ description: 'Using VuePress v2.',
 target: _self
 },
 {
-title: 'goodeye.guide',
-link: 'https://goodeye.guide/',
-description: 'A online travel book.'
-},
-{
 title: 'URBAN FARMING',
 link: 'https://urbanfarming.greatbuilding.com.tw/',
 description: 'Another VuePress site.'

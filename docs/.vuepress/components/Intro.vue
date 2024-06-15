@@ -5,7 +5,7 @@
   </h1>
   <hr class="border-[3px] border-gray-700 my-3 max-w-[500px] transition-all duration-300" />
   <h1 class="font-cursive text-8xl">
-    <span class="!delay-300">design</span>
+    <span class="!delay-300">Portfolio</span>
   </h1>
   <button @click.prevent="handleScrollDown" class="absolute left-[50%-48px] bottom-5 w-[48px] cursor-pointer transition-opacity duration-800 delay-1000">
     <scroll-down-icon class="animate-bounce fill-gray-600 w-full h-auto" />

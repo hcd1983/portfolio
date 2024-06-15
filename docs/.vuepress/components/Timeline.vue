@@ -48,7 +48,16 @@
             </TimelineBlock>
           </template>
           <template v-else >
-            <TimelineBlock title="2014 - Present" class="py-5 px-3 border-2 border-blue-400 rounded-lg bg-white">
+            <TimelineBlock title="2023/2 - Present" class="py-5 px-3 border-2 border-blue-400 rounded-lg bg-white">
+              <h3 class="text-lg font-medium text-gray-900">ELS Tech</h3>
+              <h4 class="font-medium mt-1">- 前端 Leader</h4>
+              <p class="text-sm font-normal text-gray-700 mt-2">使用 Cocos Creator 遊戲引擎開發遊戲</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">搭建及維護遊戲管理後台</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">搭建及維護遊戲品牌官網</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">Jenkins 自動化部署腳本撰寫與規劃</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">專案技術規劃、專案進度管理、人員調度</p>
+            </TimelineBlock>
+            <TimelineBlock title="2014 - 2023/2">
               <h3 class="text-lg font-medium text-gray-900">Freelancer</h3>
               <h4 class="font-medium mt-1">- 公司負責人</h4>
               <p class="text-sm font-normal text-gray-700 mt-2">以接外包為主，曾與多家企業合作，從活動網站到金流串接，都具備相當的經驗。</p>

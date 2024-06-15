@@ -17,8 +17,9 @@
           <p class="mt-6 text-base leading-loose">
             從產品設計師轉職的軟體工程師。<br/>
             具備 Html、Css 、Js 和 PHP 等前後端語法相關知識，熱愛挑戰技術與解決困難。<br/>
-            現在是會使用 <span class="text-blue-500">Larval</span> 、<span class="text-blue-500">Vue</span>、<span class="text-blue-500">React</span> 的全端開發者。
-            現為前端為主的 Freelancer ，也在數家企業擔任顧問。
+            並熟悉 <span class="text-blue-500">NodeJs</span>、 <span class="text-blue-500">Laravel</span> 、<span class="text-blue-500">Vue</span>、<span class="text-blue-500">React</span> ...等主流前後端框架。
+            曾擔任 Freelancer ，大學互動介面設計講師，並在數家企業擔任技術顧問。</p>
+          <p>現職為遊戲公司前端 Leader， 除了使用 Cocos Creator 遊戲引擎進行開發外，也負責技術規劃、專案管理及人員調度。
           </p>
         </template>
 

@@ -2,7 +2,7 @@ const colors = require("tailwindcss/colors")
 const enConfig = require("./en-config")
 module.exports = {
     en: enConfig,
-    title: "HCD Design Portfolio",
+    title: "HCD Portfolio",
     description: "產品設計師轉職的軟體工程師。具備 Html、Css 、Js 和 PHP 等前後端語法相關知識，熱愛挑戰技術與解決困難。現在是會使用 Larval 、Vue、React 的全端開發者。",
     ga: 'G-G2WG3Q3Z4Y',
     og: {
@@ -58,7 +58,7 @@ module.exports = {
                     description: '<p>具備網頁設計的相關知識，能熟練切版並使用原生 Js 語法進行開發。<p/>' +
                         '<p>會使用 rem 方式進行切版佈局。<p/>' +
                         '<p>熟悉 Promise 、async / await 非同步處理相關語法與特性，進行 api 的串接。</p>' +
-                        '<p>已知基本 TypeScript 用法，正將部分小型專案重構。</p>'
+                        '<p>熟悉 TypeScript，嚴謹的型別規劃與模型架構。</p>'
                 },
                 {
                     title: 'JS Frameworks',
@@ -68,10 +68,11 @@ module.exports = {
                         '<p><strong>React</strong>: 維護 NextJs 大型網站已有 3 年經驗，能夠優化效能與開發新功能。</p>'
                 },
                 {
-                    title: 'CSS Framworks',
-                    icons: ['tailwind', 'bootstrap'],
-                    description: '<p>近兩年的專案都使用 <strong>tailwindcss</strong> 作為前端框架。能熟練使用 unity css 並對 config 做設定。<p/>' +
-                        '<p>早期使用 Bootstrap 4 進行開發，目前有一個合作專案使用 Bootstrap 5。</p>'
+                    title: 'Git',
+                    icons: ['git'],
+                    description: `<p>使用 Git 進行版本控制，熟悉 Git flow 等主流發布流程。</p>
+                    <p>了解 merge, rebase, cherry-pick 等常用指令運作方式與時機。並搭配 Jenkins 完成 CI/CD 之部署流程。</p>
+                    `
                 },
                 {
                     title: 'Laravel / PHP / MySql',
@@ -79,11 +80,16 @@ module.exports = {
                     description: '<p>能用純 php + mysql 開發 CMS 和購物車系統。</p>' +
                         '<p><strong>Laravel</strong> 為目前主要使用之後端框架。熟悉 Controller 和 Model，能產出 api，也會做事件排程（另如訂閱扣款)，並使用 github action 的 cronjob 處理佇列事件。</p>'
                 },
+                // {
+                //     title: 'WordPress',
+                //     icons: ['wordpress'],
+                //     description: '<p>了解 WP 佈景架構，能開發外掛及佈景主題。曾自寫 WP 的購物車外掛，至今運作良好。</p>' +
+                //         '<p>近期專案把 WP 當成純後端使用。僅使用其 REST API 功能。</p>'
+                // },
                 {
-                    title: 'WordPress',
-                    icons: ['wordpress'],
-                    description: '<p>了解 WP 佈景架構，能開發外掛及佈景主題。曾自寫 WP 的購物車外掛，至今運作良好。</p>' +
-                        '<p>近期專案把 WP 當成純後端使用。僅使用其 REST API 功能。</p>'
+                    title: 'Cocos Creator',
+                    icons: ['cocos'],
+                    description: `使用 Cocos Creator 遊戲引擎，搭配 TypeScript 進行開發。`
                 },
                 {
                     title: 'UI / Graphic / 3D Modeling',
