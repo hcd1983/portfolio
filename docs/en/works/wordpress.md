@@ -6,6 +6,11 @@ skillTags: [ 'wordpress', 'bootstrap4' ]
 cover: https://i.imgur.com/PbXq0l6h.png
 overlayIcon: 'wordpress'
 linkList: [
+    {
+        title: '龍騰建設',
+        link: 'https://www.long-terng.com.tw/',
+        description: '佈景主題開發，使用 tailwind 搭配 PetiteVue' 
+    },
     { 
     title: 'EZQC',
     link: 'https://ezqc.jp',
