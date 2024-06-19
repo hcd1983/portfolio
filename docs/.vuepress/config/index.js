@@ -69,7 +69,7 @@ module.exports = {
                     title: 'JS Frameworks',
                     icons: ['node', 'vue', 'react'],
                     description: '<p>熟悉 vue 和 react 生態圈。<p/>' +
-                        '<p><strong>vue</strong>: 為目前主要使用框架。 能使用 Nuxt 完成大型專案。 也能針對需求，此用 Vue-Cli 或 Vuepress 進行開發。<p/>' +
+                        '<p><strong>vue</strong>: 為目前主要使用框架。 能使用 Nuxt 完成大型專案。 也能針對需求，使用 Vite 或 Vuepress 進行開發。<p/>' +
                         '<p><strong>React</strong>: 維護 NextJs 大型網站已有 3 年經驗，能夠優化效能與開發新功能。</p>'
                 },
                 {
