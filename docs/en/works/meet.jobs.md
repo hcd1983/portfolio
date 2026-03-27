@@ -1,11 +1,10 @@
 ---
-title: meet.jobs
-description: Description of this page
+title: International job platform
+description: Frontend maintenance and feature work on a large membership-based job site
 addon: super cool
 skillTags: [ 'react', 'nextjs' ]
-cover: https://meet.jobs/public_assets/images/meetjobs_sharing.jpg
+cover: https://i.imgur.com/Lhdtyjmh.png
 priority: 99
-link: https://meet.jobs
 ---
 website maintenance, optimization and functional development.
 

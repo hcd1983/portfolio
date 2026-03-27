@@ -15,19 +15,19 @@
           <template v-if="page.lang === 'en-US'">
             <TimelineBlock title="2023/2 - Present" class="py-5 px-3 border-2 border-blue-400 rounded-lg bg-white">
               <h3 class="text-lg font-medium text-gray-900">ELS Tech</h3>
-              <h4 class="font-medium mt-1">- Frontend Team Leader</h4>
-              <p class="text-sm font-normal text-gray-700 mt-2">Using Cocos Creator game engine for game development</p>
-<p class="text-sm font-normal text-gray-700 mt-2">Building and maintaining game management backend.</p>
-<p class="text-sm font-normal text-gray-700 mt-2">Building and maintaining game brand official website.</p>
-<p class="text-sm font-normal text-gray-700 mt-2">Writing and planning Jenkins automated deployment pipeline.</p>
-<p class="text-sm font-normal text-gray-700 mt-2">Project technical planning, project progress management, team scheduling.</p>
+              <h4 class="font-medium mt-1">- Frontend Team Leader · Gemini line</h4>
+              <p class="text-sm font-normal text-gray-700 mt-2">Cocos Creator game development; batching features and fixes across many game codebases and shared libraries.</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">Shared FE stack: protocols (e.g. protobuf), WebSocket / game services, runtime settings, webview, i18n, bundles, and loading rules.</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">Release ownership: STG / REL / PROD progression, release notes (incl. hotfix), deployment reports, S3 backup checks, version alignment.</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">Docs and plans in repos (guides, checklists, implementation notes) for traceability and handoff.</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">Game management backend, brand sites, Jenkins pipelines; technical planning, delivery, and team scheduling.</p>
             </TimelineBlock>
             <TimelineBlock title="2014 - 2023/2">
               <h3 class="text-lg font-medium text-gray-900">Freelancer</h3>
               <h4 class="font-medium mt-1">- Registered company in 2017</h4>
               <p class="text-sm font-normal text-gray-700 mt-2">Cooperate with many companies. Has extensive experience of website development.</p>
               <h3 class="text-lg font-medium text-gray-900 mt-6">Othe Technology</h3>
-              <h4 class="font-medium mt-1">- UI/ Frontend</h4>
+              <h4 class="font-medium mt-1">- UI / Frontend</h4>
               <p class="text-sm font-normal text-gray-700 mt-2">Plan the demo version interface and use web view for UI layout.</p>
               <h3 class="text-lg font-medium text-gray-900 mt-6">meet.jobs</h3>
               <h4 class="font-medium mt-1">- Software Engineer</h4>
@@ -59,12 +59,12 @@
           <template v-else >
             <TimelineBlock title="2023/2 - Present" class="py-5 px-3 border-2 border-blue-400 rounded-lg bg-white">
               <h3 class="text-lg font-medium text-gray-900">ELS Tech</h3>
-              <h4 class="font-medium mt-1">- 前端 Leader</h4>
-              <p class="text-sm font-normal text-gray-700 mt-2">使用 Cocos Creator 遊戲引擎開發遊戲</p>
-              <p class="text-sm font-normal text-gray-700 mt-2">搭建及維護遊戲管理後台</p>
-              <p class="text-sm font-normal text-gray-700 mt-2">搭建及維護遊戲品牌官網</p>
-              <p class="text-sm font-normal text-gray-700 mt-2">Jenkins 自動化部署腳本撰寫與規劃</p>
-              <p class="text-sm font-normal text-gray-700 mt-2">專案技術規劃、專案進度管理、人員調度</p>
+              <h4 class="font-medium mt-1">- 前端 Leader（Gemini 前端線）</h4>
+              <p class="text-sm font-normal text-gray-700 mt-2">Cocos Creator 遊戲開發；跨多款遊戲產品與共用程式庫的功能與修正批次同步。</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">共用前端與配置：proto／WebSocket、執行期遊戲設定、webview、共用資源包、i18n、遠端資源路徑與載入／商戶 logo 規則。</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">發版與交付：STG／REL／PROD 推進、Release Note（含 hotfix）、部署報告、S3 備份與版本對齊檢查。</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">文件與流程：repo 內實作計畫、checklist、guide 等，保留可追溯與交接脈絡。</p>
+              <p class="text-sm font-normal text-gray-700 mt-2">遊戲管理後台與品牌官網維運、Jenkins 管線；專案技術規劃、進度與人員調度。</p>
             </TimelineBlock>
             <TimelineBlock title="2014 - 2023/2">
               <h3 class="text-lg font-medium text-gray-900">Freelancer</h3>
@@ -101,7 +101,7 @@
             </TimelineBlock>
             <TimelineBlock title="Education">
               <h3 class="text-lg font-medium text-gray-900">長庚大學 - 工業設計學士 <small>(2001 - 2005)</small></h3>
-              <h3 class="text-lg font-medium text-gray-900">國立成功大學 - 工業設計碩士 <small>(2005 - 2008)</small></h3>
+              <h3 class="text-lg font-medium text-gray-900 mt-2">國立成功大學 - 工業設計碩士 <small>(2005 - 2008)</small></h3>
             </TimelineBlock>
           </template>
         </ol>

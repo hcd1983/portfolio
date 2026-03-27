@@ -20,7 +20,6 @@
     <about />
     <Skills />
     <timeline />
-    <works />
   </div>
 <!--  <Content-->
 <!--      id="content"-->

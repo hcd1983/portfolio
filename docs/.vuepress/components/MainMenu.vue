@@ -55,7 +55,6 @@ export default {
       { to: '/#about', title: 'About' },
       { to: '/#skills', title: 'Skills' },
       { to: '/#experience', title: 'Experience' },
-      { to: '/#works', title: 'Works' },
     ]
     return {
       active,

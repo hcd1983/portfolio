@@ -1,11 +1,10 @@
 ---
-title: meet.jobs
-description: Description of this page
+title: 國際求職平台
+description: 大型會員制求職網站之前端維運與功能開發
 addon: super cool
 skillTags: [ 'react', 'nextjs' ]
-cover: https://meet.jobs/public_assets/images/meetjobs_sharing.jpg
+cover: https://i.imgur.com/Lhdtyjmh.png
 priority: 99
-link: https://meet.jobs
 ---
 超過 6 萬會員的國際求職網站。
 

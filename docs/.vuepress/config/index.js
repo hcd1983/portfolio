@@ -3,7 +3,7 @@ const enConfig = require("./en-config")
 module.exports = {
     en: enConfig,
     title: "HCD Portfolio",
-    description: "產品設計師轉職的軟體工程師。具備 Html、Css 、Js 和 PHP 等前後端語法相關知識，熱愛挑戰技術與解決困難。現在是會使用 Larval 、Vue、React 的全端開發者。",
+    description: "產品設計轉軟體工程，具設計與工程雙背景；現為遊戲公司前端 Leader，Cocos 與完整交付鏈。跨專案整合、上版交付與 AI workflow（proposal-generator、GitLab、ByteHouse、skills／agent）。熟悉 Vue、React、Laravel、Node.js。",
     ga: 'G-G2WG3Q3Z4Y',
     og: {
         image: 'https://i.imgur.com/Lhdtyjmh.png',
@@ -12,97 +12,92 @@ module.exports = {
         skills: {
             en: [
                 {
-                    title: 'HTML / CSS / Vanilla JS',
-                    icons: ['html', 'css', 'js', 'ts'],
-                    description: '<p>In-depth knowledge of web development.<p/>' +
-                        '<p>Ability to layout with REM style.<p/>' +
-                        '<p>Familiar with Promise, async / await asynchronous processing.</p>' +
-                        '<p>Basic TypeScript usage is known.</p>'
+                    title: 'Frontend Engineering',
+                    description: '<p>Strong foundation in HTML, CSS, JavaScript, and TypeScript, with attention to maintainable UI structure, interaction quality, and readable code.</p>' +
+                        '<p>Comfortable handling async flows, API integration, data modeling, and UI state management in real production systems.</p>' +
+                        '<p>Bring a product-and-experience mindset into engineering work, not just feature completion.</p>'
                 },
                 {
-                    title: 'JS Frameworks',
-                    icons: ['node', 'vue', 'react'],
-                    description: '<p>Familiar with Both React and Vue.<p/>' +
-                        '<p><strong>Vue</strong>: For the current main use of the framework. Can use Nuxt to complete large projects. It can also be developed with Vue-Cli or Vuepress.<p/>' +
-                        '<p><strong>React</strong>: 3 years experience in maintaining NextJs large website.</p>'
+                    title: 'Vue / React Ecosystem',
+                    description: '<p>Hands-on experience with both Vue and React ecosystems in large-scale projects.</p>' +
+                        '<p><strong>Vue</strong>: Main working framework, including Nuxt, Vite, and documentation-oriented setups.</p>' +
+                        '<p><strong>React</strong>: Experienced in maintaining and evolving large Next.js websites, with focus on structure, performance, and long-term maintainability.</p>' +
+                        '<p>Use AI coding assistants to accelerate refactors, test ideas, and documentation drafts—always reviewed before shipping.</p>'
                 },
                 {
-                    title: 'Git',
-                    icons: ['git'],
-                    description: '<p>Proficient in using Git for version control, familiar with Git flow and other mainstream release processes.<p/>' +
-                        '<p>Experienced in integrating with Jenkins for completing CI/CD deployment processes.</p>'
+                    title: 'Game Frontend & Cocos Creator',
+                    description: '<p>Build game frontend experiences with <strong>Cocos Creator</strong> and TypeScript, balancing interaction quality, code structure, and runtime performance.</p>' +
+                        '<p>Comfortable with gameplay flows, WebSocket integration, protocol evolution, event handling, and keeping frontend behavior aligned with backend contracts.</p>' +
+                        '<p>Capable of turning one-off game features into reusable patterns across multiple titles.</p>'
                 },
                 {
-                    title: 'Laravel / PHP / MySql',
-                    icons: ['laravel', 'php', 'mysql'],
-                    description: '<p>Develop CMS or shopping cart system with php & mysql.</p>' +
-                        '<p>Familiar wiht Laravel and MVC framework.</p>'
-                },
-                // {
-                //     title: 'WordPress',
-                //     icons: ['wordpress'],
-                //     description: '<p>Able to develop WordPress plugins and themes.</p>' +
-                //         '<p>Or just use WordPress Rest API</p>'
-                // },
-                {
-                    title: 'Cocos Creator',
-                    icons: ['cocos'],
-                    description: `Using the Cocos Creator game engine for development, integrated with TypeScript.`
+                    title: 'Shared Config & Multi-project Integration',
+                    description: '<p>Work across shared frontend resources and product lines, including game configs, webview layers, i18n, shared bundles, loading assets, and merchant-specific rules.</p>' +
+                        '<p>Good at synchronizing the same requirement or fix across multiple games and shared modules, reducing duplicated work and rollout risk.</p>' +
+                        '<p>Focus on making systems easier to reuse, easier to reason about, and easier to ship as a group.</p>'
                 },
                 {
-                    title: 'UI / Graphic / 3D Modeling',
-                    icons: ['ps', 'ai', 'solidworks'],
-                    description: '<p>Used to be a interface design and Adobe software lecturer.</p>' +
-                        '<p>3D modling. Able to use Bobylon.js to put 3D model in website.</p>'
+                    title: 'Release & Delivery',
+                    description: '<p>Own the last mile of delivery: branch flow, STG / REL / PROD progression, Jenkins-based deployment, deployment reports, S3 backup checks, and REL vs PROD alignment.</p>' +
+                        '<p>Write and maintain release notes, including hotfix pages, with attention to traceability and team readability.</p>' +
+                        '<p>Not stopping at “merged” — care about what is actually live, verifiable, and documented.</p>'
+                },
+                {
+                    title: 'AI Workflow & Automation',
+                    description: '<p>Treat AI as part of the real delivery pipeline: structured prompting, workflow automation, report generation, analysis pipelines, and reusable tool interfaces.</p>' +
+                        '<p>Build practical flows around <strong>proposal-generator</strong>, <strong>GitLab-based work reports</strong>, <strong>ByteHouse analysis</strong>, and <strong>skills / agent</strong> packaging.</p>' +
+                        '<p>Focus on turning repeated team work into reusable workflows instead of isolated one-off prompts.</p>'
+                },
+                {
+                    title: 'Technical Planning & Team Collaboration',
+                    description: '<p>Beyond implementation, participate in technical planning, project coordination, release pacing, and team-facing documentation.</p>' +
+                        '<p>Act as a bridge across product, frontend, backend, deployment, and documentation so work can move from idea to production reliably.</p>' +
+                        '<p>Current role is not only frontend development, but also planning, integration, and delivery leadership.</p>'
                 },
             ],
             zh: [
                 {
-                    title: 'HTML / CSS / Vanilla JS',
-                    icons: ['html', 'css', 'js', 'ts'],
-                    description: '<p>具備網頁設計的相關知識，能熟練切版並使用原生 Js 語法進行開發。<p/>' +
-                        '<p>會使用 rem 方式進行切版佈局。<p/>' +
-                        '<p>熟悉 Promise 、async / await 非同步處理相關語法與特性，進行 api 的串接。</p>' +
-                        '<p>熟悉 TypeScript，嚴謹的型別規劃與模型架構。</p>'
+                    title: '前端工程實作',
+                    description: '<p>具備扎實的 HTML、CSS、JavaScript 與 TypeScript 基礎，重視畫面結構、互動品質、程式可讀性與長期維護性。</p>' +
+                        '<p>熟悉非同步流程、API 串接、資料建模與畫面狀態管理，能處理實際產品中的前端工程問題。</p>' +
+                        '<p>不只從功能完成角度出發，也會從產品與使用者體驗角度思考工程實作方式。</p>'
                 },
                 {
-                    title: 'JS Frameworks',
-                    icons: ['node', 'vue', 'react'],
-                    description: '<p>熟悉 vue 和 react 生態圈。<p/>' +
-                        '<p><strong>vue</strong>: 為目前主要使用框架。 能使用 Nuxt 完成大型專案。 也能針對需求，使用 Vite 或 Vuepress 進行開發。<p/>' +
-                        '<p><strong>React</strong>: 維護 NextJs 大型網站已有 3 年經驗，能夠優化效能與開發新功能。</p>'
+                    title: 'Vue / React 生態實戰',
+                    description: '<p>具備 Vue 與 React 生態系的大型專案實務經驗。</p>' +
+                        '<p><strong>Vue</strong>：目前主要使用框架，熟悉 Nuxt、Vite 及文件型專案架構。</p>' +
+                        '<p><strong>React</strong>：具備維護大型 Next.js 網站經驗，重視效能、結構與可維護性。</p>' +
+                        '<p>也會搭配 AI 輔助重構、測試案例發想與文件補齊，但最終仍以人工檢視品質與正確性。</p>'
                 },
                 {
-                    title: 'Git',
-                    icons: ['git'],
-                    description: `<p>使用 Git 進行版本控制，熟悉 Git flow 等主流發布流程。</p>
-                    <p>了解 merge, rebase, cherry-pick 等常用指令運作方式與時機。並搭配 Jenkins 完成 CI/CD 之部署流程。</p>
-                    `
+                    title: '遊戲前端與 Cocos Creator',
+                    description: '<p>以 <strong>Cocos Creator</strong> 與 TypeScript 進行遊戲前端開發，兼顧互動體驗、程式架構與執行效能。</p>' +
+                        '<p>熟悉遊戲流程設計、WebSocket 串接、協議演進、事件處理與前後端狀態一致性。</p>' +
+                        '<p>能將單一功能經驗整理為可複用模式，快速同步到多款遊戲專案。</p>'
                 },
                 {
-                    title: 'Laravel / PHP / MySql',
-                    icons: ['laravel', 'php', 'mysql'],
-                    description: '<p>能用純 php + mysql 開發 CMS 和購物車系統。</p>' +
-                        '<p><strong>Laravel</strong> 為目前主要使用之後端框架。熟悉 Controller 和 Model，能產出 api，也會做事件排程（另如訂閱扣款)，並使用 github action 的 cronjob 處理佇列事件。</p>'
-                },
-                // {
-                //     title: 'WordPress',
-                //     icons: ['wordpress'],
-                //     description: '<p>了解 WP 佈景架構，能開發外掛及佈景主題。曾自寫 WP 的購物車外掛，至今運作良好。</p>' +
-                //         '<p>近期專案把 WP 當成純後端使用。僅使用其 REST API 功能。</p>'
-                // },
-                {
-                    title: 'Cocos Creator',
-                    icons: ['cocos'],
-                    description: `使用 Cocos Creator 遊戲引擎，搭配 TypeScript 進行開發。`
+                    title: '共用配置與跨專案整合',
+                    description: '<p>熟悉跨專案處理共用前端資源與配置，包含 gameconfigs、game-webview、i18n、共用資源包、loading assets 與商戶客製規則。</p>' +
+                        '<p>擅長把同一類需求或修正同步到多個遊戲與共用模組，降低重工與遺漏風險。</p>' +
+                        '<p>重視讓系統可複用、可理解、可整體交付，而不是各專案各自為政。</p>'
                 },
                 {
-                    title: 'UI / Graphic / 3D Modeling',
-                    icons: ['ps', 'ai', 'solidworks'],
-                    description: '<p>曾任互動介面設計與 Adobe 軟體講師。</p>' +
-                        '<p>具備 UI 能力，繪製 svg 並導入 figma 進行排版編輯。</p>' +
-                        '<p>Solidworks 3D 軟體建模能力，曾在小型專案導入 Bobylon.js 將 3D 模型放入網站互動。</p>' +
-                        '<p>有處理 svg 和 canvas 等動畫技術的能力。</p>'
+                    title: '版本交付與部署流程',
+                    description: '<p>負責交付最後一哩：包含 Git 分支流程、STG / REL / PROD 推進、Jenkins 部署、部署報告、S3 備份驗證，以及 REL / PROD 版本對齊。</p>' +
+                        '<p>能撰寫與維護 Release Note（含 hotfix 頁面），讓版本狀態、環境差異與交付內容對團隊清楚可追溯。</p>' +
+                        '<p>不只關心「有沒有 merge」，更關心是否真的上線、可驗證、可說明。</p>'
+                },
+                {
+                    title: 'AI 流程與自動化',
+                    description: '<p>把 AI 視為正式工作流程的一部分：包含結構化提示、流程自動化、工作彙報生成、資料分析流程與可重用工具介面。</p>' +
+                        '<p>曾落地 proposal-generator、GitLab 工作彙報流程、ByteHouse 分析流程，以及 skills / agent 能力封裝。</p>' +
+                        '<p>重點不是「用 AI 幫忙一下」，而是把團隊重複工作整理成可持續複用的協作流程。</p>'
+                },
+                {
+                    title: '技術規劃與團隊協作',
+                    description: '<p>除了技術實作，也參與技術規劃、專案推進、上版節奏安排與團隊文件整理。</p>' +
+                        '<p>能站在產品、前端、後端、部署與文件的交界點，協助團隊把事情從想法推進到可穩定上線。</p>' +
+                        '<p>目前的角色不只是前端開發者，更是兼具規劃、整合與交付推進能力的技術整合型人才。</p>'
                 },
             ],
         }
