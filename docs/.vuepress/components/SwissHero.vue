@@ -99,7 +99,7 @@
 <script>
 import { computed } from 'vue'
 import { usePageData, useSiteData } from '@vuepress/client'
-import portraitUrl from '../assets/image.png'
+import portraitUrl from '../assets/dean.png'
 
 const PILL_TONES = [
   'bg-orange-500 text-white',

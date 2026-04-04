@@ -73,7 +73,7 @@
 
 <script>
 import { useSiteData, usePageData } from '@vuepress/client'
-import portraitSrc from '../assets/image.png'
+import portraitSrc from '../assets/dean.png'
 
 export default {
   name: "About",
