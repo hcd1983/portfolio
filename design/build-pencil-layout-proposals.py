@@ -907,7 +907,7 @@ def build_swiss(asset_base: str = "./pencil-assets") -> dict:
                 "children": [
                     txt(
                         "swCop",
-                        "HCD PORTFOLIO · DEAN HUANG · SWISS LAYOUT",
+                        "HCD PORTFOLIO · DEAN HUANG",
                         wht,
                         9,
                         weight="700",

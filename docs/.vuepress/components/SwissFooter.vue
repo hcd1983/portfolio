@@ -1,9 +1,5 @@
 <template>
-  <footer class="border-t-2 border-black bg-white text-neutral-600">
-    <div class="mx-auto max-w-[880px] space-y-2 px-6 py-6 text-sm leading-relaxed md:px-10 md:text-base">
-      <p class="font-semibold">{{ copy.footerUrls }}</p>
-      <p>{{ copy.footerNote }}</p>
-    </div>
+  <footer class="border-t-2 border-black">
     <div
       class="flex min-h-[52px] items-center justify-center bg-black px-4 py-3.5 text-center text-sm font-bold uppercase tracking-[0.18em] text-white"
     >

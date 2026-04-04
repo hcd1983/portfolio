@@ -89,7 +89,7 @@ Cocos 遊戲前端、共用模組與協議、Webview／遊戲紀錄、多環境�
 學歷 · 長庚大學工設學士（2001–2005）· 成大工設碩士（2005–2008）`,
     footerUrls: 'linkedin.com/in/Dean-6979939a · github.com/hcd1983 · it-monk.com',
     footerNote: '中英內容以頂欄切換；外部連結另開新分頁。',
-    footerBar: 'HCD PORTFOLIO · DEAN HUANG · SWISS LAYOUT',
+    footerBar: 'HCD PORTFOLIO · DEAN HUANG',
     nav: { about: '關於', skills: '技能', outcomes: '成果', exp: '經歷' },
   },
   en: {
@@ -181,7 +181,7 @@ Cocos game FE, shared modules & protocols, webview / game records, multi-env rel
 Education · Chang Gung University BID (2001–2005) · NCKU MID (2005–2008)`,
     footerUrls: 'linkedin.com/in/Dean-6979939a · github.com/hcd1983 · it-monk.com',
     footerNote: 'Switch language in the top bar; external links open in a new tab.',
-    footerBar: 'HCD PORTFOLIO · DEAN HUANG · SWISS LAYOUT',
+    footerBar: 'HCD PORTFOLIO · DEAN HUANG',
     nav: { about: 'About', skills: 'Skills', outcomes: 'Outcomes', exp: 'Experience' },
   },
 }
