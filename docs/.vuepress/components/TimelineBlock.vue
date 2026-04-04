@@ -1,7 +1,12 @@
 <template>
-  <li class="mb-10 ml-4">
-    <div class="absolute w-3 h-3 bg-gray-700 rounded-full mt-2 -left-1.5 border border-white" />
-    <time class="mb-1 text-lg font-medium leading-none text-blue-700 ">{{ title }}</time>
+  <li class="relative mb-10">
+    <!-- 對齊 ol 左側直線：pl-8 時約需 -2.25rem 讓方塊中心落在 border 上 -->
+    <div
+      class="pointer-events-none absolute top-[0.35rem] h-2.5 w-2.5 -translate-x-1/2 bg-black ring-2 ring-white"
+      style="left: calc(-2rem - 1px)"
+      aria-hidden="true"
+    />
+    <time class="mb-1 block text-base font-bold leading-none text-black">{{ title }}</time>
     <slot></slot>
   </li>
 </template>

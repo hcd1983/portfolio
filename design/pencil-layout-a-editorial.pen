@@ -1,0 +1,1132 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "edRoot",
+      "name": "提案 A · 編輯長文 / 雙欄",
+      "x": 0,
+      "y": 0,
+      "width": 1020,
+      "height": "fit_content",
+      "fill": "#f4f1eb",
+      "layout": "vertical",
+      "gap": 0,
+      "padding": [
+        56,
+        72,
+        80,
+        72
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "edLogo",
+          "content": "PORTFOLIO — DEAN HUANG",
+          "fill": "#6b6560",
+          "fontSize": 10,
+          "fontWeight": "700",
+          "textGrowth": "auto",
+          "letterSpacing": 2.5
+        },
+        {
+          "type": "frame",
+          "id": "edtop",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "padding": [
+            0,
+            0,
+            20,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "edsoc",
+              "layout": "horizontal",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "edlk0",
+                  "content": "LinkedIn",
+                  "fill": "#1e1e1e",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "textGrowth": "auto",
+                  "href": "https://www.linkedin.com/in/Dean-6979939a/"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "edsep1",
+                  "width": 1,
+                  "height": 14,
+                  "fill": "#6b6560"
+                },
+                {
+                  "type": "text",
+                  "id": "edlk1",
+                  "content": "GitHub",
+                  "fill": "#1e1e1e",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "textGrowth": "auto",
+                  "href": "https://github.com/hcd1983"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "edsep2",
+                  "width": 1,
+                  "height": 14,
+                  "fill": "#6b6560"
+                },
+                {
+                  "type": "text",
+                  "id": "edlk2",
+                  "content": "Blog",
+                  "fill": "#1e1e1e",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "textGrowth": "auto",
+                  "href": "https://it-monk.com/"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "edlang",
+              "layout": "horizontal",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "edzh",
+                  "layout": "horizontal",
+                  "padding": [
+                    8,
+                    18,
+                    8,
+                    18
+                  ],
+                  "cornerRadius": 100,
+                  "fill": "#1e1e1e",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "edzhT",
+                      "content": "中文",
+                      "fill": "#f4f1eb",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "textGrowth": "auto"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eden",
+                  "layout": "horizontal",
+                  "padding": [
+                    8,
+                    18,
+                    8,
+                    18
+                  ],
+                  "cornerRadius": 100,
+                  "fill": "#f4f1eb",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#6b6560"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "edenT",
+                      "content": "EN",
+                      "fill": "#1e1e1e",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "textGrowth": "auto"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "edRule1",
+          "width": "fill_container",
+          "height": 2,
+          "fill": "#1e1e1e"
+        },
+        {
+          "type": "frame",
+          "id": "edHero2",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "gap": 36,
+          "alignItems": "start",
+          "padding": [
+            32,
+            0,
+            28,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "edSide",
+              "width": 240,
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "edPh",
+                  "name": "IMG · 頭像 · 預留",
+                  "width": 200,
+                  "height": 200,
+                  "cornerRadius": 100,
+                  "clip": true,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "fill": "#e8e4dc",
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#9b2335",
+                    "dashPattern": [
+                      5,
+                      4
+                    ]
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "edPhTx",
+                      "content": "頭像\n預留",
+                      "fill": "#6b6560",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "textGrowth": "auto",
+                      "lineHeight": 1.35,
+                      "textAlign": "center"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "edToc",
+                  "content": "本頁\n01 導言\n02 關於\n03 能力\n04 成果\n05 經歷",
+                  "fill": "#6b6560",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "textGrowth": "fixed-width",
+                  "width": 200,
+                  "lineHeight": 1.8
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "edMain",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "edK",
+                  "content": "前端工程 · 遊戲產業 · 交付與整合",
+                  "fill": "#6b6560",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "textGrowth": "auto",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "text",
+                  "id": "edN",
+                  "content": "Dean Huang（欣迪）",
+                  "fill": "#1e1e1e",
+                  "fontSize": 38,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "edH",
+                  "content": "讓大規模遊戲前端的交付可預期、可驗證、可複用——從共用架構、上線流程到資料與自動化工具。",
+                  "fill": "#1e1e1e",
+                  "fontSize": 19,
+                  "fontWeight": "500",
+                  "textGrowth": "fixed-width",
+                  "width": 620,
+                  "lineHeight": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "edL",
+                  "content": "產品設計背景轉工程；現職遊戲公司前端 Leader，主力 Cocos，並負責跨專案整合、多環境上線與團隊側的 AI／資料工作流程。",
+                  "fill": "#6b6560",
+                  "fontSize": 15,
+                  "fontWeight": "400",
+                  "textGrowth": "fixed-width",
+                  "width": 620,
+                  "lineHeight": 1.65
+                },
+                {
+                  "type": "frame",
+                  "id": "edPills",
+                  "layout": "horizontal",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "edP0",
+                      "layout": "horizontal",
+                      "padding": [
+                        8,
+                        14,
+                        8,
+                        14
+                      ],
+                      "fill": "#e8e4dc",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "edPt0",
+                          "content": "CI/CD 與多環境交付",
+                          "fill": "#1e1e1e",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "edP1",
+                      "layout": "horizontal",
+                      "padding": [
+                        8,
+                        14,
+                        8,
+                        14
+                      ],
+                      "fill": "#e8e4dc",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "edPt1",
+                          "content": "跨產品共用架構",
+                          "fill": "#1e1e1e",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "edP2",
+                      "layout": "horizontal",
+                      "padding": [
+                        8,
+                        14,
+                        8,
+                        14
+                      ],
+                      "fill": "#e8e4dc",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "edPt2",
+                          "content": "Webview 與公平性體驗",
+                          "fill": "#1e1e1e",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "edP3",
+                      "layout": "horizontal",
+                      "padding": [
+                        8,
+                        14,
+                        8,
+                        14
+                      ],
+                      "fill": "#e8e4dc",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "edPt3",
+                          "content": "資料分析與 AI 工具鏈",
+                          "fill": "#1e1e1e",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "textGrowth": "auto"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "edStatStrip",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "justifyContent": "space_between",
+          "padding": [
+            20,
+            0,
+            20,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "edS0",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "edSl0",
+                  "content": "納管規模",
+                  "fill": "#9b2335",
+                  "fontSize": 9,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "edSv0",
+                  "content": "50+ 款遊戲",
+                  "fill": "#1e1e1e",
+                  "fontSize": 24,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "edSd0",
+                  "content": "持續整合與多環境上線流程",
+                  "fill": "#6b6560",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "textGrowth": "fixed-width",
+                  "width": 190,
+                  "lineHeight": 1.4
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "edS1",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                0,
+                0,
+                0,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "edSl1",
+                  "content": "並行產品",
+                  "fill": "#9b2335",
+                  "fontSize": 9,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "edSv1",
+                  "content": "40+ 前端專案",
+                  "fill": "#1e1e1e",
+                  "fontSize": 24,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "edSd1",
+                  "content": "獨立與多人遊戲並行維運",
+                  "fill": "#6b6560",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "textGrowth": "fixed-width",
+                  "width": 190,
+                  "lineHeight": 1.4
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "edS2",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                0,
+                0,
+                0,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "edSl2",
+                  "content": "主力技術",
+                  "fill": "#9b2335",
+                  "fontSize": 9,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "edSv2",
+                  "content": "TS · Node.js · AI flow",
+                  "fill": "#1e1e1e",
+                  "fontSize": 24,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "edSd2",
+                  "content": "型別安全、後端腳本與可重複的 AI 工作流程",
+                  "fill": "#6b6560",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "textGrowth": "fixed-width",
+                  "width": 190,
+                  "lineHeight": 1.4
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "edS3",
+              "width": 200,
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                0,
+                0,
+                0,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "edSl3",
+                  "content": "資料分析",
+                  "fill": "#9b2335",
+                  "fontSize": 9,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "edSv3",
+                  "content": "腳本與追蹤",
+                  "fill": "#1e1e1e",
+                  "fontSize": 24,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "edSd3",
+                  "content": "遊戲狀態排查、玩家行為與策略分析腳本，以及市場追蹤器",
+                  "fill": "#6b6560",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "textGrowth": "fixed-width",
+                  "width": 190,
+                  "lineHeight": 1.4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "edWide",
+          "name": "IMG · 橫幅／專案配圖 · 預留",
+          "width": "fill_container",
+          "height": 120,
+          "cornerRadius": 0,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "fill": "#ebe6df",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#6b6560",
+            "dashPattern": [
+              6,
+              4
+            ]
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "edWideTx",
+              "content": "橫幅／專案配圖 · 預留",
+              "fill": "#6b6560",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "textGrowth": "auto"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "edAbout",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            36,
+            0,
+            36,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "edAbE",
+              "content": "關於",
+              "fill": "#9b2335",
+              "fontSize": 10,
+              "fontWeight": "700",
+              "textGrowth": "auto",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "edAbH",
+              "content": "設計思維與工程實作並重",
+              "fill": "#1e1e1e",
+              "fontSize": 26,
+              "fontWeight": "700",
+              "textGrowth": "auto",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "text",
+              "id": "edAb0",
+              "content": "我從產品設計轉職軟體工程，習慣同時看使用者體驗、互動品質與可維護的實作。熟悉 HTML、CSS、JavaScript、PHP 與 Node.js、Laravel、Vue、React 等主流技術；曾以 Freelancer、大學講師與企業顧問身分累積跨領域溝通與專案推進經驗。",
+              "fill": "#6b6560",
+              "fontSize": 15,
+              "fontWeight": "400",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "lineHeight": 1.75
+            },
+            {
+              "type": "text",
+              "id": "edAb1",
+              "content": "目前擔任遊戲公司前端 Leader，主責 Cocos Creator 與技術規劃、專案節奏與人力調度。工作涵蓋遊戲前端、共用模組、設定與版本控管、部署與 Release Note——目標是把需求推到「可穩定上線、可追溯、可交接」的狀態，而不止於功能合併。",
+              "fill": "#6b6560",
+              "fontSize": 15,
+              "fontWeight": "400",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "lineHeight": 1.75
+            },
+            {
+              "type": "text",
+              "id": "edAb2",
+              "content": "我貢獻在三塊：跨產品整合（同一需求或修正快速同步到多款遊戲與共用程式）、交付與上線治理（多環境狀態、部署結果、備份與文件對齊），以及將 AI、資料查詢與例行報表工具化，減少重工並讓團隊專注在判斷與例外處理。",
+              "fill": "#6b6560",
+              "fontSize": 15,
+              "fontWeight": "400",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "lineHeight": 1.75
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "edR2",
+          "width": "fill_container",
+          "height": 1,
+          "fill": "#6b6560"
+        },
+        {
+          "type": "frame",
+          "id": "edSplit",
+          "width": "fill_container",
+          "layout": "horizontal",
+          "gap": 40,
+          "padding": [
+            36,
+            0,
+            36,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "edSk",
+              "width": 300,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "edSkE",
+                  "content": "能力",
+                  "fill": "#9b2335",
+                  "fontSize": 10,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "edSkH",
+                  "content": "核心職能",
+                  "fill": "#1e1e1e",
+                  "fontSize": 20,
+                  "fontWeight": "700",
+                  "textGrowth": "auto"
+                },
+                {
+                  "type": "text",
+                  "id": "edSkB",
+                  "content": "前端工程實作（結構、互動、型別與可維護性）\nVue / React 生態與大型專案演進\n遊戲前端與 Cocos Creator（流程、通訊、效能）\n共用設定與跨專案整合（多產品同步、降低重工）\n版本交付與部署（多環境、報告、備份與追溯）\nAI 流程與自動化（將重複工作變成可重用流程）\n技術規劃與跨職能協作（產品、後端、維運、文件）",
+                  "fill": "#6b6560",
+                  "fontSize": 13,
+                  "fontWeight": "400",
+                  "textGrowth": "fixed-width",
+                  "width": 280,
+                  "lineHeight": 1.7
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "edAch",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "edAcE",
+                  "content": "代表成果",
+                  "fill": "#9b2335",
+                  "fontSize": 10,
+                  "fontWeight": "700",
+                  "textGrowth": "auto",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "edAcH",
+                  "content": "影響力陳述",
+                  "fill": "#1e1e1e",
+                  "fontSize": 20,
+                  "fontWeight": "700",
+                  "textGrowth": "auto"
+                },
+                {
+                  "type": "text",
+                  "id": "edAcI",
+                  "content": "以下以「做了什麼 → 對組織的價值」陳述，方便與職缺需求對照；面談時可再補案例與數據。",
+                  "fill": "#6b6560",
+                  "fontSize": 13,
+                  "fontWeight": "400",
+                  "textGrowth": "fixed-width",
+                  "width": 580,
+                  "lineHeight": 1.6
+                },
+                {
+                  "type": "frame",
+                  "id": "edA0",
+                  "width": "fill_container",
+                  "layout": "horizontal",
+                  "gap": 14,
+                  "alignItems": "start",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "edAb0",
+                      "width": 4,
+                      "height": 72,
+                      "fill": "#9b2335"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "edAc0",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "edAt0",
+                          "content": "交付與上線治理",
+                          "fill": "#9b2335",
+                          "fontSize": 13,
+                          "fontWeight": "700",
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "type": "text",
+                          "id": "edAbd0",
+                          "content": "負責超過 50 款遊戲前端的持續整合與多環境上線；將部署、備份驗證、版本對齊與上線報告收斂成儀表與腳本，降低人為漏步與環境落差，讓「是否已上線、上到哪一版」可被團隊一致確認。",
+                          "fill": "#6b6560",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "textGrowth": "fixed-width",
+                          "width": 540,
+                          "lineHeight": 1.6
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "edA1",
+                  "width": "fill_container",
+                  "layout": "horizontal",
+                  "gap": 14,
+                  "alignItems": "start",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "edAb1",
+                      "width": 4,
+                      "height": 72,
+                      "fill": "#9b2335"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "edAc1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "edAt1",
+                          "content": "多產品並行與共用架構",
+                          "fill": "#9b2335",
+                          "fontSize": 13,
+                          "fontWeight": "700",
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "type": "text",
+                          "id": "edAbd1",
+                          "content": "同時維護四十餘款獨立遊戲與多款多人遊戲；統一遊戲設定、通訊協議、Webview 遊戲紀錄與公平性驗證體驗，並讓多語資源與共用資源在多款產品間同步節奏，減少重工與不一致。",
+                          "fill": "#6b6560",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "textGrowth": "fixed-width",
+                          "width": 540,
+                          "lineHeight": 1.6
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "edA2",
+                  "width": "fill_container",
+                  "layout": "horizontal",
+                  "gap": 14,
+                  "alignItems": "start",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "edAb2",
+                      "width": 4,
+                      "height": 72,
+                      "fill": "#9b2335"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "edAc2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "edAt2",
+                          "content": "大範圍遷移與規格化",
+                          "fill": "#9b2335",
+                          "fontSize": 13,
+                          "fontWeight": "700",
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "type": "text",
+                          "id": "edAbd2",
+                          "content": "推動非 Bingo 類遊戲往 Webview 體驗遷移：產出可對齊的規格與遊戲紀錄模板，並將公平性驗證拆解為可複用元件，利於跨團隊實作一致與後續擴充。",
+                          "fill": "#6b6560",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "textGrowth": "fixed-width",
+                          "width": 540,
+                          "lineHeight": 1.6
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "edA3",
+                  "width": "fill_container",
+                  "layout": "horizontal",
+                  "gap": 14,
+                  "alignItems": "start",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "edAb3",
+                      "width": 4,
+                      "height": 72,
+                      "fill": "#9b2335"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "edAc3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "edAt3",
+                          "content": "自動化與「給 Agent 的能力」",
+                          "fill": "#9b2335",
+                          "fontSize": 13,
+                          "fontWeight": "700",
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "type": "text",
+                          "id": "edAbd3",
+                          "content": "將部署、雲端資源、i18n 同步、新專案開倉檢核與議題／文件系統整合，封裝成可重複呼叫的技能與腳本，讓例行交付可由工具鏈執行，人員聚焦在例外與決策。",
+                          "fill": "#6b6560",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "textGrowth": "fixed-width",
+                          "width": 540,
+                          "lineHeight": 1.6
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "edA4",
+                  "width": "fill_container",
+                  "layout": "horizontal",
+                  "gap": 14,
+                  "alignItems": "start",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "edAb4",
+                      "width": 4,
+                      "height": 72,
+                      "fill": "#9b2335"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "edAc4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "edAt4",
+                          "content": "資料分析",
+                          "fill": "#9b2335",
+                          "fontSize": 13,
+                          "fontWeight": "700",
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "type": "text",
+                          "id": "edAbd4",
+                          "content": "建立遊戲狀態排查、玩家行為與玩家策略排查的分析腳本，以及市場追蹤器；讓營運與技術能以同一套可查詢、可重跑的流程對齊問題，減少口頭來回與一次性查表。",
+                          "fill": "#6b6560",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "textGrowth": "fixed-width",
+                          "width": 540,
+                          "lineHeight": 1.6
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "edA5",
+                  "width": "fill_container",
+                  "layout": "horizontal",
+                  "gap": 14,
+                  "alignItems": "start",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "edAb5",
+                      "width": 4,
+                      "height": 72,
+                      "fill": "#9b2335"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "edAc5",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "edAt5",
+                          "content": "研發提效與工具鏈",
+                          "fill": "#9b2335",
+                          "fontSize": 13,
+                          "fontWeight": "700",
+                          "textGrowth": "auto"
+                        },
+                        {
+                          "type": "text",
+                          "id": "edAbd5",
+                          "content": "針對換皮與企畫案，導入 AI 輔助產圖與資產相依管理，並探索 UI 編輯器與 MCP 等整合，目標是縮短從需求到可驗收畫面的前置時間。",
+                          "fill": "#6b6560",
+                          "fontSize": 14,
+                          "fontWeight": "400",
+                          "textGrowth": "fixed-width",
+                          "width": 540,
+                          "lineHeight": 1.6
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "edR3",
+          "width": "fill_container",
+          "height": 1,
+          "fill": "#6b6560"
+        },
+        {
+          "type": "frame",
+          "id": "edExp",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            36,
+            0,
+            24,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "edExE",
+              "content": "經歷",
+              "fill": "#9b2335",
+              "fontSize": 10,
+              "fontWeight": "700",
+              "textGrowth": "auto",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "edExH",
+              "content": "時間軸",
+              "fill": "#1e1e1e",
+              "fontSize": 22,
+              "fontWeight": "700",
+              "textGrowth": "auto"
+            },
+            {
+              "type": "text",
+              "id": "edExB",
+              "content": "2023/02 – 至今 · ELS Tech · 前端 Leader（Gemini 線）\nCocos 遊戲前端、共用模組與協議、Webview／遊戲紀錄、多環境發版與 Release Note、後台與品牌站、Jenkins 與技術規劃。\n\n2014 – 2023/02 · Freelancer（2017 登記公司）· 奧樂科技 UI/UX 與前端顧問 · meet.jobs 前端工程師\n\n2013 · 龍華科技大學 · 互動介面設計講師\n\n2012/10 – 2014/02 · AppWorks 育成團隊 · UI／前端\n\n2011/01 – 2012/09 · SHEICO Group · 設計組組長\n\n2009/05 – 2010/12 · 尚芳國際興業 · 工業設計工程師\n\n2008 – 2009 · 海軍義務役\n\n學歷 · 長庚大學工設學士（2001–2005）· 成大工設碩士（2005–2008）",
+              "fill": "#6b6560",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "textGrowth": "fixed-width",
+              "width": 620,
+              "lineHeight": 1.75
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "edFt",
+          "content": "LinkedIn、GitHub、Blog 與語系切換已置於頁首；正式網站請將「中文／EN」綁定路由或 i18n。",
+          "fill": "#6b6560",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "textGrowth": "fixed-width",
+          "width": 720,
+          "lineHeight": 1.6
+        }
+      ]
+    }
+  ]
+}

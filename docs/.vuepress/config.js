@@ -86,6 +86,10 @@ module.exports = {
     ],
     bundler: viteBundler({
         viteOptions: {
+            // GA 外掛的 client config 使用 __GA_ID__；dev 或合併 define 遺漏時會噴 ReferenceError
+            define: {
+                __GA_ID__: JSON.stringify(Config.ga || ''),
+            },
             css: {
                 postcss: {
                     plugins: [

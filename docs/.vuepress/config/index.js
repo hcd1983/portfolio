@@ -9,6 +9,7 @@ module.exports = {
         image: 'https://i.imgur.com/Lhdtyjmh.png',
     },
     globalData: {
+        portraitUrl: 'https://i.imgur.com/xAJ3I0pm.png',
         skills: {
             en: [
                 {
@@ -102,6 +103,7 @@ module.exports = {
             ],
         }
         ,
+        swiss: require('./swiss-content'),
         socialLink: [
             {
                 sub: 'LinkedIn',

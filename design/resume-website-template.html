@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>履歷網站 · 單頁範本（規劃用）</title>
+  <!--
+    Pencil 對照建議（畫板分區）：
+    1. Frame「Hero」：全寬、大標 + 副標 + 單一 CTA（捲動至 About）
+    2. Frame「About」：雙欄（左頭像／右文字）或單欄 max-width 720px
+    3. Frame「Skills」：卡片網格 2×3 或 3×2，與現有 skills 文案對齊
+    4. Frame「Experience」：時間軸垂直線 + 節點卡片
+    5. Frame「Contact」：社群連結列 + 簡短 email（可選）
+    匯出到 VuePress 時：每區對應一個 section id，與 MainMenu anchor 一致。
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a222d;
+      --border: #2a3544;
+      --text: #e8edf4;
+      --muted: #8b9cb3;
+      --accent: #5eead4;
+      --accent-dim: #2dd4bf33;
+      --max: 56rem;
+      --font-display: "Fraunces", Georgia, serif;
+      --font-body: "Source Sans 3", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+      background-image:
+        radial-gradient(ellipse 120% 80% at 100% -20%, var(--accent-dim), transparent 50%),
+        radial-gradient(ellipse 80% 50% at -10% 60%, #3b82f633, transparent 45%);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+    /* —— Nav（可對應 Pencil：頂部固定列） */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      margin: 0 -1.5rem;
+      background: rgba(15, 20, 25, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav__brand {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+    }
+    .nav__links {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .nav__links a { color: var(--muted); }
+    .nav__links a:hover { color: var(--accent); }
+
+    /* —— Hero */
+    #intro {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 0 4rem;
+    }
+    .hero__eyebrow {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 3.75rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin: 0 0 1rem;
+      max-width: 14ch;
+    }
+    .hero__lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 36ch;
+      margin-bottom: 2rem;
+    }
+    .hero__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--bg);
+      background: var(--accent);
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-body);
+    }
+    .hero__cta:hover { filter: brightness(1.08); text-decoration: none; }
+
+    /* —— Section 共用 */
+    section { scroll-margin-top: 4rem; }
+    .section__title {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      font-weight: 600;
+      margin: 0 0 0.25rem;
+    }
+    .section__rule {
+      width: 3rem;
+      height: 3px;
+      background: var(--accent);
+      margin-bottom: 2rem;
+      border-radius: 2px;
+    }
+
+    /* —— About */
+    #about {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .about__grid {
+      display: grid;
+      gap: 2rem;
+      align-items: start;
+    }
+    @media (min-width: 768px) {
+      .about__grid { grid-template-columns: 10rem 1fr; }
+    }
+    .about__avatar {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      background: linear-gradient(145deg, var(--surface), var(--border));
+      border: 2px solid var(--border);
+      object-fit: cover;
+    }
+    .about__body p { color: var(--muted); margin: 0 0 1rem; }
+    .about__body p strong { color: var(--text); }
+
+    /* —— Skills */
+    #skills {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .skills__grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 640px) {
+      .skills__grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 960px) {
+      .skills__grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .skill-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .skill-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .skill-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem;
+    }
+    .skill-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin: 0 0 0.5rem;
+    }
+    .skill-card p:last-child { margin-bottom: 0; }
+
+    /* —— Experience */
+    #experience {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .timeline {
+      position: relative;
+      padding-left: 1.5rem;
+      border-left: 2px solid var(--border);
+      margin-left: 0.35rem;
+    }
+    .timeline__item {
+      position: relative;
+      padding-bottom: 2rem;
+      padding-left: 1.25rem;
+    }
+    .timeline__item::before {
+      content: "";
+      position: absolute;
+      left: -1.5rem;
+      top: 0.35rem;
+      width: 10px;
+      height: 10px;
+      margin-left: -5px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px var(--bg);
+    }
+    .timeline__item:last-child { padding-bottom: 0; }
+    .timeline__meta {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+    .timeline__role {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem;
+    }
+    .timeline__company { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.75rem; }
+    .timeline__item ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .timeline__item li { margin-bottom: 0.35rem; }
+
+    /* —— Contact */
+    #contact {
+      padding: 3rem 0 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+    .contact__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      justify-content: center;
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    @media print {
+      body { background: #fff; color: #111; }
+      .nav { position: static; border: none; background: #fff; }
+      .nav__links a, a { color: #0d9488; }
+      .hero__cta { display: none; }
+      .skill-card { break-inside: avoid; border: 1px solid #ccc; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav" aria-label="主要導覽">
+      <span class="nav__brand">Your Name</span>
+      <nav class="nav__links">
+        <a href="#intro">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="intro" aria-label="開場">
+      <p class="hero__eyebrow">Portfolio / Resume</p>
+      <h1 class="hero__title">設計思維 × 工程交付</h1>
+      <p class="hero__lead">
+        一句話定位：從產品與體驗出發，把需求推到可穩定上線——並讓團隊流程可複用。
+      </p>
+      <a class="hero__cta" href="#about">關於我</a>
+    </section>
+
+    <section id="about" aria-label="關於">
+      <h2 class="section__title">About</h2>
+      <div class="section__rule" aria-hidden="true"></div>
+      <div class="about__grid">
+        <img class="about__avatar" src="https://placehold.co/320x320/1a222d/5eead4?text=Photo" width="160" height="160" alt="大頭照占位" />
+        <div class="about__body">
+          <p>
+            <strong>摘要段落（2～4 句）</strong>：說明轉職脈絡、目前角色、最在意的價值（例如整合、交付、AI 流程）。
+            可接續一段技術棧關鍵字，與現有 VuePress <code>About.vue</code> 文案對齊。
+          </p>
+          <p>
+            第二段可寫「遊戲前端／Cocos／跨專案／Release」等你希望訪客第一眼記住的標籤，避免一次塞滿細節。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" aria-label="技能">
+      <h2 class="section__title">Skills</h2>
+      <div class="section__rule" aria-hidden="true"></div>
+      <div class="skills__grid">
+        <article class="skill-card">
+          <h3>前端工程實作</h3>
+          <p>HTML / CSS / JS / TS、狀態與 API、可維護結構。</p>
+        </article>
+        <article class="skill-card">
+          <h3>Vue / React 生態</h3>
+          <p>Nuxt、Vite、Next.js 大型站維運與演進。</p>
+        </article>
+        <article class="skill-card">
+          <h3>遊戲前端 · Cocos</h3>
+          <p>玩法流程、協議與即時資料、可複用模式。</p>
+        </article>
+        <article class="skill-card">
+          <h3>共用配置 · 跨專案</h3>
+          <p>多產品同步、降低重工與遺漏。</p>
+        </article>
+        <article class="skill-card">
+          <h3>版本交付</h3>
+          <p>STG／REL／PROD、Release Note、可驗證上線。</p>
+        </article>
+        <article class="skill-card">
+          <h3>AI 流程與協作</h3>
+          <p>彙報／提案自動化、skills／agent 封裝。</p>
+        </article>
+        <article class="skill-card">
+          <h3>技術規劃</h3>
+          <p>節奏、文件、跨角色銜接。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" aria-label="經歷">
+      <h2 class="section__title">Experience</h2>
+      <div class="section__rule" aria-hidden="true"></div>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__meta">2023 — Present</div>
+          <h3 class="timeline__role">前端 Leader</h3>
+          <div class="timeline__company">公司名稱 · 產業／專案一句</div>
+          <ul>
+            <li>Cocos 與交付鏈：功能、共用資源、上版與文件。</li>
+            <li>跨專案整合與風險控管（可量化更好）。</li>
+          </ul>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__meta">2014 — 2023</div>
+          <h3 class="timeline__role">Freelancer / 顧問 / 全職</h3>
+          <div class="timeline__company">接案、新創、平台產品（依實際折疊條列）</div>
+          <ul>
+            <li>與你 Timeline.vue 區塊對齊：每段 2～4 個 bullet 即可。</li>
+          </ul>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__meta">Education</div>
+          <h3 class="timeline__role">工業設計 · 學士／碩士</h3>
+          <div class="timeline__company">學校名稱 · 年份</div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" aria-label="聯絡">
+      <h2 class="section__title">Contact</h2>
+      <div class="section__rule" style="margin-left: auto; margin-right: auto;" aria-hidden="true"></div>
+      <p style="color: var(--muted); margin: 0;">與現站一致：LinkedIn · GitHub · Blog（或 Email）</p>
+      <div class="contact__links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Blog</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
