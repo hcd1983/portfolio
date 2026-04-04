@@ -42,25 +42,23 @@
           </div>
         </div>
 
-        <!-- 右欄：頭像卡（Swiss 配色：橘米底、粗框、硬陰影） -->
+        <!-- 右欄：頭像（透明底、無外框） -->
         <aside
           class="mx-auto w-full max-w-[280px] shrink-0 lg:mx-0 lg:w-[min(100%,300px)] lg:max-w-none"
           aria-label="Profile"
         >
-          <div
-            class="flex h-full flex-col rounded-3xl border-[3px] border-black bg-orange-50 p-4 shadow-[6px_8px_0_0_#171717]"
-          >
-            <div class="overflow-hidden rounded-2xl border-2 border-black bg-neutral-900">
+          <div class="flex h-full flex-col bg-transparent">
+            <div class="w-full">
               <img
                 :src="portraitUrl"
                 alt=""
                 width="400"
                 height="400"
-                class="aspect-square w-full object-cover"
+                class="h-auto w-full object-contain"
                 loading="eager"
               />
             </div>
-            <div class="mt-4 space-y-1.5 px-0.5">
+            <div class="mt-4 space-y-1.5">
               <p
                 id="swiss-hero-name"
                 class="text-lg font-black leading-tight tracking-tight text-black md:text-xl"
@@ -101,6 +99,7 @@
 <script>
 import { computed } from 'vue'
 import { usePageData, useSiteData } from '@vuepress/client'
+import portraitUrl from '../assets/image.png'
 
 const PILL_TONES = [
   'bg-orange-500 text-white',
@@ -119,10 +118,6 @@ export default {
       const lang = page.value.lang === 'en-US' ? 'en' : 'zh'
       return site.value.globalData.swiss[lang]
     })
-
-    const portraitUrl = computed(
-      () => site.value.globalData.portraitUrl || 'https://i.imgur.com/xAJ3I0pm.png',
-    )
 
     const ogImage = computed(
       () =>

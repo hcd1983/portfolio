@@ -63,7 +63,7 @@
         </div>
       </div>
       <div class="shrink-0 flex-grow order-1 md:order-2">
-        <img class="rounded-full w-full max-w-[130px] md:max-w-[200px]" src="https://i.imgur.com/xAJ3I0pm.png" alt="Dean" loading="lazy">
+        <img class="rounded-full w-full max-w-[130px] md:max-w-[200px]" :src="portraitSrc" alt="Dean" loading="lazy">
 <!--        <img class="rounded-full w-full max-w-[130px] md:max-w-[200px]" src="@assets/icons/ai.svg" alt="Portrait" loading="lazy">-->
       </div>
     </div>
@@ -73,6 +73,7 @@
 
 <script>
 import { useSiteData, usePageData } from '@vuepress/client'
+import portraitSrc from '../assets/image.png'
 
 export default {
   name: "About",
@@ -82,6 +83,7 @@ export default {
     return {
       socialLink: site.value.globalData.socialLink,
       page,
+      portraitSrc,
     }
   },
 }
