@@ -83,7 +83,7 @@
     <div class="mx-auto max-w-[880px] space-y-1.5 px-6 pb-2 md:px-10">
       <div class="border-2 border-black">
         <img
-          :src="ogImage"
+          :src="coverImage"
           alt=""
           class="block max-h-[200px] w-full object-cover"
           loading="lazy"
@@ -100,6 +100,7 @@
 import { computed } from 'vue'
 import { usePageData, useSiteData } from '@vuepress/client'
 import portraitUrl from '../assets/dean.png'
+import coverImage from '../assets/portfolio.png'
 
 const PILL_TONES = [
   'bg-orange-500 text-white',
@@ -119,17 +120,11 @@ export default {
       return site.value.globalData.swiss[lang]
     })
 
-    const ogImage = computed(
-      () =>
-        site.value.og?.image ||
-        'https://i.imgur.com/Lhdtyjmh.png',
-    )
-
     function pillTone(i) {
       return PILL_TONES[i % PILL_TONES.length]
     }
 
-    return { copy, portraitUrl, ogImage, pillTone }
+    return { copy, portraitUrl, coverImage, pillTone }
   },
 }
 </script>
