@@ -80,7 +80,7 @@
         {{ copy.statsLine }}
       </p>
     </div>
-    <div class="mx-auto max-w-[880px] space-y-1.5 px-6 pb-2 md:px-10">
+    <div class="mx-auto max-w-[880px] px-6 pb-2 md:px-10">
       <div class="border-2 border-black">
         <img
           :src="coverImage"
@@ -89,9 +89,6 @@
           loading="lazy"
         />
       </div>
-      <p class="text-sm font-semibold uppercase tracking-wide text-neutral-600">
-        {{ copy.coverCaption }}
-      </p>
     </div>
   </div>
 </template>

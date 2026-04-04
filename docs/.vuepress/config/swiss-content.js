@@ -16,7 +16,6 @@ module.exports = {
       'Webview 與公平性體驗',
       '資料分析與 AI 工具鏈',
     ],
-    coverCaption: '主視覺／社群預覽圖（可替換）',
     aboutTitle: 'ABOUT — 設計思維與工程實作並重',
     aboutParas: [
       '我從工業設計碩士、產品設計師一路走到軟體工程。這段路讓我在做技術決策時，能直接帶入使用者體驗的判斷——Webview 遊戲紀錄的資訊層級、公平性驗證的互動流程，我習慣從體驗層反推技術規格，而不只是接規格做實作。',
@@ -112,7 +111,6 @@ module.exports = {
       'Webview & fairness UX',
       'Data analysis & AI toolchain',
     ],
-    coverCaption: 'Hero / social preview image (replaceable)',
     aboutTitle: 'ABOUT — Design thinking with engineering rigor',
     aboutParas: [
       'I went from an industrial design master\'s degree and product design into software engineering. That path lets me bring UX judgment directly into technical decisions—information hierarchy in webview game records, interaction flows for fairness verification—I work from the experience layer back to the technical spec, not the other way around.',
