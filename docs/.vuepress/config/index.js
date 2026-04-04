@@ -3,7 +3,7 @@ const enConfig = require("./en-config")
 module.exports = {
     en: enConfig,
     title: "HCD Portfolio",
-    description: "產品設計轉軟體工程，具設計與工程雙背景；現為遊戲公司前端 Leader，Cocos 與完整交付鏈。跨專案整合、上版交付與 AI workflow（proposal-generator、GitLab、ByteHouse、skills／agent）。熟悉 Vue、React、Laravel、Node.js。",
+    description: "遊戲公司前端 Leader，設計背景轉工程。18 種遊戲類型、60+ 產品變體、12 語系、三環境交付。主責 Cocos Creator、跨專案整合、部署工具鏈與 AI 自動化。Vue、React、Node.js。",
     ga: 'G-G2WG3Q3Z4Y',
     og: {
         image: 'https://i.imgur.com/Lhdtyjmh.png',

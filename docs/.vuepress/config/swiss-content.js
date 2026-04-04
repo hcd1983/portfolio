@@ -1,15 +1,15 @@
 /** Swiss 完稿版型文案（與 design/pencil-layout-c-swiss 對齊） */
 module.exports = {
   zh: {
-    kicker: '前端工程 · 遊戲產業 · 交付與整合',
+    kicker: '遊戲前端 Lead · 60+ 遊戲產品 · 交付與整合',
     nameDisplay: 'DEAN HUANG',
     nameSub: '（欣迪）',
     headline:
-      '讓大規模遊戲前端的交付可預期、可驗證、可複用——從共用架構、上線流程到資料與自動化工具。',
+      '我讓 60+ 款遊戲的前端交付可預期、可驗證、可複用——從共用架構與協議，到部署工具鏈與 AI 自動化。',
     lead:
-      '產品設計背景轉工程；現職遊戲公司前端 Leader，主力 Cocos，並負責跨專案整合、多環境上線與團隊側的 AI／資料工作流程。',
+      '現職遊戲公司前端 Leader，主責 Cocos Creator、跨專案整合與三環境交付流程。設計師背景轉工程，兼具體驗判斷與系統化實作。',
     statsLine:
-      '50+ 遊戲管線  │  40+ 並行專案  │  TS · NODE · AI  │  資料腳本 · 市場追蹤',
+      '60+ 產品交付  │  40+ 並行專案  │  設計→工程  │  AI 流程與自動化',
     pills: [
       'CI/CD 與多環境交付',
       '跨產品共用架構',
@@ -19,9 +19,9 @@ module.exports = {
     coverCaption: '主視覺／社群預覽圖（可替換）',
     aboutTitle: 'ABOUT — 設計思維與工程實作並重',
     aboutParas: [
-      '我從產品設計轉職軟體工程，習慣同時看使用者體驗、互動品質與可維護的實作。熟悉 HTML、CSS、JavaScript、PHP 與 Node.js、Laravel、Vue、React 等主流技術；曾以 Freelancer、大學講師與企業顧問身分累積跨領域溝通與專案推進經驗。',
-      '目前擔任遊戲公司前端 Leader，主責 Cocos Creator 與技術規劃、專案節奏與人力調度。工作涵蓋遊戲前端、共用模組、設定與版本控管、部署與 Release Note——目標是把需求推到「可穩定上線、可追溯、可交接」的狀態，而不止於功能合併。',
-      '我貢獻在三塊：跨產品整合（同一需求或修正快速同步到多款遊戲與共用程式）、交付與上線治理（多環境狀態、部署結果、備份與文件對齊），以及將 AI、資料查詢與例行報表工具化，減少重工並讓團隊專注在判斷與例外處理。',
+      '我從工業設計碩士、產品設計師一路走到軟體工程。這段路讓我在做技術決策時，能直接帶入使用者體驗的判斷——Webview 遊戲紀錄的資訊層級、公平性驗證的互動流程，我習慣從體驗層反推技術規格，而不只是接規格做實作。',
+      '我對「完成」的定義比較嚴格：功能合併只是起點，真正的完成是可驗證上線、有文件、可追溯、可交接。目前帶領遊戲前端團隊，負責 Cocos Creator 技術規劃、專案節奏、人力調度，以及從共用模組到三環境部署的整條交付鏈。',
+      '設計師出身讓我習慣從使用者角度看問題，工程師身分讓我能直接動手解決。帶團隊之後，我把這兩個視角用在系統層面——讓跨產品整合有統一架構、讓交付流程有工具支撐、讓重複工作變成可被 Agent 呼叫的技能，而不是每次都靠人盯。',
     ],
     skillsTitle: 'SKILLS — 核心職能',
     skillLines: [
@@ -35,37 +35,37 @@ module.exports = {
     ],
     outcomesTitle: 'OUTCOMES',
     outcomesIntro:
-      '以下以「做了什麼 → 對組織的價值」陳述，方便與職缺需求對照；面談時可再補案例與數據。',
+      '六個方向，每個都有實際部署的工具或系統支撐。面談時可針對任何項目深入展開。',
     outcomes: [
       {
-        title: '交付與上線治理',
+        title: '60+ 遊戲的交付治理',
         body:
-          '負責超過 50 款遊戲前端的持續整合與多環境上線；將部署、備份驗證、版本對齊與上線報告收斂成儀表與腳本，降低人為漏步與環境落差，讓「是否已上線、上到哪一版」可被團隊一致確認。',
+          '負責 18 種遊戲類型、60+ 產品變體的持續整合與三環境（DEV / STG / REL）上線；以 deploy-manager 與 dashboard-version-pulse 將部署、備份驗證、版本對齊與上線報告收斂成儀表與腳本，降低人為漏步與環境落差，讓「是否已上線、上到哪一版」可被團隊一致確認。',
       },
       {
-        title: '多產品並行與共用架構',
+        title: '18 類遊戲的共用架構',
         body:
-          '同時維護四十餘款獨立遊戲與多款多人遊戲；統一遊戲設定、通訊協議、Webview 遊戲紀錄與公平性驗證體驗，並讓多語資源與共用資源在多款產品間同步節奏，減少重工與不一致。',
+          '同時維護 42 款獨立遊戲與 9 款多人遊戲；統一 bingoproto / hashproto 通訊協議、game-sdk-common 與 11 個共用模組，以 i18ncommon 管理 12 語系資源同步，並對齊 Webview 遊戲紀錄與公平性驗證體驗，減少重工與不一致。',
       },
       {
-        title: '大範圍遷移與規格化',
+        title: 'Webview 體驗遷移與規格化',
         body:
-          '推動非 Bingo 類遊戲往 Webview 體驗遷移：產出可對齊的規格與遊戲紀錄模板，並將公平性驗證拆解為可複用元件，利於跨團隊實作一致與後續擴充。',
+          '推動 Hash 類遊戲（Crash、Hilo、Mines、Plinko 等 10+ 類型）往 Webview 體驗遷移：產出可對齊的規格與遊戲紀錄模板，並將公平性驗證拆解為可複用元件，利於跨團隊實作一致與後續擴充。',
       },
       {
-        title: '自動化與「給 Agent 的能力」',
+        title: '自動化工具鏈與 MCP 整合',
         body:
-          '將部署、雲端資源、i18n 同步、新專案開倉檢核與議題／文件系統整合，封裝成可重複呼叫的技能與腳本，讓例行交付可由工具鏈執行，人員聚焦在例外與決策。',
+          '建置 5+ MCP Server（Jira、Confluence、ByteHouse、FairyGUI、Git），將部署、i18n 同步、新專案開倉檢核與議題／文件系統整合封裝成可被 AI Agent 呼叫的工具鏈，讓例行交付可由工具鏈執行，人員聚焦在例外與決策。',
       },
       {
-        title: '資料分析',
+        title: '資料分析與排查流程',
         body:
-          '建立遊戲狀態排查、玩家行為與玩家策略排查的分析腳本，以及市場追蹤器；讓營運與技術能以同一套可查詢、可重跑的流程對齊問題，減少口頭來回與一次性查表。',
+          '以 rtp-analizer（PostgreSQL + Google Sheets）、bingo-analizer 與 gemini-data-analyzer 建立遊戲狀態排查、玩家行為與策略分析的可重跑流程，搭配市場追蹤器，讓營運與技術能以同一套可查詢的流程對齊問題，減少口頭來回與一次性查表。',
       },
       {
-        title: '研發提效與工具鏈',
+        title: 'AI 輔助研發提效',
         body:
-          '針對換皮與企畫案，導入 AI 輔助產圖與資產相依管理，並探索 UI 編輯器與 MCP 等整合，目標是縮短從需求到可驗收畫面的前置時間。',
+          '以 fgui-ai-tool（FairyGUI MCP Server）與 fe-claude CLI 導入 AI 輔助產圖與資產相依管理；建立 cocos3d-dice-template 等可複用模板，並探索 UI 編輯器整合，目標是縮短從需求到可驗收畫面的前置時間。',
       },
     ],
     timelineTitle: 'TIMELINE',
@@ -93,15 +93,15 @@ Cocos 遊戲前端、共用模組與協議、Webview／遊戲紀錄、多環境�
     nav: { about: '關於', skills: '技能', outcomes: '成果', exp: '經歷' },
   },
   en: {
-    kicker: 'Frontend · Games · Delivery & integration',
+    kicker: 'Game Frontend Lead · 60+ Titles · Delivery & Integration',
     nameDisplay: 'DEAN HUANG',
     nameSub: '(Dean)',
     headline:
-      'Making large-scale game frontend delivery predictable, verifiable, and reusable—from shared architecture and release flow to data and automation.',
+      'I make 60+ game frontends delivery predictable, verifiable, and reusable—across shared architecture, protocols, deployment toolchain, and AI automation.',
     lead:
-      'Product design background turned engineering; frontend lead at a game company, focused on Cocos, cross-project integration, multi-env releases, and team AI / data workflows.',
+      'Frontend lead at a game company, overseeing Cocos Creator, cross-project integration, and three-environment delivery. Design background turned engineering—combining UX judgment with systematic implementation.',
     statsLine:
-      '50+ game pipelines  │  40+ concurrent products  │  TS · NODE · AI  │  Data scripts · Market tracker',
+      '60+ titles shipped  │  40+ concurrent projects  │  Design → Engineering  │  AI workflows & automation',
     pills: [
       'CI/CD & multi-environment delivery',
       'Cross-product shared architecture',
@@ -111,9 +111,9 @@ Cocos 遊戲前端、共用模組與協議、Webview／遊戲紀錄、多環境�
     coverCaption: 'Hero / social preview image (replaceable)',
     aboutTitle: 'ABOUT — Design thinking with engineering rigor',
     aboutParas: [
-      'I moved from product design into software engineering, balancing UX, interaction quality, and maintainable implementation. Solid in HTML, CSS, JavaScript, PHP, and mainstream stacks such as Node.js, Laravel, Vue, and React; experience as a freelancer, university lecturer, and technical advisor across domains.',
-      'I lead frontend at a game company with Cocos Creator, technical planning, pacing, and staffing. Work spans game FE, shared modules, configuration, versioning, deployments, and release notes—pushing work to “shippable, traceable, handoff-ready,” not just merged.',
-      'I focus on three areas: cross-product integration (syncing needs and fixes across titles and shared code), delivery governance (environment state, deploy outcomes, backups, documentation alignment), and tooling AI/data queries and recurring reports so the team spends time on judgment and exceptions.',
+      'I went from an industrial design master\'s degree and product design into software engineering. That path lets me bring UX judgment directly into technical decisions—information hierarchy in webview game records, interaction flows for fairness verification—I work from the experience layer back to the technical spec, not the other way around.',
+      'My bar for “done” is strict: merging is just the starting point. Real completion means verified deployment, documented, traceable, and ready for handoff. I lead the frontend team, overseeing Cocos Creator technical planning, sprint pacing, staffing, and the full delivery chain from shared modules to three-environment releases.',
+      'A design background taught me to see problems from the user\'s perspective; an engineering role lets me fix them directly. As a team lead, I apply both lenses at the system level—unified architecture for cross-product integration, tooling to support delivery workflows, and repeatable skills that AI agents can call instead of relying on manual oversight.',
     ],
     skillsTitle: 'SKILLS — Core capabilities',
     skillLines: [
@@ -127,37 +127,37 @@ Cocos 遊戲前端、共用模組與協議、Webview／遊戲紀錄、多環境�
     ],
     outcomesTitle: 'OUTCOMES',
     outcomesIntro:
-      'What I did → value for the org; useful for role fit. Happy to add cases and metrics in conversation.',
+      'Six areas, each backed by deployed tools or systems. Happy to go deeper on any item in conversation.',
     outcomes: [
       {
-        title: 'Delivery & release governance',
+        title: 'Delivery governance for 60+ games',
         body:
-          'CI/CD and multi-environment releases for 50+ game frontends; dashboards and scripts for deploys, backup checks, version alignment, and release reporting—fewer missed steps and a shared view of what is live where.',
+          'CI/CD and three-environment (DEV / STG / REL) releases for 18 game types and 60+ product variants; built deploy-manager and dashboard-version-pulse to consolidate deploys, backup checks, version alignment, and release reporting—fewer missed steps and a shared view of what is live where.',
       },
       {
-        title: 'Many products & shared architecture',
+        title: 'Shared architecture across 18 game types',
         body:
-          '40+ standalone titles plus multiplayer games; aligned configs, protocols, webview game records and fairness verification, and synchronized i18n/shared assets across products.',
+          'Maintained 42 standalone titles alongside 9 multiplayer games; unified bingoproto / hashproto communication protocols, game-sdk-common, and 11 shared modules, with i18ncommon managing 12-locale resource sync, aligned webview game records, and fairness verification UX.',
       },
       {
-        title: 'Large migrations & specs',
+        title: 'Webview migration & standardization',
         body:
-          'Led non–Bingo titles toward webview experiences: aligned specs and record templates, fairness checks as reusable components for consistent cross-team implementation.',
+          'Led Hash-type games (Crash, Hilo, Mines, Plinko, and 10+ other types) toward webview experiences: standardized specs and record templates, and extracted fairness checks into reusable components for consistent cross-team implementation.',
       },
       {
-        title: 'Automation & agent-ready skills',
+        title: 'Automation toolchain & MCP integration',
         body:
-          'Packaged deploys, cloud resources, i18n sync, new-repo checklists, and issue/docs integrations into repeatable skills and scripts so routine delivery runs through toolchain; people focus on exceptions and decisions.',
+          'Built 5+ MCP servers (Jira, Confluence, ByteHouse, FairyGUI, Git) and packaged deployment, i18n sync, new-repo checklists, and issue/doc integrations into AI-agent-callable workflows—freeing the team to focus on exceptions and decisions.',
       },
       {
-        title: 'Data analysis',
+        title: 'Data analysis & triage workflows',
         body:
-          'Scripts for game-state triage, player behavior and strategy analysis, plus a market tracker—shared, queryable, rerunnable flows for ops and engineering.',
+          'Built rtp-analizer (PostgreSQL + Google Sheets), bingo-analizer, and gemini-data-analyzer for game-state triage, player behavior analysis, and strategy review, plus a market tracker—delivering shared, queryable, repeatable flows that align ops and engineering.',
       },
       {
-        title: 'R&D efficiency',
+        title: 'AI-assisted R&D efficiency',
         body:
-          'AI-assisted art pipelines and asset dependency management for reskins and planning; exploring UI editors and MCP-style integrations to shorten time from brief to reviewable UI.',
+          'Applied fgui-ai-tool (FairyGUI MCP Server) and fe-claude CLI for AI-assisted image generation and asset dependency tracking; created reusable templates like cocos3d-dice-template, and explored UI editor integrations to reduce time from brief to a reviewable deliverable.',
       },
     ],
     timelineTitle: 'TIMELINE',
