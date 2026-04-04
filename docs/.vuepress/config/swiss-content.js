@@ -71,8 +71,12 @@ module.exports = {
     timelineTitle: 'TIMELINE',
     timelineDetail: '詳細年表',
     timelineExpand: '展開完整經歷',
-    expBlock: `2023/02 – 至今 · ELS Tech · 前端 Leader（Gemini 線）
-Cocos 遊戲前端、共用模組與協議、Webview／遊戲紀錄、多環境發版與 Release Note、後台與品牌站、Jenkins 與技術規劃。
+    expBlock: `2023/02 – 至今 · ELS Tech · 前端 Leader（Gemini 前端線）
+▸ 遊戲開發｜以 Cocos Creator 開發 70+ 款遊戲產品，跨產品功能與修正批次同步
+▸ 共用架構｜維護 proto／WebSocket 協議、執行期設定、webview、i18n、共用資源包與商戶載入規則
+▸ 發版交付｜負責 STG／REL／PROD 三環境推進、Release Note（含 hotfix）、部署報告與 S3 備份對齊
+▸ 文件流程｜repo 內實作計畫、checklist、guide，保留可追溯與交接脈絡
+▸ 團隊營運｜遊戲管理後台與品牌官網維運、Jenkins 管線、專案技術規劃與人員調度
 
 2014 – 2023/02 · Freelancer（2017 登記公司）· 奧樂科技 UI/UX 與前端顧問 · meet.jobs 前端工程師
 
@@ -163,8 +167,12 @@ Cocos 遊戲前端、共用模組與協議、Webview／遊戲紀錄、多環境�
     timelineTitle: 'TIMELINE',
     timelineDetail: 'Full timeline',
     timelineExpand: 'Expand full experience',
-    expBlock: `2023/02 – Present · ELS Tech · Frontend Team Leader (Gemini line)
-Cocos game FE, shared modules & protocols, webview / game records, multi-env releases & release notes, admin & brand sites, Jenkins, technical planning.
+    expBlock: `2023/02 – Present · ELS Tech · Frontend Team Leader (Gemini frontend line)
+▸ Game dev | Built 70+ game products with Cocos Creator; batch-synced features and fixes across titles
+▸ Shared infra | Maintained proto / WebSocket protocols, runtime configs, webview, i18n, shared bundles & merchant loading rules
+▸ Release | Owned STG / REL / PROD progression, release notes (incl. hotfix), deploy reports & S3 backup alignment
+▸ Documentation | In-repo implementation plans, checklists & guides for traceability and handoff
+▸ Team ops | Game admin panel & brand site maintenance, Jenkins pipelines, technical planning & staffing
 
 2014 – 2023/02 · Freelancer (company registered 2017) · Othe Technology UI/UX & FE advisor · meet.jobs FE engineer
 
