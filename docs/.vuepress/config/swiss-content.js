@@ -1,15 +1,15 @@
 /** Swiss 完稿版型文案（與 design/pencil-layout-c-swiss 對齊） */
 module.exports = {
   zh: {
-    kicker: '遊戲前端 Lead · 60+ 遊戲產品 · 交付與整合',
+    kicker: '遊戲前端 Lead · 70+ 遊戲產品 · 交付與整合',
     nameDisplay: 'DEAN HUANG',
     nameSub: '（欣迪）',
     headline:
-      '我讓 60+ 款遊戲的前端交付可預期、可驗證、可複用——從共用架構與協議，到部署工具鏈與 AI 自動化。',
+      '我讓 70+ 款遊戲的前端交付可預期、可驗證、可複用——從共用架構與協議，到部署工具鏈與 AI 自動化。',
     lead:
       '現職遊戲公司前端 Leader，主責 Cocos Creator、跨專案整合與三環境交付流程。設計師背景轉工程，兼具體驗判斷與系統化實作。',
     statsLine:
-      '60+ 產品交付  │  40+ 並行專案  │  設計→工程  │  AI 流程與自動化',
+      '70+ 產品交付  │  40+ 並行專案  │  設計→工程  │  AI 流程與自動化',
     pills: [
       'CI/CD 與多環境交付',
       '跨產品共用架構',
@@ -38,9 +38,9 @@ module.exports = {
       '六個方向，每個都有實際部署的工具或系統支撐。面談時可針對任何項目深入展開。',
     outcomes: [
       {
-        title: '60+ 遊戲的交付治理',
+        title: '70+ 遊戲的交付治理',
         body:
-          '負責 18 種遊戲類型、60+ 產品變體的持續整合與三環境（DEV / STG / REL）上線；以 deploy-manager 與 dashboard-version-pulse 將部署、備份驗證、版本對齊與上線報告收斂成儀表與腳本，降低人為漏步與環境落差，讓「是否已上線、上到哪一版」可被團隊一致確認。',
+          '負責 18 種遊戲類型、70+ 產品變體的持續整合與三環境（DEV / STG / REL）上線；以 deploy-manager 與 dashboard-version-pulse 將部署、備份驗證、版本對齊與上線報告收斂成儀表與腳本，降低人為漏步與環境落差，讓「是否已上線、上到哪一版」可被團隊一致確認。',
       },
       {
         title: '18 類遊戲的共用架構',
@@ -93,15 +93,15 @@ Cocos 遊戲前端、共用模組與協議、Webview／遊戲紀錄、多環境�
     nav: { about: '關於', skills: '技能', outcomes: '成果', exp: '經歷' },
   },
   en: {
-    kicker: 'Game Frontend Lead · 60+ Titles · Delivery & Integration',
+    kicker: 'Game Frontend Lead · 70+ Titles · Delivery & Integration',
     nameDisplay: 'DEAN HUANG',
     nameSub: '(Dean)',
     headline:
-      'I make 60+ game frontends delivery predictable, verifiable, and reusable—across shared architecture, protocols, deployment toolchain, and AI automation.',
+      'I make 70+ game frontends delivery predictable, verifiable, and reusable—across shared architecture, protocols, deployment toolchain, and AI automation.',
     lead:
       'Frontend lead at a game company, overseeing Cocos Creator, cross-project integration, and three-environment delivery. Design background turned engineering—combining UX judgment with systematic implementation.',
     statsLine:
-      '60+ titles shipped  │  40+ concurrent projects  │  Design → Engineering  │  AI workflows & automation',
+      '70+ titles shipped  │  40+ concurrent projects  │  Design → Engineering  │  AI workflows & automation',
     pills: [
       'CI/CD & multi-environment delivery',
       'Cross-product shared architecture',
@@ -130,9 +130,9 @@ Cocos 遊戲前端、共用模組與協議、Webview／遊戲紀錄、多環境�
       'Six areas, each backed by deployed tools or systems. Happy to go deeper on any item in conversation.',
     outcomes: [
       {
-        title: 'Delivery governance for 60+ games',
+        title: 'Delivery governance for 70+ games',
         body:
-          'CI/CD and three-environment (DEV / STG / REL) releases for 18 game types and 60+ product variants; built deploy-manager and dashboard-version-pulse to consolidate deploys, backup checks, version alignment, and release reporting—fewer missed steps and a shared view of what is live where.',
+          'CI/CD and three-environment (DEV / STG / REL) releases for 18 game types and 70+ product variants; built deploy-manager and dashboard-version-pulse to consolidate deploys, backup checks, version alignment, and release reporting—fewer missed steps and a shared view of what is live where.',
       },
       {
         title: 'Shared architecture across 18 game types',
