@@ -120,7 +120,7 @@ module.exports = {
                 sub: 'Blog',
                 icon: 'blog2',
                 color: '#000',
-                url: 'https://it-monk.com/'
+                url: 'https://it-monk.tw/'
             }
         ]
     }

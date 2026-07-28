@@ -3,7 +3,7 @@ title: It-monk
 description: Description of this page
 addon: super cool
 cover: https://i.imgur.com/JPzpqsmh.jpg
-link: https://it-monk.com/
+link: https://it-monk.tw/
 priority: -100
 ---
 

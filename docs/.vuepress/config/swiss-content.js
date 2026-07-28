@@ -90,7 +90,7 @@ module.exports = {
 2008 – 2009 · 海軍義務役
 
 學歷 · 長庚大學工設學士（2001–2005）· 成大工設碩士（2005–2008）`,
-    footerUrls: 'linkedin.com/in/Dean-6979939a · github.com/hcd1983 · it-monk.com',
+    footerUrls: 'linkedin.com/in/Dean-6979939a · github.com/hcd1983 · it-monk.tw',
     footerNote: '中英內容以頂欄切換；外部連結另開新分頁。',
     footerBar: 'HCD PORTFOLIO · DEAN HUANG',
     nav: { about: '關於', skills: '技能', outcomes: '成果', exp: '經歷' },
@@ -185,7 +185,7 @@ module.exports = {
 2008 – 2009 · R.O.C. Navy (conscription)
 
 Education · Chang Gung University BID (2001–2005) · NCKU MID (2005–2008)`,
-    footerUrls: 'linkedin.com/in/Dean-6979939a · github.com/hcd1983 · it-monk.com',
+    footerUrls: 'linkedin.com/in/Dean-6979939a · github.com/hcd1983 · it-monk.tw',
     footerNote: 'Switch language in the top bar; external links open in a new tab.',
     footerBar: 'HCD PORTFOLIO · DEAN HUANG',
     nav: { about: 'About', skills: 'Skills', outcomes: 'Outcomes', exp: 'Experience' },
