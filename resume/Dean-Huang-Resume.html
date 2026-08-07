@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dean Huang — Resume</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #555;
+      --line: #d8d8d8;
+      --accent: #1f4b7a;
+      --bg: #fafafa;
+      --chip: #eef2f6;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { font-size: 14px; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #e8eaed;
+      font-family: "IBM Plex Sans", "Noto Sans TC", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.45;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 24px auto;
+      padding: 9mm 9mm 8mm;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(0,0,0,.12);
+    }
+
+    /* Header */
+    .header {
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .name {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: .04em;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .name-zh {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--muted);
+      margin-left: 6px;
+    }
+
+    .title {
+      margin: 6px 0 8px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      padding: 2px 8px;
+      font-size: 11px;
+      color: #333;
+    }
+
+    .contacts {
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    .contacts a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Sections */
+    h2 {
+      margin: 16px 0 8px;
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 4px;
+      color: var(--ink);
+    }
+
+    p { margin: 0 0 8px; }
+
+    .profile {
+      font-size: 12.5px;
+      color: #222;
+    }
+
+    .quote {
+      margin: 8px 0 0;
+      padding: 8px 12px;
+      background: var(--bg);
+      border-left: 3px solid var(--accent);
+      font-size: 12px;
+      color: #333;
+    }
+
+    /* Snapshot */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin: 10px 0 4px;
+    }
+
+    .stat {
+      text-align: center;
+      padding: 10px 6px;
+      background: var(--bg);
+      border: 1px solid var(--line);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 22px;
+      line-height: 1;
+      color: var(--accent);
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 4px;
+      font-size: 10.5px;
+      color: var(--muted);
+    }
+
+    /* Two columns */
+    .cols {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 18px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 16px;
+    }
+
+    li {
+      margin-bottom: 4px;
+      font-size: 12px;
+    }
+
+    li strong { color: #111; }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 6px 0 10px;
+    }
+
+    .pill {
+      font-size: 10.5px;
+      padding: 3px 7px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    /* Outcomes */
+    .outcome {
+      margin-bottom: 8px;
+    }
+
+    .outcome h3 {
+      margin: 0 0 2px;
+      font-size: 12.5px;
+    }
+
+    .outcome p {
+      margin: 0;
+      font-size: 11.5px;
+      color: #333;
+    }
+
+    /* Experience */
+    .job {
+      margin-bottom: 10px;
+    }
+
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+    }
+
+    .job-head h3 {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .job-head time {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .job-role {
+      margin: 1px 0 4px;
+      font-size: 11.5px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .mini-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11.5px;
+    }
+
+    .mini-table td {
+      padding: 3px 0;
+      vertical-align: top;
+      border-bottom: 1px solid #eee;
+    }
+
+    .mini-table td:first-child {
+      width: 38%;
+      color: var(--muted);
+      white-space: nowrap;
+      padding-right: 10px;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: auto;
+        min-height: auto;
+        padding: 0;
+      }
+      a { color: inherit; text-decoration: none; }
+      h2 { break-after: avoid; }
+      .outcome, .job { break-inside: avoid; }
+      @page { size: A4; margin: 9mm 8mm; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1 class="name">DEAN HUANG<span class="name-zh">（欣迪）</span></h1>
+        <p class="title">Game Client Engineer · Web + Canvas · Frontend Lead</p>
+        <div class="tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Cocos Creator</span>
+          <span class="tag">PixiJS</span>
+          <span class="tag">Spine · FairyGUI</span>
+          <span class="tag">WebSocket · Protobuf</span>
+          <span class="tag">Rendering &amp; Memory</span>
+          <span class="tag">Vue / React</span>
+          <span class="tag">Jenkins CI/CD</span>
+        </div>
+        <div class="contacts">
+          <a href="https://www.linkedin.com/in/Dean-6979939a/">LinkedIn</a> ·
+          <a href="https://github.com/hcd1983">GitHub</a> ·
+          <a href="https://it-monk.tw/">Blog</a> ·
+          <a href="https://portfolio.hcd-design-studio.com/en/">Portfolio</a>
+          <br />
+          Mandarin (native) · English (professional) · Fully remote ready
+        </div>
+      </div>
+    </header>
+
+    <h2>Profile</h2>
+    <p class="profile">
+      I work at the seam between <strong>web engineering and real-time canvas rendering</strong>—and I am solid on both sides,
+      not one borrowed from the other. Day to day that means gameplay code in <strong>Cocos Creator</strong> and <strong>PixiJS</strong>,
+      a FairyGUI runtime written against the binary spec, and texture budgets that have to survive low-memory phones—alongside
+      the company brand site, the game admin console, and Jenkins pipelines moving <strong>70+ titles</strong> through four environments.
+      I lead the frontend team and work daily with product, design, backend, marketing, and operations.
+    </p>
+    <p class="quote"><strong>Bar for “done”:</strong> merged ≠ done. Done means verified live, documented, traceable, and handoff-ready.</p>
+
+    <div class="stats">
+      <div class="stat"><strong>70+</strong><span>Game products shipped</span></div>
+      <div class="stat"><strong>18</strong><span>Game types · shared stack</span></div>
+      <div class="stat"><strong>3</strong><span>Render stacks in production</span></div>
+      <div class="stat"><strong>−18%</strong><span>Texture VRAM after tuning</span></div>
+    </div>
+
+    <div class="cols">
+      <section>
+        <h2>Game Client &amp; Rendering</h2>
+        <ul>
+          <li><strong>Cocos Creator + TypeScript</strong>: core gameplay, shared runtime modules, custom GLSL effects</li>
+          <li><strong>PixiJS 8</strong>: texture/VRAM budgeting, atlas consolidation, draw-call and texture-bind reduction</li>
+          <li><strong>Spine</strong> runtime integration &amp; format migration; <strong>FairyGUI</strong> binary package parsing</li>
+          <li>Networking: <strong>WebSocket</strong> with heartbeat &amp; reconnection, <strong>Protobuf</strong>, HTTP; frontend–backend contract alignment</li>
+          <li>Patterns: state machines, observable event bus, object pooling, service containers</li>
+          <li>HTML5 for <strong>mobile &amp; desktop</strong>; packaging, on-device debugging, low-memory device triage</li>
+        </ul>
+
+        <h2>Delivery &amp; Automation</h2>
+        <ul>
+          <li><strong>Jenkins</strong> CI/CD design &amp; maintenance; build nodes; DEV / STG / REL / PROD promotion</li>
+          <li>Deploy manager + version dashboard (“is it live, and on which version?”)</li>
+          <li>Release notes incl. hotfix; backup verification and REL↔PROD alignment</li>
+          <li>MCP / AI agent toolchains absorbing deploy, i18n sync, and repo setup</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Web Engineering</h2>
+        <ul>
+          <li><strong>TypeScript</strong> daily; <strong>Vue</strong> (primary) + <strong>React</strong>, chosen per problem rather than per habit</li>
+          <li>Nuxt / Vite / Next.js; component systems across a multi-repo portfolio</li>
+          <li>State architecture with explicit boundaries and predictable data flow</li>
+          <li><strong>Electron</strong> desktop tooling (Vue 3 + Quasar, IPC via contextBridge, S3 &amp; Google Drive integration)</li>
+          <li>Company brand site and game admin console; helped other teams move admin tools to a decoupled frontend/backend architecture</li>
+          <li>Reading and improving large, long-lived codebases</li>
+        </ul>
+
+        <h2>Collaboration</h2>
+        <div class="pill-row">
+          <span class="pill">Product</span>
+          <span class="pill">Design</span>
+          <span class="pill">Backend</span>
+          <span class="pill">Marketing</span>
+          <span class="pill">Operations</span>
+        </div>
+        <ul>
+          <li>Campaign pages, admin tools, brand sites, urgent cross-team requests</li>
+          <li>Fast requirement clarification and proactive status updates</li>
+          <li>Ownership under shifting business priorities</li>
+        </ul>
+      </section>
+    </div>
+
+    <h2>Selected Outcomes</h2>
+
+    <div class="outcome">
+      <h3>1. Rendering &amp; memory optimization (PixiJS 8)</h3>
+      <p>Cut texture VRAM on a live title by <strong>18%</strong> — consolidating atlases, halving mask and VFX resolutions, and moving to PixiJS resolution suffixes, with logical sizes unchanged and no edits to rendering code. Worked the same budget against GPU-memory ceilings on low-memory handsets, and cut the preload set by roughly two thirds to shorten first-screen load.</p>
+    </div>
+    <div class="outcome">
+      <h3>2. FairyGUI runtime on PixiJS 8, written from the binary format</h3>
+      <p>Built a ~1,000-line runtime that parses FairyGUI’s published binary package directly—big-endian byte reader, string-table references, sprite trim rects—then merges 14 scattered images into a single atlas to cut draw calls and texture binds. Covers loader, controllers, transitions, and the gear system; the parser validates 29/29 against XML ground truth.</p>
+    </div>
+    <div class="outcome">
+      <h3>3. Spine 3.8 → 4.2 migration tooling</h3>
+      <p>Wrote a converter that repaired three silent data-loss bugs in the runtime upgrade: bone rotation keys (<code>angle</code> → <code>value</code>), slot colour timelines (<code>color</code> → <code>rgba</code>), and Bézier curves (normalized → absolute coordinates). Without it, rotations flattened to zero and whole colour tracks were dropped. Verified frame by frame against the artists’ reference capture.</p>
+    </div>
+    <div class="outcome">
+      <h3>4. Cocos Creator across a 70+ title portfolio</h3>
+      <p>Core gameplay and shared runtime in Cocos Creator + TypeScript: a custom GLSL effect for time-driven gradient text, a WebSocket client with heartbeat and reconnection over Protobuf, a mask-filtered observable event system, xstate-driven state machines, and a service-container app context reused across titles. Unified protocols and 11 shared modules behind 42 standalone and 9 multiplayer games, with 12-locale i18n sync.</p>
+    </div>
+    <div class="outcome">
+      <h3>5. Reliability under device pressure</h3>
+      <p>Animation completion callbacks in a canvas runtime quietly depend on several conditions holding at once—the object staying in-frame, textures surviving memory pressure, state not changing mid-animation. I trace those dependencies and put timeout fuses on the critical paths, so a callback that never fires degrades the animation instead of stalling the whole flow.</p>
+    </div>
+    <div class="outcome">
+      <h3>6. Delivery governance and web systems</h3>
+      <p>Own CI/CD and four-environment releases across 18 game types and 70+ variants, with an internal deploy manager and version dashboard consolidating deployment, backup verification, and release reporting. Maintain the brand site and game admin console, support marketing and operations on campaigns and internal tools, and built an Electron desktop app for internal asset workflows.</p>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job-head">
+        <h3>ELS Tech</h3>
+        <time>2023/02 – Present</time>
+      </div>
+      <p class="job-role">Frontend Team Leader · Gemini frontend line</p>
+      <ul>
+        <li>Lead game client development for <strong>70+ live products</strong> (Cocos Creator + TypeScript); newer titles on <strong>PixiJS 8 + Spine + FairyGUI</strong></li>
+        <li>Own shared infrastructure: WebSocket/Protobuf protocols, runtime config, webview layer, i18n, shared bundles, merchant loading rules</li>
+        <li>Own release last-mile: STG / REL / PROD, Jenkins pipelines and build nodes, deploy reports, backup and version alignment</li>
+        <li>Maintain the company brand site and game admin console; support other teams migrating admin tools to a decoupled frontend/backend architecture</li>
+        <li>Technical planning, staffing, and in-repo plans / checklists / guides for traceability and handoff</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <h3>Freelance / Advisor / Engineer</h3>
+        <time>2014 – 2023/02</time>
+      </div>
+      <p class="job-role">Company registered 2017 · Othe Technology UI/UX &amp; FE advisor · meet.jobs FE engineer</p>
+      <ul>
+        <li>Large Vue / React sites, product UI systems, and long-lived codebase maintenance</li>
+      </ul>
+    </div>
+
+    <table class="mini-table">
+      <tr><td>2013</td><td>Interactive UI lecturer — Lunghwa University of Science and Technology</td></tr>
+      <tr><td>2012/10 – 2014/02</td><td>UI / Frontend — AppWorks accelerator team</td></tr>
+      <tr><td>2011/01 – 2012/09</td><td>Design team lead — SHEICO Group</td></tr>
+      <tr><td>2009/05 – 2010/12</td><td>Industrial design engineer — Saint-Fun International</td></tr>
+    </table>
+
+    <h2>Education</h2>
+    <ul>
+      <li><strong>M.I.D.</strong> Industrial Design — National Cheng Kung University（成大）, 2005–2008</li>
+      <li><strong>B.I.D.</strong> Industrial Design — Chang Gung University（長庚）, 2001–2005</li>
+    </ul>
+  </main>
+</body>
+</html>
