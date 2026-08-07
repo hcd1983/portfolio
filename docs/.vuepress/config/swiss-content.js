@@ -42,6 +42,11 @@ module.exports = {
           '負責 18 種遊戲類型、70+ 產品變體的持續整合與三環境（DEV / STG / REL）上線；以 deploy-manager 與 dashboard-version-pulse 將部署、備份驗證、版本對齊與上線報告收斂成儀表與腳本，降低人為漏步與環境落差，讓「是否已上線、上到哪一版」可被團隊一致確認。',
       },
       {
+        title: '自動化工具鏈與 MCP 整合',
+        body:
+          '建置 5+ MCP Server（Jira、Confluence、ByteHouse、FairyGUI、Git），將部署、i18n 同步、新專案開倉檢核與議題／文件系統整合封裝成可被 AI Agent 呼叫的工具鏈，讓例行交付可由工具鏈執行，人員聚焦在例外與決策。',
+      },
+      {
         title: '18 類遊戲的共用架構',
         body:
           '同時維護 42 款獨立遊戲與 9 款多人遊戲；統一 bingoproto / hashproto 通訊協議、game-sdk-common 與 11 個共用模組，以 i18ncommon 管理 12 語系資源同步，並對齊 Webview 遊戲紀錄與公平性驗證體驗，減少重工與不一致。',
@@ -52,14 +57,9 @@ module.exports = {
           '推動 Hash 類遊戲（Crash、Hilo、Mines、Plinko 等 10+ 類型）往 Webview 體驗遷移：產出可對齊的規格與遊戲紀錄模板，並將公平性驗證拆解為可複用元件，利於跨團隊實作一致與後續擴充。',
       },
       {
-        title: '自動化工具鏈與 MCP 整合',
-        body:
-          '建置 5+ MCP Server（Jira、Confluence、ByteHouse、FairyGUI、Git），將部署、i18n 同步、新專案開倉檢核與議題／文件系統整合封裝成可被 AI Agent 呼叫的工具鏈，讓例行交付可由工具鏈執行，人員聚焦在例外與決策。',
-      },
-      {
         title: '資料分析與排查流程',
         body:
-          '以 rtp-analizer（PostgreSQL + Google Sheets）、bingo-analizer 與 gemini-data-analyzer 建立遊戲狀態排查、玩家行為與策略分析的可重跑流程，搭配市場追蹤器，讓營運與技術能以同一套可查詢的流程對齊問題，減少口頭來回與一次性查表。',
+          '以 rtp-analyzer（PostgreSQL + Google Sheets）、bingo-analyzer 與 gemini-data-analyzer 建立遊戲狀態排查、玩家行為與策略分析的可重跑流程，搭配市場追蹤器，讓營運與技術能以同一套可查詢的流程對齊問題，減少口頭來回與一次性查表。',
       },
       {
         title: 'AI 輔助研發提效',
@@ -100,22 +100,22 @@ module.exports = {
     nameDisplay: 'DEAN HUANG',
     nameSub: '(Dean)',
     headline:
-      'I make 70+ game frontends delivery predictable, verifiable, and reusable—across shared architecture, protocols, deployment toolchain, and AI automation.',
+      'I make frontend delivery predictable, verifiable, and reusable—across 70+ games, from shared architecture and protocols to deployment tooling and AI automation.',
     lead:
-      'Frontend lead at a game company, overseeing Cocos Creator, cross-project integration, and three-environment delivery. Design background turned engineering—combining UX judgment with systematic implementation.',
+      'Frontend lead at a game studio—Cocos Creator, cross-project architecture, and three-environment delivery. I came from product design, which means I catch experience problems pure-engineering teams miss, and I can write the spec that fixes them.',
     statsLine:
-      '70+ titles shipped  │  40+ concurrent projects  │  Design → Engineering  │  AI workflows & automation',
+      '70+ titles shipped  │  40+ concurrent projects  │  Design → Engineering  │  AI across code, art & game math',
     pills: [
       'CI/CD & multi-environment delivery',
       'Cross-product shared architecture',
-      'Webview & fairness UX',
+      'Provably-fair & webview UX',
       'Data analysis & AI toolchain',
     ],
     aboutTitle: 'ABOUT — Design thinking with engineering rigor',
     aboutParas: [
-      'I went from an industrial design master\'s degree and product design into software engineering. That path lets me bring UX judgment directly into technical decisions—information hierarchy in webview game records, interaction flows for fairness verification—I work from the experience layer back to the technical spec, not the other way around.',
-      'My bar for “done” is strict: merging is just the starting point. Real completion means verified deployment, documented, traceable, and ready for handoff. I lead the frontend team, overseeing Cocos Creator technical planning, sprint pacing, staffing, and the full delivery chain from shared modules to three-environment releases.',
-      'A design background taught me to see problems from the user\'s perspective; an engineering role lets me fix them directly. As a team lead, I apply both lenses at the system level—unified architecture for cross-product integration, tooling to support delivery workflows, and repeatable skills that AI agents can call instead of relying on manual oversight.',
+      'I lead frontend engineering for a portfolio of 70+ live games—and I got here through industrial design, not computer science. That path is the point: I make technical decisions with the experience layer in view, working backward from how a feature should feel to how it should be specified. Information hierarchy in a player\'s game-history view, the interaction flow for provably-fair result verification—these are design problems that happen to ship as code.',
+      'My bar for “done” is strict: merging is the starting point, not the finish. A release is done when it is verified in production, documented, traceable, and ready for someone else to take over. Holding that bar across 18 game types, 70+ product variants, and 40+ concurrent projects in three environments is why I spend as much time on technical direction, release pacing, and the delivery chain as on the games themselves.',
+      'What I care about most as a lead is where the effort goes. Anything predictable—a protocol change that has to land in 40 titles, a deploy that has to be verified the same way every time—should be absorbed by the system, not by someone staying late to check it. My job is to keep shrinking that surface, so the team\'s attention stays on the decisions that actually need a human.',
     ],
     skillsTitle: 'SKILLS — Core capabilities',
     skillLines: [
@@ -129,37 +129,37 @@ module.exports = {
     ],
     outcomesTitle: 'OUTCOMES',
     outcomesIntro:
-      'Six areas, each backed by deployed tools or systems. Happy to go deeper on any item in conversation.',
+      'Six areas, each backed by tools or systems running in production. Happy to go deeper on any of them.',
     outcomes: [
       {
         title: 'Delivery governance for 70+ games',
         body:
-          'CI/CD and three-environment (DEV / STG / REL) releases for 18 game types and 70+ product variants; built deploy-manager and dashboard-version-pulse to consolidate deploys, backup checks, version alignment, and release reporting—fewer missed steps and a shared view of what is live where.',
+          'Owned CI/CD and three-environment releases (DEV / STG / REL) across 18 game types and 70+ product variants. Built an internal deploy manager and a version dashboard that consolidate deployment, backup verification, version alignment, and release reporting. Fewer missed steps—and anyone on the team can answer “is it live, and on which version” without asking.',
+      },
+      {
+        title: 'AI agent toolchain',
+        body:
+          'Built 5+ internal MCP servers—Model Context Protocol, the interface that lets AI agents drive real systems—wiring the issue tracker, wiki, data warehouse, UI editor, and Git into agent-callable workflows. Deployment, localization sync, and new-repo setup now run end to end, so the team spends its attention on exceptions rather than coordination.',
       },
       {
         title: 'Shared architecture across 18 game types',
         body:
-          'Maintained 42 standalone titles alongside 9 multiplayer games; unified bingoproto / hashproto communication protocols, game-sdk-common, and 11 shared modules, with i18ncommon managing 12-locale resource sync, aligned webview game records, and fairness verification UX.',
+          'Designed and maintained the shared layer behind 42 standalone titles and 9 multiplayer games: unified WebSocket protocols for the bingo and hash game families, a common game SDK, and 11 shared modules, with a shared localization system keeping 12 locales in sync. Standardizing game-history views and provably-fair verification on top of this cut duplicated work and removed inconsistencies between titles.',
       },
       {
-        title: 'Webview migration & standardization',
+        title: 'Webview migration & provably-fair standardization',
         body:
-          'Led Hash-type games (Crash, Hilo, Mines, Plinko, and 10+ other types) toward webview experiences: standardized specs and record templates, and extracted fairness checks into reusable components for consistent cross-team implementation.',
+          'Led the migration of hash-type games—Crash, Hilo, Mines, Plinko, and 10+ others—to a webview-based experience. Produced spec and game-history templates other teams could build against, and extracted provably-fair verification—the mechanism that lets players independently confirm a result was not tampered with—into shared components instead of a per-title reimplementation.',
       },
       {
-        title: 'Automation toolchain & MCP integration',
+        title: 'Analysis tooling for ops and engineering',
         body:
-          'Built 5+ MCP servers (Jira, Confluence, ByteHouse, FairyGUI, Git) and packaged deployment, i18n sync, new-repo checklists, and issue/doc integrations into AI-agent-callable workflows—freeing the team to focus on exceptions and decisions.',
+          'Built the analysis tooling ops and engineering share: an RTP analyzer on PostgreSQL and Google Sheets, a bingo-specific analyzer, a general data analysis service, and a market tracker. Together they turn game-state investigation, player behavior analysis, and strategy review into queries anyone can re-run—replacing one-off lookups and back-and-forth over chat.',
       },
       {
-        title: 'Data analysis & triage workflows',
+        title: 'AI beyond engineering: art and game math',
         body:
-          'Built rtp-analizer (PostgreSQL + Google Sheets), bingo-analizer, and gemini-data-analyzer for game-state triage, player behavior analysis, and strategy review, plus a market tracker—delivering shared, queryable, repeatable flows that align ops and engineering.',
-      },
-      {
-        title: 'AI-assisted R&D efficiency',
-        body:
-          'Applied fgui-ai-tool (FairyGUI MCP Server) and fe-claude CLI for AI-assisted image generation and asset dependency tracking; created reusable templates like cocos3d-dice-template, and explored UI editor integrations to reduce time from brief to a reviewable deliverable.',
+          'Extended the same approach past engineering. A library of 16 art-generation skills turns a theme brief into a full asset set—backgrounds, symbol icons, character sprite sheets, autotile terrain, parallax layers, UI components—with a generated style guide injected into every prompt so batches stay visually consistent. On the math side, a pipeline covering 40+ titles converts game design documents into machine-verifiable contracts and gates every payout table on review before it ships. The agents run the process; the numbers stay a human decision.',
       },
     ],
     timelineTitle: 'TIMELINE',

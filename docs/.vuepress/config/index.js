@@ -14,7 +14,7 @@ module.exports = {
                 {
                     title: 'Frontend Engineering',
                     description: '<p>Strong foundation in HTML, CSS, JavaScript, and TypeScript, with attention to maintainable UI structure, interaction quality, and readable code.</p>' +
-                        '<p>Comfortable handling async flows, API integration, data modeling, and UI state management in real production systems.</p>' +
+                        '<p>Fluent with async flows, API integration, data modeling, and UI state management—applied in production systems, not just prototypes.</p>' +
                         '<p>Bring a product-and-experience mindset into engineering work, not just feature completion.</p>'
                 },
                 {
@@ -34,13 +34,13 @@ module.exports = {
                     title: 'Shared Config & Multi-project Integration',
                     description: '<p>Work across shared frontend resources and product lines, including game configs, webview layers, i18n, shared bundles, loading assets, and merchant-specific rules.</p>' +
                         '<p>Good at synchronizing the same requirement or fix across multiple games and shared modules, reducing duplicated work and rollout risk.</p>' +
-                        '<p>Focus on making systems easier to reuse, easier to reason about, and easier to ship as a group.</p>'
+                        '<p>Aim for systems that are predictable to extend, easy to audit, and safe to ship together.</p>'
                 },
                 {
                     title: 'Release & Delivery',
                     description: '<p>Own the last mile of delivery: branch flow, STG / REL / PROD progression, Jenkins-based deployment, deployment reports, S3 backup checks, and REL vs PROD alignment.</p>' +
                         '<p>Write and maintain release notes, including hotfix pages, with attention to traceability and team readability.</p>' +
-                        '<p>Not stopping at “merged” — care about what is actually live, verifiable, and documented.</p>'
+                        '<p>“Merged” is not the finish line—what matters is whether the release is live, verifiable, and documented.</p>'
                 },
                 {
                     title: 'AI Workflow & Automation',
@@ -51,8 +51,7 @@ module.exports = {
                 {
                     title: 'Technical Planning & Team Collaboration',
                     description: '<p>Beyond implementation, participate in technical planning, project coordination, release pacing, and team-facing documentation.</p>' +
-                        '<p>Act as a bridge across product, frontend, backend, deployment, and documentation so work can move from idea to production reliably.</p>' +
-                        '<p>Current role is not only frontend development, but also planning, integration, and delivery leadership.</p>'
+                        '<p>Sit at the intersection of product, frontend, backend, deployment, and documentation, so work moves from decision to production without handoff gaps.</p>'
                 },
             ],
             zh: [
