@@ -1,5 +1,5 @@
 const colors = require("tailwindcss/colors")
 module.exports = {
     title: "HCD Portfolio",
-    description: "Game frontend lead with a product-design background—70+ titles, 18 game types, 12 locales, three-environment delivery. Builds shared architecture, deployment tooling, and AI agent workflows spanning engineering, art, and game design. Cocos Creator, Vue, React, TypeScript, Node.js."
+    description: "Game client engineer and frontend lead—solid on both web engineering and real-time canvas rendering. Cocos Creator, PixiJS 8, Spine, FairyGUI, GLSL, texture/VRAM optimization. 70+ titles, 18 game types, four-environment delivery."
 }
