@@ -10,7 +10,7 @@ VuePress 驅動的個人 Portfolio 網站，展示 Dean Huang（欣迪）的前�
 ```
 docs/                     # VuePress 內容頁（Markdown）
 docs/.vuepress/config/    # 核心配置與文案資料
-  ├── index.js            # 主設定（skills、socialLink、OG）
+  ├── index.js            # 主設定（socialLink、OG / SEO）
   ├── swiss-content.js    # Swiss 版型中英文案（Hero、About、Skills、Outcomes、Timeline）
   └── en-config.js        # 英文站 meta
 themes/portfolio/         # 自訂 VuePress 主題
@@ -22,8 +22,7 @@ themes/portfolio/         # 自訂 VuePress 主題
 
 | 區塊 | 檔案 | 說明 |
 |------|------|------|
-| Hero / About / Outcomes / Timeline | `docs/.vuepress/config/swiss-content.js` | 中英版主要文案 |
-| Skills 詳細描述 | `docs/.vuepress/config/index.js` → `globalData.skills` | 七項技能的 HTML 描述 |
+| Hero / About / Skills / Outcomes / Timeline | `docs/.vuepress/config/swiss-content.js` | 中英版全部頁面文案，`globalData.swiss` 唯一來源 |
 | OG / SEO | `docs/.vuepress/config/index.js` → `description` | 搜尋引擎摘要 |
 | OG / SEO (en) | `docs/.vuepress/config/en-config.js` → `description` | 英文搜尋引擎摘要 |
 
@@ -51,8 +50,11 @@ themes/portfolio/         # 自訂 VuePress 主題
 
 ```bash
 # 本地開發
-yarn dev
+yarn docs:dev
 
-# 建置
-yarn build
+# 建置（產物在 docs/.vuepress/dist，已 gitignore）
+yarn docs:build
+
+# 部署到 GitHub Pages（會先自動 build）
+yarn deploy
 ```
