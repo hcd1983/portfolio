@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:dev": "yarn copy:resume && vuepress dev docs",
+    "docs:build": "yarn copy:resume && vuepress build docs",
     "start": "lite-server",
     "predeploy": "yarn docs:build",
     "deploy": "gh-pages -d docs/.vuepress/dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy:resume": "mkdir -p docs/.vuepress/public/resume && cp resume/Dean-Huang-Resume.html docs/.vuepress/public/resume/index.html"
   },
   "repository": "git+https://github.com/hcd1983/portfolio.git",
   "author": "hcd1983",
