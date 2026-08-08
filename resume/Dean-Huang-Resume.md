@@ -1,5 +1,5 @@
 <!--
-  Dean Huang — Resume（遊戲為主：Game Client Engineer / Senior Web Engineer）
+  Dean Huang — Resume（AI 跨領域整合 / Applied AI Engineering Lead）
   瀏覽器轉 PDF 建議：直接開同資料夾的 Dean-Huang-Resume.html → Cmd/Ctrl+P → Save as PDF
   本檔為可編輯來源；HTML 版在同一目錄。
 -->
@@ -8,9 +8,11 @@
 
 # DEAN HUANG（欣迪）
 
-**Game Client Engineer · Web + Canvas · Frontend Lead**
+**Applied AI Engineering Lead · Cross-Domain Integration · Frontend**
 
-TypeScript · Cocos Creator · PixiJS · Spine / FairyGUI · WebSocket / Protobuf · Jenkins CI/CD
+TypeScript · Claude Code Skills / MCP · PixiJS · Cocos Creator · Svelte / Vue / React · Jenkins CI/CD
+
+AWS Certified AI Practitioner
 
 [linkedin.com/in/Dean-6979939a](https://www.linkedin.com/in/Dean-6979939a/) · [github.com/hcd1983](https://github.com/hcd1983) · [it-monk.tw](https://it-monk.tw/) · [Portfolio](https://portfolio.hcd-design-studio.com/en/)
 
@@ -22,67 +24,62 @@ TypeScript · Cocos Creator · PixiJS · Spine / FairyGUI · WebSocket / Protobu
 
 ## Profile
 
-I work at the seam between **web engineering and real-time canvas rendering**—and I am solid on both sides, not one borrowed from the other. Day to day that means gameplay code in **Cocos Creator** and **PixiJS**, a FairyGUI runtime written against the binary spec, and texture budgets that have to survive low-memory phones—alongside the company brand site, the game admin console, and Jenkins pipelines moving **70+ titles** through four environments.
+I lead frontend at a game studio. The turn toward **applied AI** started at an AWS conference last year — I came away convinced this was how the work would be done from now on, and began converting the repetitive, predictable, cross-discipline work in the department into tooling that runs. Not "using AI to write a function," but rebuilding the process end to end.
 
-I lead the frontend team and work daily with product, design, backend, marketing, and operations—clarifying requirements fast and shipping reliably when priorities move.
+When the team later went from five people to two without the delivery load dropping, that judgement paid off: the groundwork was already in place when the pressure arrived.
 
-> **Bar for “done”:** merged ≠ done. Done means verified live, documented, traceable, and handoff-ready.
+The result is a **semi-automated game production line**: design rules, math validation, art and audio generation, the frontend SDK, and post-launch analytics, each with agent-callable tooling, each stage feeding the next. Work that used to take several roles and a lot of meetings.
+
+> **How I work now:** I set the architecture and the acceptance bar, agents produce, I verify. Models get replaced and output drifts, so the acceptance bar lives *outside* the model as a hard boundary — permission limits defined by a human, automated checks wired into CI that block the build when they fail.
 
 ---
 
 ## Snapshot
 
-| 70+ | 18 | 3 | −18% |
+| 5 → 2 | 1 wk → 2 d | 80+ | 6 |
 |:---:|:---:|:---:|:---:|
-| Game products shipped | Game types on shared stack | Render stacks in production | Texture VRAM after tuning |
+| Team size, delivery flat | Reskin turnaround | Titles still shipping | Pipeline stages wired |
 
 ---
 
 ## Core Skills
 
-### Game Client & Rendering
-- **Cocos Creator + TypeScript**: core gameplay, shared runtime modules, custom GLSL effects
-- **PixiJS 8**: texture / VRAM budgeting, atlas consolidation, draw-call and texture-bind reduction
-- **Spine** runtime integration and format migration; **FairyGUI** binary package parsing
+### AI & Automation
+- **Claude Code Skills / MCP servers**: agent-callable workflows for deploy, analytics, doc sync, error triage, issue fixing
+- Pipeline design across disciplines; machine-verifiable contracts as the handoff format
+- A cross-project knowledge base (90+ repositories) giving agents the context that makes their output usable
+- Hard boundaries: CI-enforced checks that block on failure, plus explicit limits on what an agent may decide
+- Departmental adoption: building the tools, then getting a team to actually use them
+
+### Game Client & Web
+- **PixiJS 8** and **Cocos Creator + TypeScript**: gameplay, custom GLSL effects, texture/VRAM budgeting
+- **Spine** runtime integration and format migration; low-memory device triage
+- **TypeScript** daily; **Svelte**, **Vue** (primary), **React**; Nuxt / Vite / Next.js; **Electron** desktop tooling
 - Networking: **WebSocket** with heartbeat and reconnection, **Protobuf**, HTTP; frontend–backend contract alignment
-- Patterns: state machines, observable event bus, object pooling, service containers
-- HTML5 for **mobile and desktop**; packaging, on-device debugging, low-memory device triage
 
-### Web Engineering
-- **TypeScript** daily; **Vue** (primary) + **React**, chosen per problem rather than per habit
-- Nuxt / Vite / Next.js; component systems across a multi-repo portfolio
-- State architecture with explicit boundaries and predictable data flow
-- **Electron** desktop tooling (Vue 3 + Quasar, IPC via contextBridge, S3 and Google Drive integration)
-- Company brand site and game admin console; helped other teams move admin tools to a decoupled frontend/backend architecture
-- Reading and improving large, long-lived codebases
-
-### Delivery & Automation
-- **Jenkins** CI/CD design and maintenance; build nodes; DEV / STG / REL / PROD promotion
-- Deploy manager + version dashboard (“is it live, and on which version?”)
-- Release notes incl. hotfix; backup verification and REL↔PROD alignment
-- MCP / AI agent toolchains absorbing deploy, i18n sync, and repo setup
+### Delivery & Data
+- **Jenkins** CI/CD design and maintenance; DEV / STG / REL / PROD across 40 game types and 80+ reskinned variants
+- Deploy manager and version dashboard; backup verification and environment alignment
+- **ClickHouse-family** warehousing; re-runnable query and triage flows shared by ops and engineering
 
 ---
 
 ## Selected Outcomes
 
-### 1. Rendering & memory optimization (PixiJS 8)
-Cut texture VRAM on a live title by **18%** — consolidating atlases, halving mask and VFX resolutions, and moving to PixiJS resolution suffixes, with logical sizes unchanged and no edits to rendering code. Worked the same budget against GPU-memory ceilings on low-memory handsets, and cut the preload set by roughly two thirds to shorten first-screen load.
+### 1. A semi-automated game production line
+Broke building a game into six stages — design, math, art, audio, frontend, post-launch analytics — built agent-callable tooling for each, and made every stage feed the next. The design rules document is the single source of truth and flows downstream into a verifiable math contract; art and audio consume the same theme definition; the frontend builds against the same event structure. It now runs from a theme brief to a demo-ready build.
 
-### 2. FairyGUI runtime on PixiJS 8, written from the binary format
-Built a ~1,000-line runtime that parses FairyGUI's published binary package directly—big-endian byte reader, string-table references, sprite trim rects—then merges 14 scattered images into a single atlas to cut draw calls and texture binds. Covers loader, controllers, transitions, and the gear system; the parser validates 29/29 against XML ground truth.
+### 2. Frontend SDK and hands-on rendering
+Contributed to a **Svelte 5 + PixiJS 8** slot-game frontend SDK — a monorepo of 14 game apps and 29 shared packages — as its single largest contributor (~60% of commits). Event-driven architecture: the server returns a round as a sequence of events the client replays, making rounds reproducible and independently testable. The low-level work continues alongside: cut texture VRAM on a live title by **18%** (atlas consolidation, halved mask and VFX resolutions, resolution suffixes — logical sizes and rendering code untouched), and wrote the Spine 3.8 → 4.2 converter that repaired three silent data-loss bugs in the runtime upgrade.
 
-### 3. Spine 3.8 → 4.2 migration tooling
-Wrote a converter that repaired three silent data-loss bugs in the runtime upgrade: bone rotation keys (`angle` → `value`), slot colour timelines (`color` → `rgba`), and Bézier curves (normalized → absolute coordinates). Without it, rotations flattened to zero and whole colour tracks were dropped. Verified frame by frame against the artists' reference capture.
+### 3. Art generation: "consistent style" as an executable spec
+16 generation skills covering theme proposals, a visual style guide, batch image generation, character poses, sprite sheets, autotile terrain, parallax backgrounds and UI components. The key decision: produce the style guide first, then inject it into every downstream prompt — a batch drifts as it grows, and that spec is the only thing that holds it together.
 
-### 4. Cocos Creator across a 70+ title portfolio
-Core gameplay and shared runtime in Cocos Creator + TypeScript: a custom GLSL effect for time-driven gradient text, a WebSocket client with heartbeat and reconnection over Protobuf, a mask-filtered observable event system, xstate-driven state machines, and a service-container app context reused across titles. Unified protocols and 11 shared modules behind 42 standalone and 9 multiplayer games, with 12-locale i18n sync.
+### 4. Math: turning a design document into a machine-verifiable contract
+A math pipeline covering 40+ titles. It expands the design rules into a mechanics matrix, interrogates every ambiguous cell until it is pinned down, and emits a machine-verifiable contract. Every batch of computed results must clear hard checks — matrix gaps, whether a declared mechanic actually appears, field and behaviour assertions — and nothing ships until it passes. One line drawn deliberately: the pipeline runs on its own, but the final call on a payout table stays with the game designer. It now operates without me — I go back in only when the spec has to change.
 
-### 5. Reliability under device pressure
-Animation completion callbacks in a canvas runtime quietly depend on several conditions holding at once—the object staying in-frame, textures surviving memory pressure, state not changing mid-animation. I trace those dependencies and put timeout fuses on the critical paths, so a callback that never fires degrades the animation instead of stalling the whole flow.
-
-### 6. Delivery governance and web systems
-Own CI/CD and four-environment releases across 18 game types and 70+ variants, with an internal deploy manager and version dashboard consolidating deployment, backup verification, and release reporting. Maintain the brand site and game admin console, support marketing and operations on campaigns and internal tools, and built an Electron desktop app for internal asset workflows.
+### 5. Putting live operations data within reach of an agent
+An analytics MCP server exposing the data warehouse as 16 agent-callable tools — revenue and partner rankings, period comparison, player behaviour analysis, single-round replay. On top sit 5 analysis agents and a daily triage routine chaining "check revenue → find anomalous games → shortlist suspects → investigate → report" into one command. Read-only access, query timeouts and row caps so an agent cannot take the warehouse down.
 
 ---
 
@@ -91,11 +88,13 @@ Own CI/CD and four-environment releases across 18 game types and 70+ variants, w
 ### Frontend Team Leader — ELS Tech（Gemini frontend line）
 **2023/02 – Present**
 
-- Lead game client development for **70+ live products** (Cocos Creator + TypeScript); newer titles on **PixiJS 8 + Spine + FairyGUI**
-- Own shared infrastructure: WebSocket / Protobuf protocols, runtime config, webview layer, i18n, shared bundles, merchant loading rules
-- Own release last-mile: STG / REL / PROD, Jenkins pipelines and build nodes, deploy reports, backup and version alignment
-- Maintain the company brand site and game admin console; support other teams migrating admin tools to a decoupled frontend/backend architecture
-- Technical planning, staffing, and in-repo plans / checklists / guides for traceability and handoff
+- Built **MCP servers and agent workflows** for deployment, analytics, doc sync and issue diagnosis; the math and art-reskin lines now run without me — I step in only when the spec itself changes — QA files a ticket, an MCP server picks it up, the agent pulls project context and past fixes from a knowledge base spanning 90+ repositories, and a human signs off
+- Wired design, math, art, audio, frontend and analytics into a single cross-discipline pipeline
+- Lead game client development for **40 game types, 80+ reskinned products live** (Cocos Creator + TypeScript); newer work on PixiJS 8 + Spine
+- Own shared infrastructure: WebSocket / Protobuf protocols, runtime config, webview layer, i18n, shared bundles
+- Own release last-mile: DEV / STG / REL / PROD, Jenkins pipelines, deploy reports, backup and version alignment
+- Held delivery flat after the frontend team went from five people to two
+- Technical planning and in-repo plans / checklists / guides for traceability and handoff
 
 ### Freelancer / Advisor / Engineer
 **2014 – 2023/02**
@@ -114,8 +113,9 @@ Own CI/CD and four-environment releases across 18 game types and 70+ variants, w
 
 ---
 
-## Education
+## Certification & Education
 
+- **AWS Certified AI Practitioner**
 - **M.I.D.** Industrial Design — National Cheng Kung University（成大）, 2005–2008
 - **B.I.D.** Industrial Design — Chang Gung University（長庚）, 2001–2005
 
